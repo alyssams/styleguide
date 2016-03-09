@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="stylesheet" type="text/css" href="./media/css/style.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="./media/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<header>Lexus Style Guide</header>
+			<div class="row">
+				<div class="main">
+					<div class="col-md-4 side">
+						<nav class="dr-menu">
+						<div class="dr-trigger"><span class="dr-icon dr-icon-spinner"></span><a class="dr-label" href="#design">Design</a></div>
+						<ul>
+							<li><a class="dr-icon dr-icon-paint-format" href="#design-color">Color</a></li>
+							<li><a class="dr-icon dr-icon-stack" href="#design-layout">Layout</a></li>
+							<li><a class="dr-icon dr-icon-enlarge2" href="#design-motion">Motion</a></li>
+							<li><a class="dr-icon dr-icon-location" href="#design-navigation">Navigation</a></li>
+							<li><a class="dr-icon dr-icon-font-size" href="#design-typography">Typography</a></li>
+						</ul>
+					</nav>
+					</div>
+					<div class="col-md-8 content">
+						<main role="main">
+							 <div id="design">
+							 	<p>Design View</p>
+							    <p>Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design. Overview of design.</p>
+							  </div>
+							
+							 <div id="design-color">
+							    <p>COLOR</p>
+							    <p>This is one of any number of views that are reachable by linking to its <code>id</code> / hash identifier.</p>
+							  </div>
+							  <div id="design-layout">
+							    <p>LAYOUT</p>
+							    <p>This is one of any number of views that are reachable by linking to its <code>id</code> / hash identifier.</p>
+							  </div>
+							  <div id="design-motion">
+							    <p>MOTION</p>
+							    <p>This view is visible by default when the user first arrives at the app.</p>
+							  </div>
+							  <div id="design-navigation">
+							    <p>NAVIGATION</p>
+							    <p>This view is visible by default when the user first arrives at the app.</p>
+							  </div>
+							  <div id="design-typography">
+							    <p>TYPOGRAPHY</p>
+							    <p>This view is visible by default when the user first arrives at the app.</p>
+							  </div>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="./media/js/ytmenu.js"></script>
+		<script>
+			window.addEventListener('hashchange', function() {
+				console.log('this view\'s id is', window.location.hash.substr(1));
+			});
+		</script>
+	</body>
+</html>
