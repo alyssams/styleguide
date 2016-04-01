@@ -1,0 +1,89 @@
+/* ///////////////////////// NUMBER OneC /////////////////////////*/
+#vr300x600_03{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #FFF;
+width: 300px;
+height: 600px;
+cursor: pointer;
+border:1px solid #000;
+}
+#vr300x600_03 .label{
+	width: 302px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#vr300x600_03 .luxury{
+width: 248px;
+height: 115px;
+background-image: url(../img/luxury_doesnt_have_to_come_in_small_portions_the_ES.png);
+position: absolute;
+left: 25px;
+top: 17px;
+z-index: 0;
+opacity: 0.0;
+}
+#vr300x600_03 .rule01{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-right:2px solid #000;
+left: 17px;
+top: 17px;
+z-index: 1;
+}
+#vr300x600_03 .rule02{
+width: 281px;
+height: 115px;
+background-color: #fff;
+position: absolute;
+border-left:2px solid #000;
+right: 0px;
+top: 17px;
+z-index: 1;
+opacity: 0.0;
+}
+#vr300x600_03 .optionsInfo{
+width: 59px;
+height: 25px;
+background-image: url(../img/options_shown-important_info.png);
+position: absolute;
+background-size: contain;
+right: 18px;
+top: 515px;
+opacity: 0.0;
+z-index: 2;
+}
+#vr300x600_03 .logo{
+position: absolute;
+left: 18px;
+bottom: 23px;
+width: 112px;
+height: 20px;
+background-image: url(../img/lexus_logo.png);
+opacity: 0.0;
+}
+#vr300x600_03 .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn_more_button.png);
+position: absolute;
+right: 18px;
+bottom: 18px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#vr300x600_03 .learnMore:hover{
+background-image: url(../img/learn_more_button-Hover.png);
+}
+/* ///////////////////////// NUMBER OneC /////////////////////////*/

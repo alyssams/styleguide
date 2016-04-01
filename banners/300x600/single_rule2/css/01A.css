@@ -1,0 +1,88 @@
+/* ///////////////////////// NUMBER OneA /////////////////////////*/
+#sr2_300x600_01{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #FFF;
+width: 300px;
+height: 600px;
+cursor: pointer;
+border:1px solid #000;
+}
+#sr2_300x600_01 .label{
+	width: 302px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#sr2_300x600_01 .live{
+width: 139px;
+height: 62px;
+background-image: url(../img/live_a_full_life.png);
+position: absolute;
+left: 18px;
+top: 17px;
+z-index: 0;
+opacity: 0.0;
+}
+#sr2_300x600_01 .theCThybrid{
+width: 112px;
+height: 19px;
+background-image: url(../img/the_CT_hybrid.png);
+background-repeat: no-repeat;
+position: absolute;
+background-size: contain;
+left: 18px;
+top: 93px;
+opacity: 0.0;
+}
+#sr2_300x600_01 .thickRule{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:2px solid #000;
+left: 17px;
+bottom: 512px;
+z-index: 1;
+}
+#sr2_300x600_01 .optionsInfo{
+width: 59px;
+height: 25px;
+background-image: url(../img/options_shown-important_info.png);
+position: absolute;
+background-size: contain;
+right: 18px;
+top: 515px;
+opacity: 0.0;
+z-index: 2;
+}
+#sr2_300x600_01 .logo{
+position: absolute;
+left: 18px;
+bottom: 23px;
+width: 112px;
+height: 20px;
+background-image: url(../img/lexus_logo.png);
+opacity: 0.0;
+}
+#sr2_300x600_01 .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn_more_button.png);
+position: absolute;
+right: 18px;
+bottom: 18px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}#sr2_300x600_01 .learnMore:hover{
+background-image: url(../img/learn_more_button-Hover.png);
+}
+/* ///////////////////////// NUMBER OneA /////////////////////////*/

@@ -1,0 +1,117 @@
+/* ///////////////////////// NUMBER Eight /////////////////////////*/
+#numEight{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #000;
+width: 728px;
+height: 90px;
+cursor: pointer;
+}
+#numEight .luxury{
+width: 308px;
+height: 69px;
+background-image: url(../img/luxury_full.png);
+position: absolute;
+left: 18px;
+top: 11px;
+z-index: 0;
+opacity: 0.0;
+}
+#coverLine2{
+    width: 308px;
+    height: 21px;
+    position: absolute;
+    left: 18px;
+    top: 35px;
+    z-index: 0;
+    opacity: 1.0;
+    background-color: #000;
+    z-index: 1;
+}
+#coverLine3{
+    width: 308px;
+    height: 21px;
+    position: absolute;
+    left: 18px;
+    top: 60px;
+    z-index: 0;
+    opacity: 1.0;
+    background-color: #000;
+    z-index: 1;
+}
+#numEight #cover{
+    width: 11px;
+    height: 90px;
+    background-color: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+#numEight .theES{
+width: 77px;
+height: 21px;
+background-image: url(../img/theES-L.png);
+position: absolute;
+left: -77px;
+bottom: 8px;
+z-index: 1;
+opacity: 1.0;
+}
+#numEight .thinRuleBottom{
+width: 2px;
+height: 0px;
+background-color: #000;
+border-right:2px solid #fff;
+position: absolute;
+left: 11px;
+top: 44.5px;
+z-index: 2;
+opacity: 1.0;
+}
+#numEight .thinRuleTop{
+width: 2px;
+height: 0px;
+background-color: #000;
+border-right:2px solid #fff;
+position: absolute;
+left: 11px;
+bottom: 45.5px;
+z-index: 2;
+opacity: 1.0;
+}
+#numEight .logo{
+position: absolute;
+right: 14px;
+top: 15px;
+width: 112px;
+height: 21px;
+background-image: url(../img/logo.png);
+opacity: 0.0;
+}
+#numEight .learnMore{
+width: 112px;
+height: 30px;
+background-image: url(../img/learn-more.png);
+position: absolute;
+right:  14px;
+bottom: 16px;
+z-index: 0;
+cursor: pointer;
+opacity: 0;
+}
+#numEight .learnMore:hover{
+background-color: #555;
+}
+#numEight .rcShown{
+width: 78px;
+height: 8px;
+background-image: url(../img/rc-f-sport-shown.png);
+position: absolute;
+right: 138px;
+top: 43px;
+z-index: 0;
+opacity: 0;
+}
+/* ///////////////////////// NUMBER Eight /////////////////////////*/

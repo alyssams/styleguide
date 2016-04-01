@@ -1,0 +1,119 @@
+/* ///////////////////////// NUMBER OneB /////////////////////////*/
+#numOneB{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #FFF;
+width: 728px;
+height: 90px;
+cursor: pointer;
+border:1px solid #000;
+/* margin-right: 100px; */
+}
+#numOneB .label{
+	width: 730px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#numOneB .resistance{
+width: 236px;
+height: 21px;
+background-image: url(../img/resistance_is_futile.png);
+position: absolute;
+left: 18px;
+top: 17px;
+z-index: 0;
+opacity: 0.0;
+}
+#numOneB .rule01L{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:6px solid #000;
+right: 592px;
+bottom: 43px;
+z-index: 1;
+}
+#numOneB .rule01R{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:6px solid #000;
+left: 136px;
+bottom: 43px;
+z-index: 1;
+}
+#numOneB .rule02L{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:2px solid #000;
+right: 592px;
+bottom: 18px;
+z-index: 1;
+}
+#numOneB .rule02R{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:2px solid #000;
+left: 136px;
+bottom: 18px;
+z-index: 1;
+}
+#numOneB .firstEver{
+width: 149px;
+height: 15px;
+background-image: url(../img/the_first_ever_rc_coupe.png);
+position: absolute;
+left: 18px;
+top: 53px;
+z-index: 0;
+opacity: 0.0;
+}
+#numOneB .optionsInfo{
+width: 59px;
+height: 31px;
+background-image: url(../img/options_shown-important_info.png);
+position: absolute;
+background-size: contain;
+right: 138px;
+top: 44px;
+opacity: 0.0;
+z-index: 2;
+}
+#numOneB .logo{
+position: absolute;
+right: 15px;
+top: 15px;
+width: 112px;
+height: 20px;
+background-image: url(../img/lexus_logo.png);
+opacity: 0.0;
+}
+#numOneB .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn_more_button.png);
+position: absolute;
+right: 15px;
+bottom: 15px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#numOneB .learnMore:hover{
+background-image: url(../img/learn_more_button-Hover.png);
+}
+/* ///////////////////////// NUMBER OneB /////////////////////////*/

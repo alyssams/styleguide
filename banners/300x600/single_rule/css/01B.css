@@ -1,0 +1,97 @@
+/* ///////////////////////// NUMBER OneB /////////////////////////*/
+#sr300x600_02{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #FFF;
+width: 300px;
+height: 600px;
+cursor: pointer;
+border:1px solid #000;
+}
+#sr300x600_02 .label{
+	width: 302px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#sr300x600_02 .resistance{
+width: 185px;
+height: 62px;
+background-image: url(../img/resistance_is_futile.png);
+position: absolute;
+left: 17px;
+top: 18px;
+z-index: 0;
+opacity: 0.0;
+}
+#sr300x600_02 .rule01{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:2px solid #000;
+left: 17px;
+bottom: 512px;
+z-index: 1;
+}
+#sr300x600_02 .rule02{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-bottom:2px solid #000;
+left: 17px;
+top: 86px;
+z-index: 2;
+}
+#sr300x600_02 .firstEver{
+width: 180px;
+height: 19px;
+background-image: url(../img/the_first_ever_rc_coupe.png);
+position: absolute;
+left: 17px;
+top: 94px;
+z-index: 0;
+opacity: 0.0;
+}
+#sr300x600_02 .optionsInfo{
+width: 59px;
+height: 25px;
+background-image: url(../img/options_shown-important_info.png);
+position: absolute;
+background-size: contain;
+right: 18px;
+top: 515px;
+opacity: 0.0;
+z-index: 2;
+}
+#sr300x600_02 .logo{
+position: absolute;
+left: 18px;
+bottom: 23px;
+width: 112px;
+height: 20px;
+background-image: url(../img/lexus_logo.png);
+opacity: 0.0;
+}
+#sr300x600_02 .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn_more_button.png);
+position: absolute;
+right: 18px;
+bottom: 18px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}#sr300x600_02 .learnMore:hover{
+background-image: url(../img/learn_more_button-Hover.png);
+}
+/* ///////////////////////// NUMBER OneB /////////////////////////*/

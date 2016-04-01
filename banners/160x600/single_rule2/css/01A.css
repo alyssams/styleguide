@@ -1,0 +1,122 @@
+/* ///////////////////////// NUMBER OneA /////////////////////////*/
+#sr2_160x600_01{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #fff;
+width: 160px;
+height: 600px;
+cursor: pointer;
+border: 1px solid #000;
+}
+#sr2_160x600_01 .label{
+	width: 162px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#sr2_160x600_01 .live{
+width: 90px;
+height: 42px;
+background-image: url(../img/live_a_full_life.png);
+position: absolute;
+left: 18px;
+top: 18px;
+z-index: 0;
+opacity: 0.0;
+}
+
+#sr2_160x600_01 .thickRule{
+width: 0px;
+height: 0px;
+background-color: #fff;
+position: absolute;
+border-top:2px solid #000;
+left: 17px;
+bottom: 534px;
+z-index: 1;
+}
+#sr2_160x600_01 .theCThybrid{
+width: 73px;
+height: 14px;
+background-image: url(../img/the_CT_hybrid.png);
+position: absolute;
+background-size: contain;
+left: 17px;
+top: 71px;
+opacity: 0.0;
+z-index: 2;
+}
+#sr2_160x600_01 .logo{
+position: absolute;
+left: 17px;
+bottom: 75px;
+width: 112px;
+height: 21px;
+background-image: url(../img/logo.png);
+opacity: 0.0;
+}
+/*
+#sr2_160x600_01 .learnMore{
+width: 112px;
+height: 30px;
+background-image: url(../img/learn-more.png);
+position: absolute;
+left: 24px;
+bottom:32px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#sr2_160x600_01 .learnMore:hover{
+background-color: #555;
+}
+*/
+
+
+
+
+#sr2_160x600_01 .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn-more.png);
+position: absolute;
+left: 24px;
+bottom:32px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#sr2_160x600_01 .learnMore:hover{
+background-image: url(../../../img/learn_more_button-Hover.png);
+}
+
+
+
+#sr2_160x600_01 .rcShown{
+    width: 111px;
+    height: 10px;
+    background-image: url(../img/rc-f-sport-shown.png);
+    background-position: center center;
+    position: absolute;
+    left: 25px;
+    bottom: 11px;
+    opacity: 0.0;
+    z-index: 0;
+}
+#sr2_160x600_01 #cover{
+width: 126px;
+height: 100px;
+background-color: #fff;
+position: absolute;
+left: 17px;
+top: 66px;
+z-index: 1;
+}
+/* ///////////////////////// NUMBER OneA /////////////////////////*/

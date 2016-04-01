@@ -1,0 +1,120 @@
+/* ///////////////////////// NUMBER OneA /////////////////////////*/
+#nr160x600_03{
+position: relative;
+display: inline-block;
+margin: 40px;
+background-color: #fff;
+width: 160px;
+height: 600px;
+cursor: pointer;
+border: 1px solid #000;
+}
+#nr160x600_03 .label{
+	width: 162px;
+	height: 20px;
+	position: absolute;
+	left: -1px;
+	top: -21px;
+	font-size: 10px;
+	font-family: sans-serif;
+	color: #AAA;
+	text-align: left;
+}
+#nr160x600_03 .allWeatherDriveLexusSedans{
+width: 141px;
+    height: 59px;
+    background-image: url(../img/all_weather_drive_lexus_sedans.png);
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    z-index: 0;
+    opacity: 1.0;
+}
+#nr160x600_03 .firstEver{
+width: 126px;
+height: 14px;
+background-image: url(../img/the-first-ever-rc-coupe.png);
+position: absolute;
+background-size: contain;
+left: 17px;
+top: 71px;
+opacity: 0.0;
+z-index: 2;
+}
+#nr160x600_03 .logo{
+position: absolute;
+left: 17px;
+bottom: 75px;
+width: 112px;
+height: 21px;
+background-image: url(../img/logo.png);
+opacity: 0.0;
+}
+/*
+#nr160x600_03 .learnMore{
+width: 112px;
+height: 30px;
+background-image: url(../img/learn-more.png);
+position: absolute;
+left: 24px;
+bottom:32px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#nr160x600_03 .learnMore:hover{
+background-color: #555;
+}
+*/
+
+
+
+
+#nr160x600_03 .learnMore{
+transition: background-image 0.3s;
+width: 112px;
+height: 30px;
+background-image: url(../img/learn-more.png);
+position: absolute;
+left: 24px;
+bottom:32px;
+z-index: 0;
+cursor: pointer;
+opacity: 0.0;
+}
+#nr160x600_03 .learnMore:hover{
+background-image: url(../../../img/learn_more_button-Hover.png);
+}
+
+
+
+#nr160x600_03 .rcShown{
+    width: 111px;
+    height: 10px;
+    background-image: url(../img/rc-f-sport-shown.png);
+    background-position: center center;
+    position: absolute;
+    left: 25px;
+    bottom: 11px;
+    opacity: 0.0;
+    z-index: 0;
+}
+#nr160x600_03 #cover{
+width: 141px;
+    height: 38px;
+    background-color: #fff;
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    z-index: 1;
+}
+#nr160x600_03 #cover2{
+width: 141px;
+    height: 18px;
+    background-color: #fff;
+    position: absolute;
+    right: 9px;
+    top: 51px;
+    z-index: 1;
+}
+/* ///////////////////////// NUMBER OneA /////////////////////////*/
