@@ -1,5 +1,5 @@
 /* line 1, ../../scss/modules/menu.scss */
-.dr-menu {
+.menu {
   width: 100%;
   max-width: 400px;
   min-width: 300px;
@@ -11,14 +11,14 @@
   padding-top: 2em;
 }
 /* line 11, ../../scss/modules/menu.scss */
-.dr-menu > div {
+.menu > div {
   cursor: pointer;
   position: absolute;
   width: 100%;
   z-index: 100;
 }
 /* line 16, ../../scss/modules/menu.scss */
-.dr-menu > div .dr-icon, .dr-menu > div .blur {
+.menu > div .icon, .menu > div .blur {
   top: 0;
   left: 0;
   position: absolute;
@@ -29,28 +29,8 @@
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 30, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open > div .blur, .dr-menu.dr-menu-open > div .dr-icon {
-  color: #60a773;
-  left: 100%;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-/* line 39, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open > div .dr-icon:after {
-  opacity: 1;
-}
-/* line 42, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open > div .dr-label {
-  -webkit-transform: translateY(-90%);
-  -moz-transform: translateY(-90%);
-  -ms-transform: translateY(-90%);
-  transform: translateY(-90%);
-}
-/* line 49, ../../scss/modules/menu.scss */
-.dr-menu > div .dr-icon:after {
+/* line 28, ../../scss/modules/menu.scss */
+.menu > div .icon:after {
   content: "\ea51";
   position: absolute;
   font-size: 50%;
@@ -61,8 +41,8 @@
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 60, ../../scss/modules/menu.scss */
-.dr-menu > div .dr-label {
+/* line 39, ../../scss/modules/menu.scss */
+.menu > div .label {
   padding-left: 3em;
   position: relative;
   display: block;
@@ -76,8 +56,8 @@
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 74, ../../scss/modules/menu.scss */
-.dr-menu ul {
+/* line 53, ../../scss/modules/menu.scss */
+.menu ul {
   padding: 0;
   margin: 0 3em 0 0;
   list-style: none;
@@ -89,8 +69,8 @@
   -moz-transition: opacity 0s linear 205ms;
   transition: opacity 0s linear 205ms;
 }
-/* line 86, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul {
+/* line 65, ../../scss/modules/menu.scss */
+.menu.menu-open ul {
   opacity: 1;
   z-index: 200;
   pointer-events: auto;
@@ -98,8 +78,8 @@
   -moz-transition: opacity 0s linear 0s;
   transition: opacity 0s linear 0s;
 }
-/* line 94, ../../scss/modules/menu.scss */
-.dr-menu ul li {
+/* line 73, ../../scss/modules/menu.scss */
+.menu ul li {
   display: block;
   margin: 0 0 5px 0;
   opacity: 0;
@@ -107,59 +87,59 @@
   -moz-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-/* line 102, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li {
+/* line 81, ../../scss/modules/menu.scss */
+.menu.menu-open ul li {
   opacity: 1;
 }
-/* line 104, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(2) {
+/* line 83, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(2) {
   -webkit-transition-delay: 35ms;
   -moz-transition-delay: 35ms;
   transition-delay: 35ms;
 }
-/* line 109, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(3) {
+/* line 88, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(3) {
   -webkit-transition-delay: 70ms;
   -moz-transition-delay: 70ms;
   transition-delay: 70ms;
 }
-/* line 114, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(4) {
+/* line 93, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(4) {
   -webkit-transition-delay: 105ms;
   -moz-transition-delay: 105ms;
   transition-delay: 105ms;
 }
-/* line 119, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(5) {
+/* line 98, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(5) {
   -webkit-transition-delay: 140ms;
   -moz-transition-delay: 140ms;
   transition-delay: 140ms;
 }
-/* line 124, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(6) {
+/* line 103, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(6) {
   -webkit-transition-delay: 175ms;
   -moz-transition-delay: 175ms;
   transition-delay: 175ms;
 }
-/* line 129, ../../scss/modules/menu.scss */
-.dr-menu.dr-menu-open ul li:nth-child(7) {
+/* line 108, ../../scss/modules/menu.scss */
+.menu.menu-open ul li:nth-child(7) {
   -webkit-transition-delay: 205ms;
   -moz-transition-delay: 205ms;
   transition-delay: 205ms;
 }
-/* line 135, ../../scss/modules/menu.scss */
-.dr-menu ul li a {
+/* line 114, ../../scss/modules/menu.scss */
+.menu ul li a {
   display: inline-block;
   padding: 0 20px;
   color: #fff;
 }
-/* line 139, ../../scss/modules/menu.scss */
-.dr-menu ul li a:hover {
+/* line 118, ../../scss/modules/menu.scss */
+.menu ul li a:hover {
   color: #60a773;
 }
 
-/* line 146, ../../scss/modules/menu.scss */
-.dr-icon:before, .dr-icon:after {
+/* line 125, ../../scss/modules/menu.scss */
+.icon:before, .icon:after {
   position: relative;
   font-family: 'icomoon';
   speak: none;
@@ -170,42 +150,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 158, ../../scss/modules/menu.scss */
-.dr-menu ul .dr-icon:before {
+/* line 137, ../../scss/modules/menu.scss */
+.menu ul .icon:before {
   margin-right: 15px;
-}
-
-/* line 164, ../../scss/modules/menu.scss */
-.dr-icon-paint-format:before {
-  content: "\e90d";
-}
-
-/* line 168, ../../scss/modules/menu.scss */
-.dr-icon-location:before {
-  content: "\e948";
-}
-
-/* line 172, ../../scss/modules/menu.scss */
-.dr-icon-enlarge2:before {
-  content: "\e98c";
-}
-
-/* line 176, ../../scss/modules/menu.scss */
-.dr-icon-stack:before {
-  content: "\e92f";
-}
-
-/* line 180, ../../scss/modules/menu.scss */
-.dr-icon-font-size:before {
-  content: "\e900";
-}
-
-/* line 184, ../../scss/modules/menu.scss */
-.dr-icon-spinner:before {
-  content: "\e982";
-}
-
-/* line 189, ../../scss/modules/menu.scss */
-.dr-icon-menu:before {
-  content: "\e007";
 }

@@ -1,4 +1,4 @@
-.dr-menu {
+.menu {
   width: 100%;
   max-width: 400px;
   min-width: 300px;
@@ -13,7 +13,7 @@
     position: absolute;
     width: 100%;
     z-index: 100;
-    .dr-icon, .blur {
+    .icon, .blur {
       top: 0;
       left: 0;
       position: absolute;
@@ -25,28 +25,7 @@
       transition: all 0.2s ease;
     }
   }
-  &.dr-menu-open {
-    > div {
-      .blur, .dr-icon {
-        color: #60a773;
-        left: 100%;
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        transform: translateX(-100%);
-      }
-    }
-    > div .dr-icon:after {
-      opacity: 1;
-    }
-    > div .dr-label {
-      -webkit-transform: translateY(-90%);
-      -moz-transform: translateY(-90%);
-      -ms-transform: translateY(-90%);
-      transform: translateY(-90%);
-    }
-  }
-  > div .dr-icon:after {
+  > div .icon:after {
     content: "\ea51";
     position: absolute;
     font-size: 50%;
@@ -57,7 +36,7 @@
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
-  > div .dr-label {
+  > div .label {
     padding-left: 3em;
     position: relative;
     display: block;
@@ -83,7 +62,7 @@
     -moz-transition: opacity 0s linear 205ms;
     transition: opacity 0s linear 205ms;
   }
-  &.dr-menu-open ul {
+  &.menu-open ul {
     opacity: 1;
     z-index: 200;
     pointer-events: auto;
@@ -99,7 +78,7 @@
     -moz-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
-  &.dr-menu-open ul li {
+  &.menu-open ul li {
     opacity: 1;
     &:nth-child(2) {
       -webkit-transition-delay: 35ms;
@@ -142,7 +121,7 @@
   }
 }
 
-.dr-icon {
+.icon {
   &:before, &:after {
     position: relative;
     font-family: 'icomoon';
@@ -155,37 +134,6 @@
   }
 }
 
-.dr-menu ul .dr-icon:before {
+.menu ul .icon:before {
   margin-right: 15px;
-}
-
-
-
-.dr-icon-paint-format:before {
-    content: "\e90d";
-}
-
-.dr-icon-location:before {
-    content: "\e948";
-}
-
-.dr-icon-enlarge2:before {
-    content: "\e98c";
-}
-
-.dr-icon-stack:before {
-    content: "\e92f";
-}
-
-.dr-icon-font-size:before {
-    content: "\e900";
-}
-
-.dr-icon-spinner:before {
-    content: "\e982";
-}
-
-
-.dr-icon-menu:before {
-  content: "\e007";
 }

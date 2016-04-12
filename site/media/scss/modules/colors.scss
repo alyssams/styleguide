@@ -1,0 +1,26 @@
+.colors {
+    margin: 5% 0;
+
+    .color-picker {
+        color: #ffffff;
+        padding: 20px;
+    }
+
+    .black {
+        background-color: #000;
+    }
+
+    .white {
+        background-color: #ffffff;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+    .grey {
+        background-color: #939393;
+    }
+
+    .gold {
+        background-color: #C29339;
+    }
+}

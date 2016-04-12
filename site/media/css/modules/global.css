@@ -1,186 +1,112 @@
-/* line 1, ../../scss/modules/global.scss */
+/* line 13, ../../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* Reset */
-/* line 6, ../../scss/modules/global.scss */
+/* line 21, ../../scss/modules/global.scss */
 *,
 *:after,
 *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-/* line 14, ../../scss/modules/global.scss */
+/* line 29, ../../scss/modules/global.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-family: 'nobel-book', helvetica, sans-serif;
+}
+
+/* line 37, ../../scss/modules/global.scss */
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, ../../scss/modules/global.scss */
+h2 {
+  font-family: 'nobel-bold', helvetica, sans-serif;
+}
+
+/* line 46, ../../scss/modules/global.scss */
+p {
+  margin: 5%;
+}
+
+/* line 51, ../../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 19, ../../scss/modules/global.scss */
+/* line 56, ../../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 23, ../../scss/modules/global.scss */
-body {
-  font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #fff;
-  background: #91cfa1;
-  font-weight: 300;
+/* line 60, ../../scss/modules/global.scss */
+#topPos {
+  margin-top: 50px;
 }
 
-/* line 30, ../../scss/modules/global.scss */
-a {
-  color: #f0f0f0;
-  text-decoration: none;
+/* line 64, ../../scss/modules/global.scss */
+.navbar-default {
+  font-family: 'nobel-bold', helvetica, sans-serif;
+  background-color: #000000 !important;
 }
-
-/* line 35, ../../scss/modules/global.scss */
-a:hover {
-  color: #fff;
-}
-
-/* line 39, ../../scss/modules/global.scss */
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  right: 3px;
-  top: 5px;
-  position: relative;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
 /* line 68, ../../scss/modules/global.scss */
-.main,
-.container > header {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1.875em 3.125em 1.875em;
+.navbar-default .navbar-brand {
+  color: #ffffff !important;
+}
+/* line 72, ../../scss/modules/global.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff !important;
 }
 
-/* line 74, ../../scss/modules/global.scss */
-.main {
-  max-width: 69em;
-  min-height: 600px;
-  padding: 2em 0 0 0;
+/* line 77, ../../scss/modules/global.scss */
+.page-header {
+  border-bottom: 2px solid #000000 !important;
 }
 
-/* line 80, ../../scss/modules/global.scss */
-.side {
-  float: left;
-  width: 30%;
-  padding-right: 20px;
-  min-width: 320px;
-  box-shadow: 1px 0 rgba(0, 0, 0, 0.1);
+/* line 81, ../../scss/modules/global.scss */
+.digital-content h2 {
+  text-transform: uppercase;
 }
 
-/* line 88, ../../scss/modules/global.scss */
-.main p {
-  font-size: 2em;
-  padding: 0 1em;
-  margin: 0;
-  line-height: 1.5;
-  float: right;
-  width: 70%;
-}
-
-/* line 97, ../../scss/modules/global.scss */
-.container > header {
-  padding: 2.875em 1.875em 2.875em;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.02);
-}
-
-/* line 103, ../../scss/modules/global.scss */
-.container > header h1 {
-  font-size: 2.625em;
-  line-height: 1.3;
-  margin: 0;
+/* line 85, ../../scss/modules/global.scss */
+.btn {
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 25px 14px 25px;
+  background: #000;
   color: #fff;
-  font-weight: 300;
-}
-
-/* line 111, ../../scss/modules/global.scss */
-.container > header span {
+  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17.5px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-decoration: none;
   display: block;
-  font-size: 60%;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 0 0 0.6em 0.1em;
+  max-width: 200px;
+  border: 2px solid #000;
+  cursor: pointer;
+  display: inline-block;
 }
-
-/* line 118, ../../scss/modules/global.scss */
-main > * {
-  display: none;
-}
-
-/* line 122, ../../scss/modules/global.scss */
-main > *:last-child {
-  display: block;
-}
-
-@keyframes pulse {
-  /* line 127, ../../scss/modules/global.scss */
-  0% {
-    transform: scale(1);
-  }
-
-  /* line 128, ../../scss/modules/global.scss */
-  50% {
-    transform: scale(1.05);
-  }
-
-  /* line 129, ../../scss/modules/global.scss */
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* line 132, ../../scss/modules/global.scss */
-main > *:target {
-  display: block;
-  animation: pulse 0.5s linear 1;
-}
-
-/* line 137, ../../scss/modules/global.scss */
-main > *:target ~ * {
-  display: none;
-}
-
-@media screen and (max-width: 66.9375em) {
-  /* line 143, ../../scss/modules/global.scss */
-  .side, .main p {
-    float: none;
-    width: 100%;
-    box-shadow: none;
-    padding: 1em;
-  }
-
-  /* line 150, ../../scss/modules/global.scss */
-  .main p {
-    font-size: 130%;
-  }
+/* line 107, ../../scss/modules/global.scss */
+.btn:hover, .btn:focus {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+  outline: none;
 }
