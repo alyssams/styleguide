@@ -59,28 +59,29 @@ p {
 /* line 64, ../../scss/modules/global.scss */
 .navbar-default {
   font-family: 'nobel-bold', helvetica, sans-serif;
-  background-color: #000000 !important;
+  background-color: #000000;
 }
 /* line 68, ../../scss/modules/global.scss */
 .navbar-default .navbar-brand {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 /* line 72, ../../scss/modules/global.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* line 77, ../../scss/modules/global.scss */
 .page-header {
-  border-bottom: 2px solid #000000 !important;
+  border-bottom: 2px solid #000000;
+  margin-top: 100px;
 }
 
-/* line 81, ../../scss/modules/global.scss */
+/* line 82, ../../scss/modules/global.scss */
 .digital-content h2 {
   text-transform: uppercase;
 }
 
-/* line 85, ../../scss/modules/global.scss */
+/* line 86, ../../scss/modules/global.scss */
 .btn {
   border-radius: 0;
   -webkit-box-sizing: border-box;
@@ -103,7 +104,7 @@ p {
   cursor: pointer;
   display: inline-block;
 }
-/* line 107, ../../scss/modules/global.scss */
+/* line 108, ../../scss/modules/global.scss */
 .btn:hover, .btn:focus {
   background: #fff;
   color: #000;
