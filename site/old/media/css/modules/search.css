@@ -1,0 +1,204 @@
+/* line 1, ../../scss/modules/search.scss */
+.typeahead-container {
+  max-width: 500px;
+}
+
+/* line 5, ../../scss/modules/search.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+/* line 29, ../../scss/modules/search.scss */
+#form-game_v1 .popover {
+  display: block;
+  position: absolute;
+  right: -135px;
+  top: -30px;
+  left: auto;
+  width: 120px;
+  height: 90px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* line 42, ../../scss/modules/search.scss */
+#form-game_v1 .popover.out {
+  display: none;
+}
+
+/* line 46, ../../scss/modules/search.scss */
+#form-game_v1 .popover-content {
+  padding: 0;
+}
+
+/* line 50, ../../scss/modules/search.scss */
+#form-game_v1 .popover-content img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 55, ../../scss/modules/search.scss */
+.popover.top {
+  margin-top: -10px;
+}
+
+/* line 59, ../../scss/modules/search.scss */
+.popover.right {
+  margin-left: 10px;
+}
+
+/* line 63, ../../scss/modules/search.scss */
+.popover.bottom {
+  margin-top: 10px;
+}
+
+/* line 67, ../../scss/modules/search.scss */
+.popover.left {
+  margin-left: -10px;
+}
+
+/* line 71, ../../scss/modules/search.scss */
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: capitalize;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 85, ../../scss/modules/search.scss */
+.popover-title:empty {
+  display: none;
+}
+
+/* line 89, ../../scss/modules/search.scss */
+.popover-content {
+  font-size: 13px;
+  padding: 10px;
+}
+
+/* line 94, ../../scss/modules/search.scss */
+.popover-content > p {
+  margin-top: 0;
+}
+
+/* line 99, ../../scss/modules/search.scss */
+.popover .arrow,
+.popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 108, ../../scss/modules/search.scss */
+.popover .arrow {
+  border-width: 11px;
+}
+
+/* line 112, ../../scss/modules/search.scss */
+.popover .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+/* line 117, ../../scss/modules/search.scss */
+.popover.top .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
+}
+
+/* line 126, ../../scss/modules/search.scss */
+.popover.top .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  border-top-color: #ffffff;
+  border-bottom-width: 0;
+}
+
+/* line 133, ../../scss/modules/search.scss */
+.popover.right .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+/* line 142, ../../scss/modules/search.scss */
+.popover.right .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  border-right-color: #ffffff;
+  border-left-width: 0;
+}
+
+/* line 149, ../../scss/modules/search.scss */
+.popover.bottom .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-top-width: 0;
+}
+
+/* line 158, ../../scss/modules/search.scss */
+.popover.bottom .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  border-bottom-color: #ffffff;
+  border-top-width: 0;
+}
+
+/* line 165, ../../scss/modules/search.scss */
+.popover.left .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+  border-right-width: 0;
+}
+
+/* line 174, ../../scss/modules/search.scss */
+.popover.left .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  border-left-color: #ffffff;
+  border-right-width: 0;
+}

@@ -11,7 +11,7 @@ cursor: pointer;
 #numFive .resistance{
 width: 126px;
 height: 19px;
-background-image: url(../img/resistance.png);
+background: url(../img/resistance.png) no-repeat;
 position: absolute;
 left: 12px;
 top: 20px;
@@ -21,7 +21,7 @@ opacity: 0.0;
 #numFive .is{
 width: 15px;
 height: 19px;
-background-image: url(../img/is.png);
+background: url(../img/is.png) no-repeat;
 position: absolute;
 left: 146px;
 top: 20px;
@@ -31,7 +31,7 @@ opacity: 0.0;
 #numFive .futile{
 width: 65px;
 height: 19px;
-background-image: url(../img/futile.png);
+background: url(../img/futile.png) no-repeat;
 position: absolute;
 left: 169px;
 top: 20px;
@@ -61,7 +61,7 @@ z-index: 1;
 #numFive .firstEver{
 width: 126px;
 height: 14px;
-background-image: url(../img/the-first-ever-rc-coupe.png);
+background: url(../img/the-first-ever-rc-coupe.png) no-repeat;
 position: absolute;
 background-size: contain;
 left: 12px;
@@ -86,13 +86,13 @@ right: 14px;
 top: 15px;
 width: 112px;
 height: 21px;
-background-image: url(../img/logo.png);
+background: url(../img/logo.png) no-repeat;
 opacity: 0.0;
 }
 #numFive .learnMore{
 width: 112px;
 height: 30px;
-background-image: url(../img/learn-more.png);
+background: url(../img/learn-more.png) no-repeat;
 position: absolute;
 right:  14px;
 bottom: 16px;
@@ -106,7 +106,7 @@ background-color: #555;
 #numFive .rcShown{
 width: 78px;
 height: 8px;
-background-image: url(../img/rc-f-sport-shown.png);
+background: url(../img/rc-f-sport-shown.png) no-repeat;
 position: absolute;
 right: 138px;
 top: 43px;

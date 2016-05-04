@@ -11,7 +11,7 @@ cursor: pointer;
 #sr160x600_05 .resistance{
 width: 126px;
 height: 19px;
-background-image: url(../img/resistance.png);
+background: url(../img/resistance.png) no-repeat;
 position: absolute;
 left: 17px;
 top: 16px;
@@ -21,7 +21,7 @@ opacity: 0.0;
 #sr160x600_05 .is{
 width: 15px;
 height: 19px;
-background-image: url(../img/is.png);
+background: url(../img/is.png) no-repeat;
 position: absolute;
 left: 17px;
 top: 39px;
@@ -31,7 +31,7 @@ opacity: 0.0;
 #sr160x600_05 .futile{
 width: 65px;
 height: 19px;
-background-image: url(../img/futile.png);
+background: url(../img/futile.png) no-repeat;
 position: absolute;
 left: 37px;
 top: 39px;
@@ -73,7 +73,7 @@ z-index: 3;
 #sr160x600_05 .firstEver{
 width: 126px;
 height: 14px;
-background-image: url(../img/the-first-ever-rc-coupe.png);
+background: url(../img/the-first-ever-rc-coupe.png) no-repeat;
 position: absolute;
 background-size: contain;
 left: 17px;
@@ -87,13 +87,13 @@ left: 17px;
 bottom: 75px;
 width: 112px;
 height: 21px;
-background-image: url(../img/logo.png);
+background: url(../img/logo.png) no-repeat;
 opacity: 0.0;
 }
 #sr160x600_05 .learnMore{
 width: 112px;
 height: 30px;
-background-image: url(../img/learn-more.png);
+background: url(../img/learn-more.png) no-repeat;
 position: absolute;
 left: 24px;
 top: 600px;
@@ -106,7 +106,7 @@ background-color: #555;
 #sr160x600_05 .rcShown{
 width: 78px;
 height: 8px;
-background-image: url(../img/rc-f-sport-shown.png);
+background: url(../img/rc-f-sport-shown.png) no-repeat;
 position: absolute;
 left: 41px;
 top: 640px;

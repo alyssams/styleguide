@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Multi-Level Push Menu - Demo 3</title>
+		<meta name="description" content="Multi-Level Push Menu: Off-screen navigation with multiple levels" />
+		<meta name="keywords" content="multi-level, menu, navigation, off-canvas, off-screen, mobile, levels, nested, transform" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
+		<link rel="stylesheet" href="./../media/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body class="proto1">
+		<nav class="navbar nav-proto navbar-static-top primary">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="toggle-wrap"><a href="#" id="trigger" class="toggle-bar">Open/Close Menu</a></p>
+					<!-- <a class="navbar-brand text-hide" href="http://lexus.com">Lexus</a> -->
+					<div class="navbar-center navbar-brand" href="#"></div>
+
+				</div>
+				<div id="primary-nav" class="navbar-collapse collapse">
+					<form class="navbar-form navbar-right">
+		                <div class="typeahead-container">
+		                    <div class="typeahead-field">
+
+		                        <span class="typeahead-query">
+		                            <input id="q"
+		                                   name="q"
+		                                   type="search"
+		                                   autofocus
+		                                   autocomplete="off">
+		                        </span>
+		                        <span class="typeahead-button">
+		                            <button class="btn btn-default" type="submit">
+		                                <span class="typeahead-search-icon"></span>
+		                            </button>
+		                        </span>
+
+		                    </div>
+		                </div>
+		            </form>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+		<div class="container-fluid">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">All Categories</h2>
+						<ul>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-display" href="#">Design Elements</a>
+								<div class="mp-level">
+									<h2 class="icon icon-display">Design Elements</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-phone" href="#">Color</a>
+											<div class="mp-level">
+												<h2>Color</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#">Palette</a></li>
+													
+												</ul>
+											</div>
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-tv" href="#">Typography</a>
+											<div class="mp-level">
+												<h2>Typography</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#">Typeface</a></li>
+													<li><a href="#">Content Type Styles</a></li>
+													<li><a href="#">Case</a></li>
+													<li><a href="#">Spacing</a></li>
+													<li><a href="#">Badging</a></li>
+													<li><a href="#">Legal &amp; Recalls</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-camera" href="#">Layout</a>
+											<div class="mp-level">
+												<h2>Layout</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#">Logo</a></li>
+													<li><a href="#">Heros &amp; Headers</a></li>
+													<li><a href="#">Backgrounds</a></li>
+													<li><a href="#">Images</a></li>
+													<li><a href="#">Videos</a></li>
+													<li><a href="#">Image Selection Guidelines</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-camera" href="#">Iconography</a>
+											<div class="mp-level">
+												<h2>Iconography</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li><a href="#">Icon Set</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-news" href="#">UI Components</a>
+								<div class="mp-level">
+									<h2 class="icon icon-news">Magazines</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li><a href="#">National Geographic</a></li>
+										<li><a href="#">Scientific American</a></li>
+										<li><a href="#">The Spectator</a></li>
+										<li><a href="#">The Rambler</a></li>
+										<li><a href="#">Physics World</a></li>
+										<li><a href="#">The New Scientist</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="icon icon-arrow-left">
+								<a class="icon icon-shop" href="#">Modules</a>
+								<div class="mp-level">
+									<h2 class="icon icon-shop">Store</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li class="icon icon-arrow-left">
+											<a class="icon icon-t-shirt" href="#">Clothes</a>
+											<div class="mp-level">
+												<h2 class="icon icon-t-shirt">Clothes</h2>
+												<a class="mp-back" href="#">back</a>
+												<ul>
+													<li class="icon icon-arrow-left">
+														<a class="icon icon-female" href="#">Women's Clothing</a>
+														<div class="mp-level">
+															<h2 class="icon icon-female">Women's Clothing</h2>
+															<a class="mp-back" href="#">back</a>
+															<ul>
+																<li><a href="#">Tops</a></li>
+																<li><a href="#">Dresses</a></li>
+																<li><a href="#">Trousers</a></li>
+																<li><a href="#">Shoes</a></li>
+																<li><a href="#">Sale</a></li>
+															</ul>
+														</div>
+													</li>
+													<li class="icon icon-arrow-left">
+														<a class="icon icon-male" href="#">Men's Clothing</a>
+														<div class="mp-level">
+															<h2 class="icon icon-male">Men's Clothing</h2>
+															<a class="mp-back" href="#">back</a>
+															<ul>
+																<li><a href="#">Shirts</a></li>
+																<li><a href="#">Trousers</a></li>
+																<li><a href="#">Shoes</a></li>
+																<li><a href="#">Sale</a></li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="icon icon-diamond" href="#">Jewelry</a>
+										</li>
+										<li>
+											<a class="icon icon-music" href="#">Music</a>
+										</li>
+										<li>
+											<a class="icon icon-food" href="#">Grocery</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="icon icon-photo" href="#">Banners</a></li>
+							<li><a class="icon icon-wallet" href="#">Glossary</a></li>
+						</ul>
+							
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+
+				
+
+			</div><!-- /pusher -->
+			<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+						
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/mlpushmenu.js"></script>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+	</body>
+</html>

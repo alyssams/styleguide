@@ -1,0 +1,370 @@
+.active {
+    display: block;
+}
+
+section:first-of-type {
+    margin-top: 0;
+}
+.page-heading {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.divider {
+    border-bottom: 1px solid #ccc;
+}
+#fake-footer {
+    height: 600px;
+    widith: 100%;
+    background: #ccc;
+}
+li a {
+    transition-duration: 1s;
+}
+
+.nav-pills > li {
+    font-size: 2em;
+}
+
+/* Helpers for top position on internal page links
+====================================================*/
+#topPos:before,
+h2:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -80px; 
+  height: 80px; 
+  visibility: hidden; 
+}
+/* AFFIX STYLES
+====================================================*/
+.panel-affix {
+    min-width: 225px;
+}
+
+
+.panel-default {
+    border: none !important;
+}
+
+.panel-body {
+    padding: 0 !important;
+    ul li {
+        color: #000;
+    }
+    ul li ul {
+        // border-top: 1px solid black;
+        // border-bottom: 1px solid black;
+
+        li {
+            font-size: .8em;
+            
+            list-style: none;
+
+            a {
+                color: #939393;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+.menu {
+    > li {
+        font-size: 2.5em;
+        list-style: none;
+
+        a {
+            color: #000;
+            position: relative;
+            top: 3px;
+            text-decoration: none;
+
+            &:hover {
+                border-bottom: 2px solid #000;
+                position: relative;
+                top: 3px;
+                text-decoration: none;
+            }
+
+            &:focus {
+                border-bottom: 2px solid #000;
+                position: relative;
+                top: 3px;
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            // border-top: 1px solid black;
+            // border-bottom: 1px solid black;
+
+            li {
+                font-size: .8em;
+                margin-left: 12px;
+                list-style: none;
+
+                a {
+                    color: #939393;
+                }
+            }
+        }
+    }
+}
+
+section {
+    min-height: 500px;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin: 100px 0;
+    padding-bottom: 100px;
+    text-align: center;
+    &:first-of-type {
+        margin-top:0;
+    }
+
+    h3 {
+        background: #000;
+        color: #fff;
+        padding: 1% 0;
+    }
+}
+
+.example {
+    position: relative;
+    padding: 45px 15px 15px;
+    min-height: 300px;
+
+    &:after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #959595;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        content: "Example";
+    }
+
+    // button {
+    //     background: transparent;
+    //     border: none;
+    //     color: dodgerblue;
+    //     font-size: 16px;
+    // }
+
+    .row {
+        border-top: 1px solid #939393;
+        padding: 20px;
+    }
+
+    .row:last-child {
+        border-bottom: 1px solid #939393;
+    }
+
+    .desc {
+        text-align: left;
+
+        ul li {
+            list-style: none;
+            color: dodgerblue;
+        }
+    }
+
+    .larger {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #696969;
+        background: #939393;
+        margin-bottom: 20px;
+    }
+
+    .large {
+        width: 100%;
+        height: 300px;
+        border: 1px solid #696969;
+        background: #939393;
+        margin-bottom: 20px;
+    }
+
+    .medium {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #696969;
+        background: #939393;
+    }
+
+    .small {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #696969;
+        background: #939393;
+    }
+
+    .smaller {
+        width: 50px;
+        height: 100px;
+        border: 1px solid #696969;
+        background: #939393;
+    }
+}
+
+[data-example-id="headings"] {
+    .table {
+        h2 {
+            font-family: 'nobel-book', helvetica, sans-serif;
+            text-transform: none;
+        }
+
+        h3 {
+            background-color: transparent;
+            color: #000;
+        }
+
+        .type-info {
+            vertical-align: middle;
+        }
+    }
+}
+
+// .server-link {
+//     position: relative;
+//     min-height: 300px;
+// }
+
+[data-example-id="colors-badge"] {
+    position: relative;
+
+    .badger {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 50%;
+        border-radius: 0;
+        padding: 10px;
+        margin: 0 auto;
+
+        .badge-title {
+            font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            display: block;
+            padding: 25% 13%;
+
+            .top-line {
+                display: block;
+                padding: 0 0 15px;
+            }
+
+            .model-name {
+                font-family: "nobel-light",Helvetica,Arial,sans-serif;
+                text-transform: uppercase;
+                font-weight: 200;
+                background: url("http://www.lexus.com/assets/img/overview/hero-border.png") no-repeat center 100%;
+                display: block;
+                font-size: 84px;
+                padding: 0 0 15px;
+                float: none;
+                position: static;
+                letter-spacing: 0px;
+            }
+        }
+    }
+}
+
+[data-example-id="colors-button"] {
+    .btn {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 15px 25px 14px 25px;
+        background: #fff;
+        color: #000;
+        font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 17.5px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        max-width: 200px;
+        border: 2px solid #000;
+        cursor: pointer;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+}
+
+[data-example-id="colors-favorite"] {
+    span {
+        padding-left: 30px;
+        padding-top: 1px;
+    }
+
+    span[data-action=addFavorite] {
+        background: transparent url("http://www.lexus.com//assets/img/global/svg/star/gold.svg") no-repeat scroll 9% 35%;
+        color: #C29339;
+        font-family: nobel-bold;
+        font-size: 12px;
+    }
+
+    .favorite-listener {
+        height: 10px;
+        text-align: left;
+        text-decoration: none;
+        z-index: 9999;
+        background-color: #000000;
+    }
+}
+
+.code-block {
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+
+    .nt {
+        color: #2f6f9f;
+    }
+
+    pre {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        word-break: normal;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+
+        code {
+            padding: 0;
+            font-size: inherit;
+            color: inherit;
+            white-space: pre-wrap;
+            background-color: transparent;
+            border-radius: 0;
+
+            &:first-child {
+                display: inline-block;
+                padding-right: 45px;
+            }
+        }
+    }
+
+    .language-html {
+        width: 200px;
+    }
+}

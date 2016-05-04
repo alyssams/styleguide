@@ -1,16 +1,76 @@
-$(document).ready(function(){
-    $('a[href^="#"]').bind('click',function (e) {
-        e.preventDefault();
+jQuery(function($) {
+    // var scrollto = window.location.hash;
+    // if (window.location.hash != null && window.location.hash != '') {
+    //     $('html, body').animate({
+    //         scrollTop: $(scrollto).offset().top-100
+    //     }, 500);
+    // }
 
-        var target = this.hash,
-        $target = $(target);
+    // $('.secondary').on('click', 'li a', function() {
+    //     $('.secondary li a.active').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+    // var doAnimations = function() {
 
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 100
-        }, 900, 'swing', function () {
-            window.location.hash = target;
+    // var offset = $(window).scrollTop() + $(window).height(),
+    //     $animatables = $('.animatable');
+
+    // if ($animatables.size() == 0) {
+    //   $(window).off('scroll', doAnimations);
+    // }
+
+    //     $animatables.each(function(i) {
+    //    var $animatable = $(this);
+    //         if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+    //     $animatable.removeClass('animatable').addClass('animated');
+    //         }
+    // });
+
+    // };
+    // $(window).on('scroll', doAnimations);
+    // $(window).trigger('scroll');
+
+
+      var slideWidth = $('#pageslide').outerWidth(); //grab width of the sliding menu so that this can be controlled in the css only
+
+      $('.slideIt, #pageslide a.close').on("click", function(){  //click function
+        $('.slideIt').toggleClass('active'); //toggle the active close vs open icon
+        
+        if($('#pageslide').is(':visible')) {  //if visible then hide it 
+          $('#pageslide').animate({
+            left: '-'+slideWidth
+          }, 400, function(){
+            $('#pageslide').hide();
+          } );
+          $('.wrapper').animate({
+            marginLeft: '0'
+          }, 400 );
+          $('.slideIt span').text('☰');
+        } 
+        else{                                //else show it
+          $('#pageslide').show().animate({
+            left: '0'
+          }, 400 );
+          $('.wrapper').animate({
+            marginLeft: slideWidth
+          }, 400 );
+        }
+      });
+
+        $('.toggle').click(function(e) {
+            e.preventDefault();
+          
+            var $this = $(this);
+          
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('li .inner').removeClass('show');
+                $this.parent().parent().find('li .inner').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
+            }
         });
 
-        console.log('did it');
-    });
 });

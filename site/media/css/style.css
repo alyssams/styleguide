@@ -1,149 +1,146 @@
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+/* line 16, ../scss/modules/grid.scss */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Nobel Light */
-@font-face {
-  font-family: 'nobel-light';
-  font-weight: 200;
-  src: url("./../fonts/nobel-light.eot");
-  src: url("./../fonts/nobel-light.eot") format("embedded-opentype"), url("./../fonts/nobel-light.woff") format("woff"), url("./../fonts/nobel-light.ttf") format("truetype"), url("./../fonts/nobel-light.svg#NobelLight") format("svg");
+/* line 22, ../scss/modules/grid.scss */
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
 }
 
-/* Nobel Book */
-@font-face {
-  font-family: 'nobel-book';
-  font-weight: normal;
-  src: url("./../fonts/nobel-book.eot");
-  src: url("./../fonts/nobel-book.eot") format("embedded-opentype"), url("./../fonts/nobel-book.woff") format("woff"), url("./../fonts/nobel-book.ttf") format("truetype"), url("./../fonts/nobel-book.svg#NobelBook") format("svg");
+/* line 28, ../scss/modules/grid.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Nobel Book Italic */
-@font-face {
-  font-family: 'nobel-book-italic';
-  src: url("./../fonts/nobel-book-italic.eot");
-  src: url("./../fonts/nobel-book-italic.eot") format("embedded-opentype"), url("./../fonts/nobel-book-italic.woff") format("woff"), url("./../fonts/nobel-book-italic.ttf") format("truetype"), url("./../fonts/nobel-book-italic.svg") format("svg");
-  font-weight: normal;
-  font-style: italic;
+/* line 37, ../scss/modules/grid.scss */
+[class*='column-'] {
+  float: left;
+  padding: 0 23px;
+  width: 100%;
+  min-height: 1px;
 }
 
-/* Nobel Regular */
-@font-face {
-  font-family: 'nobel-regular';
-  src: url("./../fonts/nobelregular.eot");
-  src: url("./../fonts/nobel-regular.ttf") format("truetype"), url("./../fonts/nobelregular.eot") format("embedded-opentype"), url("./../fonts/nobel-regular.woff") format("woff"), url("./../fonts/nobel-regular.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@media only screen and (min-width: 30em) {
+  /* line 46, ../scss/modules/grid.scss */
+  .container {
+    width: 95%;
+    max-width: 90em;
+  }
 
-/* Nobel Regular Italic */
-@font-face {
-  font-family: 'nobel-regular-italic';
-  src: url("./../fonts/nobelregularitalic.eot");
-  src: url("./../fonts/nobelregularitalic.eot") format("embedded-opentype"), url("./../fonts/nobel-regular-italic.woff") format("woff"), url("./../fonts/nobel-regular-italic.ttf") format("truetype"), url("./../fonts/nobel-regular-italic.svg") format("svg");
-  font-style: italic;
-}
+  /* line 51, ../scss/modules/grid.scss */
+  .column-1 {
+    width: 8.33333%;
+  }
 
-/* Nobel Bold */
-@font-face {
-  font-family: 'nobel-bold';
-  src: url("./../fonts/nobelbold.eot");
-  src: url("./../fonts/nobelbold.eot") format("embedded-opentype"), url("./../fonts/nobel-bold.woff") format("woff"), url("./../fonts/nobel-bold.ttf") format("truetype"), url("./../fonts/nobel-bold.svg") format("svg");
-  font-weight: bold;
-}
+  /* line 51, ../scss/modules/grid.scss */
+  .column-2 {
+    width: 16.66667%;
+  }
 
-/* Pakt */
-@font-face {
-  font-family: 'pakt';
-  src: url("./../fonts/pakt.eot");
-  src: url("./../fonts/pakt.eot") format("embedded-opentype"), url("./../fonts/pakt.woff") format("woff"), url("./../fonts/pakt.ttf") format("truetype"), url("./../fonts/pakt.svg#PaktRegular") format("svg");
-}
+  /* line 51, ../scss/modules/grid.scss */
+  .column-3 {
+    width: 25%;
+  }
 
-/* line 13, ../scss/modules/global.scss */
+  /* line 51, ../scss/modules/grid.scss */
+  .column-4 {
+    width: 33.33333%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-5 {
+    width: 41.66667%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-6 {
+    width: 50%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-7 {
+    width: 58.33333%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-8 {
+    width: 66.66667%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-9 {
+    width: 75%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-10 {
+    width: 83.33333%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-11 {
+    width: 91.66667%;
+  }
+
+  /* line 51, ../scss/modules/grid.scss */
+  .column-12 {
+    width: 100%;
+  }
+}
+/* line 15, ../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 21, ../scss/modules/global.scss */
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 29, ../scss/modules/global.scss */
+/* line 22, ../scss/modules/global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  font-family: 'nobel-book', helvetica, sans-serif;
+  font-family: sans-serif;
+  background-color: white;
 }
 
-/* line 37, ../scss/modules/global.scss */
-.row {
-  margin: 0;
-  padding: 0;
+/* line 30, ../scss/modules/global.scss */
+h1 {
+  font-family: 'nobel-regular', sans-serif;
+  font-size: 4em;
+  font-weight: normal;
 }
 
-/* line 42, ../scss/modules/global.scss */
-h2 {
-  font-family: 'nobel-bold', helvetica, sans-serif;
+/* line 36, ../scss/modules/global.scss */
+h3 {
+  font-weight: bold;
+  font-size: 14px;
 }
 
-/* line 46, ../scss/modules/global.scss */
+/* line 41, ../scss/modules/global.scss */
 p {
-  margin: 5%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 1em 0;
 }
 
-/* line 51, ../scss/modules/global.scss */
+/* line 49, ../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 56, ../scss/modules/global.scss */
+/* line 54, ../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
-}
-
-/* line 60, ../scss/modules/global.scss */
-#topPos {
-  margin-top: 50px;
-}
-
-/* line 64, ../scss/modules/global.scss */
-.navbar-default {
-  font-family: 'nobel-bold', helvetica, sans-serif;
-  background-color: #000000;
-}
-/* line 68, ../scss/modules/global.scss */
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-/* line 72, ../scss/modules/global.scss */
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-
-/* line 77, ../scss/modules/global.scss */
-.page-header {
-  border-bottom: 2px solid #000000;
-  margin-top: 100px;
-}
-
-/* line 82, ../scss/modules/global.scss */
-.digital-content h2 {
-  text-transform: uppercase;
 }
 
 /* line 86, ../scss/modules/global.scss */
@@ -155,7 +152,6 @@ p {
   padding: 15px 25px 14px 25px;
   background: #000;
   color: #fff;
-  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
@@ -177,395 +173,805 @@ p {
   outline: none;
 }
 
-/* line 1, ../scss/modules/content.scss */
-.active {
+/* line 116, ../scss/modules/global.scss */
+ul.accordion {
+  list-style: none;
+  padding: 0;
+}
+/* line 120, ../scss/modules/global.scss */
+ul.accordion .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+/* line 125, ../scss/modules/global.scss */
+ul.accordion .inner.show {
+  /*display: block;*/
+}
+/* line 130, ../scss/modules/global.scss */
+ul.accordion li {
+  margin: .5em 0;
+}
+/* line 133, ../scss/modules/global.scss */
+ul.accordion li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+/* line 142, ../scss/modules/global.scss */
+ul.accordion li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* line 7, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper {
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+}
+/* line 14, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper > ul li {
+  display: inline-block;
+}
+/* line 17, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper > ul li a {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 17.5px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 21px 25px;
+  width: 100%;
+  display: block;
+}
+/* line 32, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper .active a, nav.primary .nav-wrapper ul li a:hover {
+  background: white;
+  color: black;
+}
+/* line 36, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper .not-active {
+  pointer-events: none;
+}
+/* line 39, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper .logo {
+  margin-top: 10px;
+  max-width: 200px;
+  margin-right: 77px;
+}
+/* line 45, ../scss/modules/nav.scss */
+nav.primary .nav-wrapper .search {
+  z-index: 2;
+  margin-top: 10px;
+}
+
+/* line 52, ../scss/modules/nav.scss */
+#primary-nav ul li {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 17.5px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
   display: block;
 }
 
-/* line 5, ../scss/modules/content.scss */
-section:first-of-type {
-  margin-top: 0;
+/* line 66, ../scss/modules/nav.scss */
+input[type="checkbox"]:checked ~ label.active:before {
+  box-shadow: transparent 0 0 0 0;
+  top: 50%;
+  transform: rotate(225deg);
+}
+/* line 72, ../scss/modules/nav.scss */
+input[type="checkbox"]:checked ~ label.active:after {
+  top: 50%;
+  transform: rotate(315deg);
 }
 
-/* line 8, ../scss/modules/content.scss */
-.page-heading {
-  padding: 20px 0 40px;
-  text-align: center;
+/* line 78, ../scss/modules/nav.scss */
+.hamburger-slim {
+  background: transparent;
+  height: 30px;
+  width: 50px;
+}
+/* line 86, ../scss/modules/nav.scss */
+.hamburger-slim:before, .hamburger-slim:after {
+  background: black;
+  backface-visibility: hidden;
+  content: "";
+  height: 2px;
+  left: 0;
+  transition: 0.75s;
+  width: 50px;
+}
+/* line 96, ../scss/modules/nav.scss */
+.hamburger-slim:before {
+  box-shadow: black 0 14px 0 0;
+  position: absolute;
+  top: 0;
+}
+/* line 102, ../scss/modules/nav.scss */
+.hamburger-slim:after {
+  position: absolute;
+  top: calc(100% - 2px);
+}
+/* line 109, ../scss/modules/nav.scss */
+.hamburger-slim.active:before {
+  box-shadow: transparent 0 0 0 0;
+  top: 50%;
+  transform: rotate(225deg);
+}
+/* line 115, ../scss/modules/nav.scss */
+.hamburger-slim.active:after {
+  top: 50%;
+  transform: rotate(315deg);
 }
 
-/* line 13, ../scss/modules/content.scss */
-.divider {
-  border-bottom: 1px solid #ccc;
+/* line 131, ../scss/modules/nav.scss */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-/* line 16, ../scss/modules/content.scss */
-#fake-footer {
-  height: 600px;
-  widith: 100%;
+/* line 149, ../scss/modules/nav.scss */
+.c-hamburger:focus {
+  outline: none;
+}
+
+/* line 153, ../scss/modules/nav.scss */
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white;
+}
+
+/* line 164, ../scss/modules/nav.scss */
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: "";
+}
+
+/* line 174, ../scss/modules/nav.scss */
+.c-hamburger span::before {
+  top: -20px;
+}
+
+/* line 178, ../scss/modules/nav.scss */
+.c-hamburger span::after {
+  bottom: -20px;
+}
+
+/* line 182, ../scss/modules/nav.scss */
+.c-hamburger--htx {
+  background-color: #ff3264;
+}
+
+/* line 186, ../scss/modules/nav.scss */
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+/* line 191, ../scss/modules/nav.scss */
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+/* line 196, ../scss/modules/nav.scss */
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+/* line 200, ../scss/modules/nav.scss */
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+/* line 205, ../scss/modules/nav.scss */
+.c-hamburger--htx.is-active {
+  background-color: #cb0032;
+}
+
+/* line 209, ../scss/modules/nav.scss */
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+/* line 213, ../scss/modules/nav.scss */
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+/* line 218, ../scss/modules/nav.scss */
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* line 224, ../scss/modules/nav.scss */
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
+
+/* line 1, ../scss/modules/aside.scss */
+aside {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #eeeeee;
+  z-index: -1;
+  overflow-y: scroll;
+  padding: 80px 23px !important;
+}
+/* line 12, ../scss/modules/aside.scss */
+aside > h3 {
+  margin-top: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 17, ../scss/modules/aside.scss */
+aside a {
+  color: black;
+  text-decoration: none;
+}
+/* line 22, ../scss/modules/aside.scss */
+aside a.active {
+  background: black;
+  color: white;
+  padding: 5px;
+}
+/* line 27, ../scss/modules/aside.scss */
+aside p > span {
+  font-weight: bold;
+}
+
+/* line 33, ../scss/modules/aside.scss */
+::-webkit-scrollbar {
+  width: 2px;
+  /* for vertical scrollbars */
+  height: 0px;
+  /* for horizontal scrollbars */
+  background-color: #fff;
+}
+
+/* line 39, ../scss/modules/aside.scss */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* line 43, ../scss/modules/aside.scss */
+::-webkit-scrollbar-thumb {
   background: #ccc;
 }
 
-/* line 21, ../scss/modules/content.scss */
-li a {
-  transition-duration: 1s;
-}
-
-/* line 25, ../scss/modules/content.scss */
-.nav-pills > li {
-  font-size: 2em;
-}
-
-/* Helpers for top position on internal page links
-====================================================*/
-/* line 32, ../scss/modules/content.scss */
-#topPos:before,
-h2:before {
-  display: block;
-  content: " ";
-  margin-top: -80px;
-  height: 80px;
-  visibility: hidden;
-}
-
-/* AFFIX STYLES
-====================================================*/
-/* line 41, ../scss/modules/content.scss */
-.panel-affix {
-  min-width: 225px;
-}
-
-/* line 46, ../scss/modules/content.scss */
-.panel-default {
-  border: none !important;
-}
-
-/* line 50, ../scss/modules/content.scss */
-.panel-body {
-  padding: 0 !important;
-}
-/* line 52, ../scss/modules/content.scss */
-.panel-body ul li {
-  color: #000;
-}
-/* line 59, ../scss/modules/content.scss */
-.panel-body ul li ul li {
-  font-size: .8em;
-  list-style: none;
-}
-/* line 64, ../scss/modules/content.scss */
-.panel-body ul li ul li a {
-  color: #939393;
-  margin-left: 30px;
-}
-
-/* line 73, ../scss/modules/content.scss */
-.menu > li {
-  font-size: 2.5em;
-  list-style: none;
-}
-/* line 77, ../scss/modules/content.scss */
-.menu > li a {
-  color: #000;
-  position: relative;
-  top: 3px;
-  text-decoration: none;
-}
-/* line 83, ../scss/modules/content.scss */
-.menu > li a:hover {
-  border-bottom: 2px solid #000;
-  position: relative;
-  top: 3px;
-  text-decoration: none;
-}
-/* line 90, ../scss/modules/content.scss */
-.menu > li a:focus {
-  border-bottom: 2px solid #000;
-  position: relative;
-  top: 3px;
-  text-decoration: none;
-}
-/* line 102, ../scss/modules/content.scss */
-.menu > li ul li {
-  font-size: .8em;
-  margin-left: 12px;
-  list-style: none;
-}
-/* line 107, ../scss/modules/content.scss */
-.menu > li ul li a {
-  color: #939393;
-}
-
-/* line 115, ../scss/modules/content.scss */
-section {
-  min-height: 500px;
+/* line 47, ../scss/modules/aside.scss */
+nav.secondary {
+  margin: 40px 0;
   height: auto;
-  width: 100%;
-  border-bottom: 1px solid #000;
-  margin: 100px 0;
-  padding-bottom: 100px;
-  text-align: center;
 }
-/* line 123, ../scss/modules/content.scss */
-section:first-of-type {
-  margin-top: 0;
+/* line 51, ../scss/modules/aside.scss */
+nav.secondary h3 {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
 }
-/* line 127, ../scss/modules/content.scss */
-section h3 {
-  background: #000;
-  color: #fff;
-  padding: 1% 0;
+/* line 60, ../scss/modules/aside.scss */
+nav.secondary ul li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 8px;
 }
 
-/* line 134, ../scss/modules/content.scss */
+/* line 72, ../scss/modules/aside.scss */
+.slideItWrapper {
+  position: relative;
+}
+
+/* line 75, ../scss/modules/aside.scss */
+.slideIt {
+  left: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #7E64BF;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  position: relative;
+}
+/* line 86, ../scss/modules/aside.scss */
+.slideIt span {
+  font-size: 20px;
+  left: 6px;
+  top: -3px;
+  position: absolute;
+  text-align: center;
+  text-indent: -9999px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  background-image: url("http://purplerockscissors.com/wp-content/themes/prpl/images/casestudies/bg-controls.png");
+  background-size: 150%;
+  background-position: 4px 7px;
+}
+/* line 104, ../scss/modules/aside.scss */
+.slideIt span.open {
+  background-position: 4px 7px;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 110, ../scss/modules/aside.scss */
+.slideIt span.close {
+  background-position: -19px 7px;
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+/* line 117, ../scss/modules/aside.scss */
+.slideIt.active .close {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 122, ../scss/modules/aside.scss */
+.slideIt.active .open {
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+/* line 127, ../scss/modules/aside.scss */
+.slideIt:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -13px;
+  top: 10px;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #7E64BF;
+  border-bottom: 5px solid transparent;
+}
+/* line 140, ../scss/modules/aside.scss */
+.slideIt:hover:before {
+  left: -9px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+/* line 147, ../scss/modules/aside.scss */
+#pageslide {
+  /* These styles MUST be included. Do not change. */
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  /* Specify the width of your pageslide here */
+  width: 240px;
+  /* styles */
+  background: #7E64BF;
+  left: -240px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/* line 163, ../scss/modules/aside.scss */
+#pageslide h3 {
+  font-size: 1.8em;
+  margin: 0;
+  padding: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+/* line 170, ../scss/modules/aside.scss */
+#pageslide ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 175, ../scss/modules/aside.scss */
+#pageslide li a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 3.5;
+  padding: 0 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #594786;
+  text-decoration: none;
+}
+/* line 184, ../scss/modules/aside.scss */
+#pageslide li a:hover {
+  background: #6E58A6;
+}
+
+/* line 3, ../scss/modules/main.scss */
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 !important;
+  left: 300px;
+  margin-right: 100px;
+  z-index: -1;
+}
+/* line 11, ../scss/modules/main.scss */
+main .container {
+  border-top: 6px solid black;
+  position: relative;
+  top: 62px;
+}
+/* line 18, ../scss/modules/main.scss */
+main h1 {
+  position: relative;
+  padding: 18px 0;
+  letter-spacing: -0.03em;
+  border-bottom: 1px solid black;
+}
+/* line 26, ../scss/modules/main.scss */
+main .section p {
+  text-align: left;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+/* line 34, ../scss/modules/main.scss */
 .example {
   position: relative;
   padding: 45px 15px 15px;
   min-height: 300px;
+  margin-top: 50px;
 }
-/* line 139, ../scss/modules/content.scss */
+/* line 40, ../scss/modules/main.scss */
 .example:after {
   position: absolute;
   top: 15px;
   left: 15px;
   font-size: 12px;
   font-weight: 700;
-  color: #959595;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
   content: "Example";
 }
-/* line 158, ../scss/modules/content.scss */
-.example .row {
-  border-top: 1px solid #939393;
-  padding: 20px;
-}
-/* line 163, ../scss/modules/content.scss */
-.example .row:last-child {
-  border-bottom: 1px solid #939393;
-}
-/* line 167, ../scss/modules/content.scss */
-.example .desc {
-  text-align: left;
-}
-/* line 170, ../scss/modules/content.scss */
-.example .desc ul li {
-  list-style: none;
-  color: dodgerblue;
-}
-/* line 176, ../scss/modules/content.scss */
-.example .larger {
-  width: 100%;
-  height: 300px;
-  border: 1px solid #696969;
-  background: #939393;
-  margin-bottom: 20px;
-}
-/* line 184, ../scss/modules/content.scss */
-.example .large {
-  width: 100%;
-  height: 300px;
-  border: 1px solid #696969;
-  background: #939393;
-  margin-bottom: 20px;
-}
-/* line 192, ../scss/modules/content.scss */
-.example .medium {
-  width: 200px;
-  height: 100px;
-  border: 1px solid #696969;
-  background: #939393;
-}
-/* line 199, ../scss/modules/content.scss */
-.example .small {
-  width: 100px;
-  height: 100px;
-  border: 1px solid #696969;
-  background: #939393;
-}
-/* line 206, ../scss/modules/content.scss */
-.example .smaller {
-  width: 50px;
-  height: 100px;
-  border: 1px solid #696969;
-  background: #939393;
-}
 
-/* line 216, ../scss/modules/content.scss */
-[data-example-id="headings"] .table h2 {
-  font-family: 'nobel-book', helvetica, sans-serif;
-  text-transform: none;
-}
-/* line 221, ../scss/modules/content.scss */
-[data-example-id="headings"] .table h3 {
-  background-color: transparent;
-  color: #000;
-}
-/* line 226, ../scss/modules/content.scss */
-[data-example-id="headings"] .table .type-info {
-  vertical-align: middle;
-}
-
-/* line 237, ../scss/modules/content.scss */
-[data-example-id="colors-badge"] {
+/* line 1, ../scss/modules/homepage.scss */
+#wrapper {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
-/* line 240, ../scss/modules/content.scss */
-[data-example-id="colors-badge"] .badger {
-  background-color: #000;
-  color: #fff;
+
+/* line 7, ../scss/modules/homepage.scss */
+header {
   text-align: center;
+  height: 400px;
+  background: white;
+  width: 100%;
   position: relative;
-  top: 0;
+}
+/* line 13, ../scss/modules/homepage.scss */
+header h1 {
+  font-family: "nobel-book",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 80px 0 32px;
+}
+/* line 20, ../scss/modules/homepage.scss */
+header p {
+  font-family: "nobel-light", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 660px;
+  font-size: 14px;
+  line-height: 29px;
+  letter-spacing: 0.003px;
+}
+
+/* line 33, ../scss/modules/homepage.scss */
+.module {
+  z-index: 0;
+  position: relative;
+  display: block;
   left: 0;
-  width: 50%;
-  border-radius: 0;
-  padding: 10px;
+  color: white;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+/* line 42, ../scss/modules/homepage.scss */
+.module.other {
+  background: white;
+  color: black;
+}
+/* line 45, ../scss/modules/homepage.scss */
+.module.other .possible-image {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+/* line 51, ../scss/modules/homepage.scss */
+.module h2 {
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 100%;
+}
+/* line 56, ../scss/modules/homepage.scss */
+.module .bg {
+  position: absolute;
+}
+/* line 60, ../scss/modules/homepage.scss */
+.module .possible-image {
+  position: absolute;
+  top: 30px;
+  right: 130px;
+}
+/* line 65, ../scss/modules/homepage.scss */
+.module .module-text {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  width: 100%;
+  height: 460px;
+  top: 80px;
   margin: 0 auto;
-}
-/* line 252, ../scss/modules/content.scss */
-[data-example-id="colors-badge"] .badger .badge-title {
-  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  display: block;
-  padding: 25% 13%;
-}
-/* line 261, ../scss/modules/content.scss */
-[data-example-id="colors-badge"] .badger .badge-title .top-line {
-  display: block;
-  padding: 0 0 15px;
-}
-/* line 266, ../scss/modules/content.scss */
-[data-example-id="colors-badge"] .badger .badge-title .model-name {
-  font-family: "nobel-light",Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  font-weight: 200;
-  background: url("http://www.lexus.com/assets/img/overview/hero-border.png") no-repeat center 100%;
-  display: block;
-  font-size: 84px;
-  padding: 0 0 15px;
-  float: none;
-  position: static;
-  letter-spacing: 0px;
-}
-
-/* line 283, ../scss/modules/content.scss */
-[data-example-id="colors-button"] .btn {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 15px 25px 14px 25px;
-  background: #fff;
-  color: #000;
-  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 17.5px;
-  letter-spacing: 0.15em;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  max-width: 200px;
-  border: 2px solid #000;
-  cursor: pointer;
-  padding: 10px 20px;
-  cursor: pointer;
   position: relative;
-  margin: 0 auto;
-  border-radius: 0;
+  max-width: 480px;
+}
+/* line 75, ../scss/modules/homepage.scss */
+.module .module-text.left {
+  left: -30%;
+}
+/* line 78, ../scss/modules/homepage.scss */
+.module .module-text.right {
+  left: 30%;
+}
+/* line 80, ../scss/modules/homepage.scss */
+.module .module-text.right .line-grow {
+  background-color: black;
+}
+/* line 84, ../scss/modules/homepage.scss */
+.module .module-text .line-grow {
+  width: 0%;
+  height: 6px;
+  background-color: #FFF;
+  margin-bottom: 6px;
+}
+/* line 95, ../scss/modules/homepage.scss */
+.module .module-text p {
+  font-family: 'Palatino','Palatino Linotype','Book Antiqua',serif;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 140%;
 }
 
-/* line 311, ../scss/modules/content.scss */
-[data-example-id="colors-favorite"] span {
-  padding-left: 30px;
-  padding-top: 1px;
-}
-/* line 316, ../scss/modules/content.scss */
-[data-example-id="colors-favorite"] span[data-action=addFavorite] {
-  background: transparent url("http://www.lexus.com//assets/img/global/svg/star/gold.svg") no-repeat scroll 9% 35%;
-  color: #C29339;
-  font-family: nobel-bold;
-  font-size: 12px;
-}
-/* line 323, ../scss/modules/content.scss */
-[data-example-id="colors-favorite"] .favorite-listener {
-  height: 10px;
-  text-align: left;
-  text-decoration: none;
-  z-index: 9999;
-  background-color: #000000;
+@-webkit-keyframes grow {
+  /* line 147, ../scss/modules/homepage.scss */
+  from {
+    width: 0;
+  }
+
+  /* line 147, ../scss/modules/homepage.scss */
+  to {
+    width: 100%;
+  }
 }
 
-/* line 332, ../scss/modules/content.scss */
-.code-block {
-  padding: 9px 14px;
-  margin-bottom: 14px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
-  border-radius: 4px;
+@-moz-keyframes grow {
+  /* line 148, ../scss/modules/homepage.scss */
+  from {
+    width: 0;
+  }
+
+  /* line 148, ../scss/modules/homepage.scss */
+  to {
+    width: 100%;
+  }
 }
-/* line 339, ../scss/modules/content.scss */
-.code-block .nt {
-  color: #2f6f9f;
+
+@keyframes grow {
+  /* line 149, ../scss/modules/homepage.scss */
+  from {
+    width: 0;
+  }
+
+  /* line 149, ../scss/modules/homepage.scss */
+  to {
+    width: 100%;
+  }
 }
-/* line 343, ../scss/modules/content.scss */
-.code-block pre {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  word-break: normal;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
+
+@-webkit-keyframes fadeIn {
+  /* line 152, ../scss/modules/homepage.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 152, ../scss/modules/homepage.scss */
+  to {
+    opacity: 1;
+  }
 }
-/* line 352, ../scss/modules/content.scss */
-.code-block pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0;
+
+@-moz-keyframes fadeIn {
+  /* line 153, ../scss/modules/homepage.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 153, ../scss/modules/homepage.scss */
+  to {
+    opacity: 1;
+  }
 }
-/* line 360, ../scss/modules/content.scss */
-.code-block pre code:first-child {
-  display: inline-block;
-  padding-right: 45px;
+
+@keyframes fadeIn {
+  /* line 154, ../scss/modules/homepage.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 154, ../scss/modules/homepage.scss */
+  to {
+    opacity: 1;
+  }
 }
-/* line 367, ../scss/modules/content.scss */
-.code-block .language-html {
-  width: 200px;
+
+/* line 156, ../scss/modules/homepage.scss */
+.animated.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 171, ../scss/modules/homepage.scss */
+.animatable {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+/* line 181, ../scss/modules/homepage.scss */
+.animated {
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 203, ../scss/modules/homepage.scss */
+.animated.line-grow {
+  -webkit-animation: grow ease-in 1;
+  /* call our keyframe named grow, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: grow ease-in 1;
+  animation: grow ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 /* line 1, ../scss/modules/colors.scss */
 .colors {
-  margin: 5% 0;
+  margin: 3% 0;
+  text-align: center;
 }
-/* line 4, ../scss/modules/colors.scss */
+/* line 5, ../scss/modules/colors.scss */
 .colors .color-picker {
-  color: #ffffff;
+  color: white;
   padding: 20px;
+  margin-bottom: 15px;
 }
-/* line 9, ../scss/modules/colors.scss */
+/* line 11, ../scss/modules/colors.scss */
 .colors .black {
-  background-color: #000;
+  background-color: black;
 }
-/* line 13, ../scss/modules/colors.scss */
+/* line 15, ../scss/modules/colors.scss */
 .colors .white {
-  background-color: #ffffff;
-  border: 1px solid #000;
-  color: #000;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
-/* line 19, ../scss/modules/colors.scss */
+/* line 21, ../scss/modules/colors.scss */
 .colors .grey {
   background-color: #939393;
 }
-/* line 23, ../scss/modules/colors.scss */
+/* line 25, ../scss/modules/colors.scss */
+.colors .light-grey {
+  background: #cccccc;
+}
+/* line 29, ../scss/modules/colors.scss */
+.colors .dark-grey {
+  background: dimgrey;
+}
+/* line 33, ../scss/modules/colors.scss */
 .colors .gold {
-  background-color: #C29339;
+  background-color: #c29339;
 }
 
 /* line 2, ../scss/modules/typography.scss */
@@ -1214,4 +1620,128 @@ input {
   bottom: -10px;
   border-left-color: #ffffff;
   border-right-width: 0;
+}
+
+/* line 2, ../scss/modules/proto.scss */
+.proto1 {
+  background-color: white;
+}
+/* line 4, ../scss/modules/proto.scss */
+.proto1 .nav-proto {
+  background: white !important;
+}
+/* line 7, ../scss/modules/proto.scss */
+.proto1 nav.primary {
+  border-bottom: 1px solid black;
+}
+/* line 9, ../scss/modules/proto.scss */
+.proto1 nav.primary .navbar-header {
+  height: 65px;
+}
+/* line 14, ../scss/modules/proto.scss */
+.proto1 .scroller-inner {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 43px;
+}
+/* line 22, ../scss/modules/proto.scss */
+.proto1 .mp-pusher {
+  left: -16px;
+  top: -20px;
+}
+/* line 26, ../scss/modules/proto.scss */
+.proto1 .mp-menu {
+  width: 330px;
+  height: 100vh;
+}
+/* line 30, ../scss/modules/proto.scss */
+.proto1 .mp-level {
+  background: #585656;
+  color: white;
+}
+/* line 33, ../scss/modules/proto.scss */
+.proto1 .mp-level h2 {
+  color: white;
+}
+/* line 37, ../scss/modules/proto.scss */
+.proto1 .toggle-wrap {
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  z-index: 10;
+  /*disable selection*/
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 57, ../scss/modules/proto.scss */
+.proto1 .toggle-bar,
+.proto1 .toggle-bar::before,
+.proto1 .toggle-bar::after,
+.proto1 .toggle-wrap.active .toggle-bar,
+.proto1 .toggle-wrap.active .toggle-bar::before,
+.proto1 .toggle-wrap.active .toggle-bar::after {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* line 63, ../scss/modules/proto.scss */
+.proto1 .toggle-bar {
+  width: 38px;
+  margin: 10px 0;
+  position: relative;
+  border-top: 6px solid #303030;
+  display: block;
+}
+/* line 71, ../scss/modules/proto.scss */
+.proto1 .toggle-bar::before,
+.proto1 .toggle-bar::after {
+  content: "";
+  display: block;
+  background: #303030;
+  height: 6px;
+  width: 38px;
+  position: absolute;
+  top: -16px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -ms-transform-origin: 13%;
+  -webkit-transform-origin: 13%;
+  transform-origin: 13%;
+}
+/* line 86, ../scss/modules/proto.scss */
+.proto1 .toggle-bar::after {
+  top: 4px;
+}
+/* line 89, ../scss/modules/proto.scss */
+.proto1 .toggle-wrap.active .toggle-bar {
+  border-top: 6px solid transparent;
+}
+/* line 92, ../scss/modules/proto.scss */
+.proto1 .toggle-wrap.active .toggle-bar::before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 97, ../scss/modules/proto.scss */
+.proto1 .toggle-wrap.active .toggle-bar::after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 105, ../scss/modules/proto.scss */
+.dotcom > nav.primary {
+  background: white;
+}
+/* line 108, ../scss/modules/proto.scss */
+.dotcom .nav > li {
+  margin-top: 15px;
 }

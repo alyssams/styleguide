@@ -1,0 +1,114 @@
+//colors
+
+$white: #ffffff;
+$black: #000000;
+$bg-grey: #eeeeee;
+$light-grey: #cccccc;
+$grey: #939393;
+$dark-grey: #696969;
+$navy: #596f7d;
+$beige: #e7ebd6;
+$text-grey: #747474;
+$gold: #C29339;
+
+
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    // change this font once they migrate to better design.
+    background-color: $white;
+}
+
+h1 {
+    font-family: 'nobel-regular', sans-serif;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+p {
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 1em 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+// #topPos {
+//     margin-top: 50px;
+// }
+
+// .navbar-default {
+//     // font-family: 'nobel-bold', helvetica, sans-serif;
+//     background-color: #000000;
+
+//     .navbar-brand {
+//         color: #ffffff;
+//     }
+
+//     .navbar-nav > li > a {
+//         color: #ffffff;
+//     }
+// }
+
+// .page-header {
+//     border-bottom: 2px solid #000000;
+//     margin-top: 100px;
+// }
+
+// .digital-content h2 {
+//     text-transform: uppercase;
+// }
+
+.btn {
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px 25px 14px 25px;
+    background: #000;
+    color: #fff;
+    // font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17.5px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    max-width: 200px;
+    border: 2px solid #000;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover, &:focus {
+        background: #fff;
+        color: #000;
+        border-color: #000;
+        outline: none;
+    }
+}

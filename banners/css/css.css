@@ -1,151 +1,222 @@
+@font-face {
+  font-family: 'nobel-regular';
+  src: url("./../fonts/nobelregular.eot");
+  src: url("./../fonts/nobel-regular.ttf") format("truetype"), url("./../fonts/nobelregular.eot") format("embedded-opentype"), url("./../fonts/nobel-regular.woff") format("woff"), url("./../fonts/nobel-regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
--webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 ::-webkit-scrollbar
 {
-width: 2px;  /* for vertical scrollbars */
-height: 0px; /* for horizontal scrollbars */
-background-color: #fff;
+    width: 2px;  /* for vertical scrollbars */
+    height: 0px; /* for horizontal scrollbars */
+    background-color: #fff;
 }
 ::-webkit-scrollbar-track
 {
-background: #fff;
+    background: #fff;
 }
 ::-webkit-scrollbar-thumb
 {
-background: #ccc;
+    background: #ccc;
 }
 
 
 body,html{
-margin: 0;
-padding: 0;
-width: 100vw;
-min-height: 100vh;
-background-color: #EEE;
-position:relative;
-left: 0;
-top: 0;
-  -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #EEE;
+    position:relative;
+    left: 0;
+    top: 0;
+    font-family: sans-serif;
+    -webkit-overflow-scrolling: touch;
 }
 #wrapper{
-width: 100vw;
-height: 100vh;
-position: absolute;
-top: 0;
-left: 0;
-text-align: left;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
 }
-#filters{
+#side {
     position: fixed;
     left: 0;
     top: 0px;
     width: 300px;
     height: 100vh;
-background-color: #fff;
-z-index: 1000;
-overflow-y: scroll;
+    background-color: #fff;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+#filters{
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+    font-family: sans-serif;
+    color: #000;
 }
 #filters .logo{
-    position: absolute;
-    left: 8%;
-    top: 18px;
+    margin: 20px auto;
     width: 240px;
     height: 43px;
-    background-image: url("../img/lexus_logo.png");
+    background: url("../img/lexus_logo.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 #filters .headline{
-position: absolute;
-left: 10%;
-top: 100px;
-width: 80%;
-height: 24px;
-text-align: left;
-font-family: sans-serif;
-font-size: 14px;
-font-weight: bold;
-text-transform: uppercase;
-color: #000;
+    margin-top: 30px;
+    text-align: left;
+    
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
 }
 #filters .intro{
-position: absolute;
-left: 10%;
-top: 125px;
-width: 80%;
-height: 150px;
-text-align: left;
-font-family: sans-serif;
-font-size: 12px;
-line-height: 14px;
-color: #000;
+    
+    height: 150px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 14px;
 }
-#filters .intro a{
-color: #000;
-font-weight: bold;
-text-decoration: underline;
+
+#filters .download {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top:20px;
 }
+
 #filters .toggles{
-position: absolute;
-left: 10%;
-top: 395px;
-width: 80%;
-height: 50px;
-}
-#filters .thickRule{
-width: 100%;
-height: 2px;
-background-color: #000;
-float: left;
-}
-#filters .thinRule{
-width: 100%;
-height: 1px;
-background-color: #000;
-float: left;
+    height: 350px;
+    margin: 40px 0 0;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
 }
 #filters .size{
-float:left;
-width: 100%;
-height: 14px;
-text-align: left;
-font-family: sans-serif;
-font-size: 14px;
-font-weight: normal;
-font-weight: bold;
-text-transform: uppercase;
-color: #000;
-margin: 10px 0 10px 0;
+    float:left;
+    width: 100%;
+    height: 14px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #000000;
+    padding-bottom:10px;
 }
-#filters ul{
-float: left;
-width: 100%;
-list-style: none;
-text-align: left;
-padding: 0;
-;
+.toggles ul{
+    float: left;
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    ;
 }
-#filters ul li{
-float:left; 
-font-family: sans-serif;
-font-size: 12px;
-font-weight: normal;
-padding: 3px;
-margin: 5px;
-transition: background-color 0.3s;
-cursor: pointer;
-padding: 5px;
+.toggles ul li{
+    float:left; 
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding: 5px;
 }
+
+.more-info {
+    position: relative;
+    height: 300px;
+}
+
+.more-info ul {
+    padding: 0;
+}
+
+.more-info ul li{
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.more-info ul:first-child li {
+    font-size:12px;
+}
+
+.more-info ul:last-child {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    opacity: 0.5;
+    pointer-events: none;
+    left: 10px;
+}
+
 /*
 #filters ul li:hover{
 cursor: pointer;
 background-color: #fff;
 }
 */
+
+/*CTA*/
+
+#filters .download {
+    margin-top: 30px;
+}
+
+#filters .cta {
+    padding: 15px 9px;
+}
+
+.cta {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    /*font-family: "nobel-bold",Helvetica,Arial,sans-serif;*/
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 17.5px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    max-width: 200px;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.cta:hover {
+    background-color: white;
+    /*border: 2px solid #000;*/
+    color: black;
+}
+
+/*end of CTA*/
+
+
+
+.download p {
+    text-align: center;
+}
 
 .selected{
 	background-color: #000;
@@ -166,24 +237,28 @@ background-color: #fff;
 .strike{
 	color: #000;
 	background-color: #fff;
-text-decoration: line-through;
-cursor: pointer;
+    text-decoration: line-through;
+    cursor: pointer;
 }
 #filters .structure{
-float: left;
-width: 100%;
-height: 14px;
-text-align: left;
-font-family: sans-serif;
-font-size: 14px;
-font-weight: normal;
-text-transform: uppercase;
-color: #000;
-margin: 10px 0 10px 0;
-font-weight: bold;
+    float: left;
+    width: 100%;
+    height: 14px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+    padding:10px 0;
+    border-top: 2px solid #000000;
+
 }
 #banners{
-position: absolute;
+    position: absolute;
     left: 0;
     top: 0px;
     width: calc(100vw - 325px);
@@ -192,44 +267,107 @@ position: absolute;
     background-color: #EEE;
     padding-left: 400px;
     padding-top: 62px;
-overflow-y: visible;
+    overflow-y: visible;
 
 }
-#banners .sizeHeader{
-float: left;
-	width: 90%;
-	height: 97px;
-	border-top:6px solid #000;
+
+.size-info {
+    float: left;
+    width: 90%;
+    height: 97px;
+    border-top:6px solid #000;
+    
 }
+.size-info .sizeHeader{
+    float: left;
+    font-size: 4em;
+    font-family: 'nobel-regular', sans-serif;
+    position: relative;
+    margin-top: 20px;
+    letter-spacing: -0.03em;
+}
+
+.size-info .btn-download {
+    float: right;
+    margin-top: 40px;
+    padding: 10px 8px;
+}
+
 #banners .subHeader{
-float: left;
-	width: 90%;
-	height: 20px;
-	line-height: 20px;
-	border-top:1px solid #000;
-	text-align: left;
-	font-size: 11px;
-	font-family: sans-serif;
-	margin-bottom: 50px;
+    float: left;
+    width: 90%;
+    height: 20px;
+    line-height: 20px;
+    border-top:1px solid #000;
+    text-align: left;
+    font-size: 11px;
+    font-family: sans-serif;
+    margin-top:18px;
+    margin-bottom: 50px;
 }
 .updated{
-opacity: 0.5;
-pointer-events: none;
+    opacity: 0.5;
+    pointer-events: none;
 }
 #top{
-position: fixed;
-width: 29px;
-height: 42px;
-background-image: url(../img/top.png);
-background-size: contain;
-background-position: center center;
-background-repeat: no-repeat;
-right: 35px;
-bottom: 25px;
-opacity: 0.2;
-display: none;
+    position: fixed;
+    width: 29px;
+    height: 42px;
+    background: url(../img/top.png) no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    right: 35px;
+    bottom: 25px;
+    opacity: 0.2;
+    display: none;
 }
 #top:hover{
-opacity: 1.0;
-cursor: pointer;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#container728x90{
+    display: block;
+    position: relative;
+}
+#containersr728x90{
+    display: block;
+}
+#containerdr728x90{
+    display: block;
+}
+#containervr728x90{
+    display: block;
+}
+#containernr728x90{
+    display: block;
+}
+
+#container300x600{
+    display: block;
+    position: relative;
+}
+#containersr300x600{
+    display: block;
+}
+#containerdr300x600{
+    display: block;
+}
+#containervr300x600{
+    display: block;
+}
+#containernr300x600{
+    display: block;
+}
+#container300x250{
+    position: relative;
+}
+#container160x600{
+    display: block;
+    position: relative;
+}
+.selected{
+    background-color: #000;
+    color: #FFF;
 }

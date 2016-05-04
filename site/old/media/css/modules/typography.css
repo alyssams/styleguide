@@ -1,0 +1,36 @@
+/* line 2, ../../scss/modules/typography.scss */
+.typeface ul {
+  display: block;
+  margin-bottom: 50px;
+}
+/* line 6, ../../scss/modules/typography.scss */
+.typeface ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+/* line 10, ../../scss/modules/typography.scss */
+.typeface ul li:first-child {
+  font-family: 'nobel-book';
+}
+/* line 14, ../../scss/modules/typography.scss */
+.typeface ul li:nth-child(2) {
+  font-family: 'nobel-regular';
+}
+/* line 18, ../../scss/modules/typography.scss */
+.typeface ul li:nth-child(3) {
+  font-family: 'nobel-bold';
+}
+/* line 22, ../../scss/modules/typography.scss */
+.typeface ul li:last-child {
+  font-family: 'nobel-light';
+}
+
+/* line 31, ../../scss/modules/typography.scss */
+.headings div .head {
+  float: left;
+  padding: 0;
+}
+/* line 36, ../../scss/modules/typography.scss */
+.headings div span {
+  float: right;
+}

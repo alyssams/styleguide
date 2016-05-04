@@ -1,0 +1,215 @@
+#wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	text-align: center;
+	height: 400px;
+	background: $white;
+	width: 100%;
+	position: relative;
+	h1 {
+		font-family: "nobel-book",Helvetica,Arial,sans-serif;
+    	text-transform: uppercase;
+    	font-weight: 300;
+    	padding: 80px 0 32px;
+	}
+
+	p {
+		font-family: "nobel-light", Helvetica, Arial, sans-serif;
+	    text-align: center;
+	    font-weight: bold;
+	    margin: 0 auto;
+	    width: 660px;
+	    font-size: 14px;
+	    line-height: 29px;
+	    letter-spacing: 0.003px;
+	}
+
+}
+
+.module {
+	z-index: 0;
+	position: relative;
+    display: block;
+    left: 0;
+    color: $white;
+    background:$black;
+    width: 100%;
+    height: 100%;
+    &.other {
+    	background: $white;
+    	color: $black;
+    	.possible-image {
+    		position: absolute;
+    		top: 30px;
+    		left: 90px;
+    	}
+    }
+    h2 {
+    	text-transform: uppercase;
+    	font-size: 38px;
+    	line-height: 100%;
+    }
+    .bg {
+    	position: absolute;
+
+    }
+    .possible-image {
+		position: absolute;
+	    top: 30px;
+	    right: 130px;
+	}
+    .module-text {
+    	-webkit-animation-delay: 0.7s;
+ 	 	-moz-animation-delay: 0.7s;
+  		animation-delay: 0.7s;
+		width: 100%;
+		height: 460px;
+		top: 80px;
+		margin: 0 auto;
+		position: relative;
+		max-width: 480px;
+		&.left {
+			left: -30%;
+		}
+		&.right {
+			left: 30%;
+			.line-grow {
+				background-color: $black;
+			}
+		}  
+    	.line-grow {
+	    	width: 0%;
+		    height: 6px;
+		    background-color: #FFF;
+		    margin-bottom: 6px;
+		   //  -webkit-animation-delay: 0.5s;
+ 	 		// -moz-animation-delay: 0.5s;
+  			// animation-delay: 0.5s;
+			
+
+	    }
+	    p {
+	    	font-family: 'Palatino','Palatino Linotype','Book Antiqua',serif;
+		    font-size: 18px;
+		    margin-top: 15px;
+		    line-height: 140%;
+	    }
+    }
+}
+
+// breakpoint change cover to contain
+
+// #module-1 .bg {
+// 	background: url("http://www.lexus.com/cm-img/R4/about/about-hero-lg.jpg") no-repeat;
+//     height: 100%;
+//     width: 100%;
+//     background-position: right 0px;
+//     background-size: cover;
+//     background-color: $white; 
+// }
+
+// #module-3 {
+// 	background: white;
+// 		.bg{
+// 			background: url("http://blog.lexusofreno.com/wp-content/uploads/2010/10/lexus-pod.jpg") no-repeat;
+// 		    height: 100%;
+// 		    left: 90px;
+// 		    width: 100%;
+// 		    background-position: left 0px;
+// 		    background-repeat: no-repeat;
+// 		    background-size: cover;
+// 		    background-color: white;
+// 	}
+// }
+
+// // http://www.lexus.com/cm-img/parts-services/overview/Lexus-overview-tools-and-benefits-icon-1044x760-LEX-GSG-MY16-004301.jpg
+
+
+// #module-2 {
+// 	.bg {
+// 		background: url("http://www.lexus.com/cm-img/R4/about/technology-hero-lg.jpg")no-repeat;
+// 		height: 100%;
+// 	    width: 100%;
+// 	    background-position: left 0px;
+// 	    background-repeat: no-repeat;
+// 	    background-size: cover;
+// 	    background-color: white;
+// 	}
+// }
+
+
+
+
+@-webkit-keyframes grow { from { width:0; } to { width: 100%; } }
+@-moz-keyframes grow { from { width:0; } to { width: 100%; } }
+@keyframes grow { from { width:0; } to { width: 100%; } }
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.animated.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.animatable {
+  visibility: hidden;
+  -webkit-animation-play-state: paused;        
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.animated.line-grow {
+	-webkit-animation:grow ease-in 1;  /* call our keyframe named grow, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:grow ease-in 1;
+	animation:grow ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}

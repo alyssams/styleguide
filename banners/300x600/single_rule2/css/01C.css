@@ -23,7 +23,7 @@ border:1px solid #000;
 #sr2_300x600_03 .live{
 width: 139px;
 height: 62px;
-background-image: url(../img/live_a_full_life.png);
+background: url(../img/live_a_full_life.png) no-repeat;
 position: absolute;
 left: 18px;
 top: 17px;
@@ -33,7 +33,7 @@ opacity: 0.0;
 #sr2_300x600_03 .theCThybrid{
 width: 112px;
 height: 19px;
-background-image: url(../img/the_CT_hybrid.png);
+background: url(../img/the_CT_hybrid.png) no-repeat;
 background-repeat: no-repeat;
 position: absolute;
 background-size: contain;
@@ -64,7 +64,7 @@ z-index: 2;
 #sr2_300x600_03 .optionsInfo{
 width: 59px;
 height: 25px;
-background-image: url(../img/options_shown-important_info.png);
+background: url(../img/options_shown-important_info.png) no-repeat;
 position: absolute;
 background-size: contain;
 right: 18px;
@@ -78,14 +78,14 @@ left: 18px;
 bottom: 23px;
 width: 112px;
 height: 20px;
-background-image: url(../img/lexus_logo.png);
+background: url(../img/lexus_logo.png) no-repeat;
 opacity: 0.0;
 }
 #sr2_300x600_03 .learnMore{
-transition: background-image 0.3s;
+transition: background 0.3s;
 width: 112px;
 height: 30px;
-background-image: url(../img/learn_more_button.png);
+background: url(../img/learn_more_button.png) no-repeat;
 position: absolute;
 right: 18px;
 bottom: 18px;
@@ -93,6 +93,6 @@ z-index: 0;
 cursor: pointer;
 opacity: 0.0;
 }#sr2_300x600_03 .learnMore:hover{
-background-image: url(../img/learn_more_button-Hover.png);
+background: url(../img/learn_more_button-Hover.png) no-repeat;
 }
 /* ///////////////////////// NUMBER OneC /////////////////////////*/

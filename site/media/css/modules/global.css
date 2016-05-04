@@ -1,84 +1,49 @@
-/* line 13, ../../scss/modules/global.scss */
+/* line 15, ../../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 21, ../../scss/modules/global.scss */
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 29, ../../scss/modules/global.scss */
+/* line 22, ../../scss/modules/global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  font-family: 'nobel-book', helvetica, sans-serif;
+  font-family: sans-serif;
+  background-color: white;
 }
 
-/* line 37, ../../scss/modules/global.scss */
-.row {
-  margin: 0;
-  padding: 0;
+/* line 30, ../../scss/modules/global.scss */
+h1 {
+  font-family: 'nobel-regular', sans-serif;
+  font-size: 4em;
+  font-weight: normal;
 }
 
-/* line 42, ../../scss/modules/global.scss */
-h2 {
-  font-family: 'nobel-bold', helvetica, sans-serif;
+/* line 36, ../../scss/modules/global.scss */
+h3 {
+  font-weight: bold;
+  font-size: 14px;
 }
 
-/* line 46, ../../scss/modules/global.scss */
+/* line 41, ../../scss/modules/global.scss */
 p {
-  margin: 5%;
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 1em 0;
 }
 
-/* line 51, ../../scss/modules/global.scss */
+/* line 49, ../../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 56, ../../scss/modules/global.scss */
+/* line 54, ../../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
-}
-
-/* line 60, ../../scss/modules/global.scss */
-#topPos {
-  margin-top: 50px;
-}
-
-/* line 64, ../../scss/modules/global.scss */
-.navbar-default {
-  font-family: 'nobel-bold', helvetica, sans-serif;
-  background-color: #000000;
-}
-/* line 68, ../../scss/modules/global.scss */
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-/* line 72, ../../scss/modules/global.scss */
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-
-/* line 77, ../../scss/modules/global.scss */
-.page-header {
-  border-bottom: 2px solid #000000;
-  margin-top: 100px;
-}
-
-/* line 82, ../../scss/modules/global.scss */
-.digital-content h2 {
-  text-transform: uppercase;
 }
 
 /* line 86, ../../scss/modules/global.scss */
@@ -90,7 +55,6 @@ p {
   padding: 15px 25px 14px 25px;
   background: #000;
   color: #fff;
-  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
@@ -110,4 +74,38 @@ p {
   color: #000;
   border-color: #000;
   outline: none;
+}
+
+/* line 116, ../../scss/modules/global.scss */
+ul.accordion {
+  list-style: none;
+  padding: 0;
+}
+/* line 120, ../../scss/modules/global.scss */
+ul.accordion .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+/* line 125, ../../scss/modules/global.scss */
+ul.accordion .inner.show {
+  /*display: block;*/
+}
+/* line 130, ../../scss/modules/global.scss */
+ul.accordion li {
+  margin: .5em 0;
+}
+/* line 133, ../../scss/modules/global.scss */
+ul.accordion li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+/* line 142, ../../scss/modules/global.scss */
+ul.accordion li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
 }

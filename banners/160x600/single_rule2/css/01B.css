@@ -23,7 +23,7 @@ border: 1px solid #000;
 #sr2_160x600_02 .live{
 width: 90px;
 height: 42px;
-background-image: url(../img/live_a_full_life.png);
+background: url(../img/live_a_full_life.png) no-repeat;
 position: absolute;
 left: 18px;
 top: 18px;
@@ -53,7 +53,7 @@ z-index: 3;
 #sr2_160x600_02 .theCThybrid{
 width: 73px;
 height: 14px;
-background-image: url(../img/the_CT_hybrid.png);
+background: url(../img/the_CT_hybrid.png) no-repeat;
 position: absolute;
 background-size: contain;
 left: 17px;
@@ -67,14 +67,14 @@ left: 17px;
 bottom: 75px;
 width: 112px;
 height: 21px;
-background-image: url(../img/logo.png);
+background: url(../img/logo.png) no-repeat;
 opacity: 0.0;
 }
 #sr2_160x600_02 .learnMore{
-transition: background-image 0.3s;
+transition: background 0.3s;
 width: 112px;
 height: 30px;
-background-image: url(../img/learn-more.png);
+background: url(../img/learn-more.png) no-repeat;
 position: absolute;
 left: 24px;
 bottom:32px;
@@ -83,12 +83,12 @@ cursor: pointer;
 opacity: 0.0;
 }
 #sr2_160x600_02 .learnMore:hover{
-background-image: url(../img/learn_more_button-Hover.png);
+background: url(../img/learn_more_button-Hover.png) no-repeat;
 }
 #sr2_160x600_02 .rcShown{
     width: 111px;
     height: 10px;
-    background-image: url(../img/rc-f-sport-shown.png);
+    background: url(../img/rc-f-sport-shown.png) no-repeat;
     background-position: center center;
     position: absolute;
     left: 25px;
