@@ -1,53 +1,165 @@
 nav.primary {
-	// position: relative;
- //    background: $black;
- //    width: 100%;
- //    height: 58px;
- //    z-index: 2;
-    .nav-wrapper {
-    	position: fixed;
-	    background: $black;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    height: 58px;
-	    > ul li {
-	    	display: inline-block;
+	background-color: $black;
+    line-height: 1em;
+    margin: 0 auto;
+    padding: 0px 0;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 61px;
+    z-index: 2;
+    .header {
+		width: 96%;
+		max-width: 1200px;
+		height: 100%;
+		margin: 0px auto;
+		padding: 0px;
+		position: relative;
+		z-index: 300;
+	    .logo {
+	    	float: left;
+	    	width: 100%;
+    		display: inline-block;
+    		@include md-up() {
+    			width: auto;
+    		}
+    		a {
+    			top: 14px;
+			    width: 162px;
+			    display: block;
+			    margin: 0 auto;
+			    height: 30px;
+			    position: relative;
+    		    background: url('http://lexus.com/assets/sprite/sprites/global-sf24df3adbc.png') 0 0 no-repeat;
+    		    
+    			@include md-up() {
+    		    margin-top: 14px;
+    			width: 162px;
+    			display: block;
+    			position: inherit;
+    			}
+    		}
+    
 	    }
-	    > ul li a {
-	    	text-transform: uppercase;
-	    	color: $white;
-	    	text-align: center;
-		    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
-		    font-size: 11px;
-		    font-weight: bold;
-		    line-height: 17.5px;
-		    letter-spacing: 0.1em;
-		    text-decoration: none;
-		    padding: 21px 25px;
-		    width: 100%;
+	    #categoryNav {
+	    	display: none;
+		    background: $black;
+		    float: left;
+		    /* height: 61px; */
+		    /* padding-bottom: 0px; */
+		    position: relative;
+		    /* margin-top: 4px; */
+		    text-align: right;
+		    width: 51%;
+		    @include md-up {
+		        display: inline-block;
+		    }
+		}
+		#categoryNav #categoryBorderWrap {
 		    display: block;
-	    }
+		    max-width: 1200px;
+		    padding: 0px 35px 0 0;
+		    position: relative;
+		    z-index: 16;
+		}
 
-	    .active a, ul li a:hover {
-	    	background: $white;
-	    	color: $black;
-	    }
-	    .not-active {
-	    	pointer-events: none;
-	    }
-	 	.logo {
-	 		margin-top: 10px;
-	 		max-width: 200px;
-	 		margin-right: 77px;
-	 	}
+		#categoryNav #categoryBorderWrap #categoryNavWrap {
+		    // display: inline-block;
+		    // width: 100%;
+		}
+		#categoryNav #categories {
+		    // display: inline-block;
+		    // margin-top: 4px;
+		    // padding-right: 20px;
+		    text-align: left;
+		    // transition: 0.5s padding;
+		    // vertical-align: top;
+		    // width: 66%;
+		}
 
-	 	.search {
-	 		z-index: 2;
-	 		margin-top: 10px;
-	 	}
+		#categoryNav #categories .vehicleLink {
+		        font-family: "nobel-bold", Helvetica, Arial, sans-serif;
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    font-size: 11px;
+			    background: $black;
+			    color: $white;
+			    letter-spacing: 0.09em;
+			    /* color: white; */
+			    /* text-decoration: none; */
+			    /* outline: none; */
+			    display: inline-block;
+			    /* margin-right: 0%; */
+			    margin-left: 17px;
+			    padding: 0px 1.5%;
+			    /* position: relative; */
+			    /* height: 0; */
+			    /* line-height: 0; */
+			    padding: 22px 15px 23px;
+			    /* top: 10px; */
+			    /* vertical-align: top; */
+			    &.active {
+			    	background: $white;
+			    	color: $black;
+			    }
+		}
     }
 }
+
+// nav.primary {
+// 	// position: relative;
+// 	top: 0;
+//     height: 61px;
+//     position: fixed;
+
+//     background: $black;
+//     width: 100%;
+//      //    z-index: 2;
+//     .nav-wrapper {
+//     	position: fixed;
+// 	    background: $black;
+// 	    top: 0;
+// 	    left: 0;
+// 	    right: 0;
+// 	    height: 58px;
+// 	    > ul li {
+// 	    	display: inline-block;
+// 	    }
+// 	    > ul li a {
+// 	    	text-transform: uppercase;
+// 	    	color: $white;
+// 	    	text-align: center;
+// 		    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+// 		    font-size: 11px;
+// 		    font-weight: bold;
+// 		    line-height: 17.5px;
+// 		    letter-spacing: 0.1em;
+// 		    text-decoration: none;
+// 		    padding: 21px 25px;
+// 		    width: 100%;
+// 		    display: block;
+// 	    }
+
+// 	    .active a, ul li a:hover {
+// 	    	background: $white;
+// 	    	color: $black;
+// 	    }
+// 	    .not-active {
+// 	    	pointer-events: none;
+// 	    }
+// 	 	.logo {
+// 	 		margin-top: 10px;
+// 	 		max-width: 200px;
+// 	 		margin-right: 27px;
+// 	 	}
+
+// 	 	.search {
+// 	 		z-index: 2;
+// 	 		margin-top: 10px;
+// 	 	}
+//     }
+// }
 
 #primary-nav ul li {
 	text-transform: uppercase;
@@ -62,165 +174,19 @@ nav.primary {
     display: block;
 }
 
-input[type="checkbox"]:checked ~ label.active {
-    &:before {
-      box-shadow: transparent 0 0 0 0;
-      top: 50%;
-      transform: rotate(225deg);
+.mobile-nav {
+	width: 100%;
+	z-index: 3;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	padding: 0;
+	left: 0;
+	font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+    @include md-up {
+       display: none;
     }
-
-    &:after {
-      top: 50%;
-      transform: rotate(315deg);
-    }     
 }
 
-.hamburger-slim {
-  background: transparent;
-  // margin: 60px auto 40px;
-  // position: relative;
-  height: 30px;
-  width: 50px;
 
-  &:before,
-  &:after {
-    background: $black;
-    backface-visibility: hidden;
-    content: "";
-    height: 2px;
-    left: 0;
-    transition: 0.75s;
-    width: 50px;
-  }
 
-  &:before {
-    box-shadow: $black 0 14px 0 0;
-    position: absolute;
-    top: 0;
-  }
-
-  &:after {
-    position: absolute;
-    top: calc(100% - 2px);
-  }
-
-  &.active {
-
-    &:before {
-      box-shadow: transparent 0 0 0 0;
-      top: 50%;
-      transform: rotate(225deg);
-    }
-
-    &:after {
-      top: 50%;
-      transform: rotate(315deg);
-    }
-  }
-}
-
-// SECONDARY NAV
-
-$button-width: 96px;                    // The width of the button area
-$button-height: 96px;                   // The height of the button area
-$bar-thickness: 8px;                    // The thickness of the button bars
-$button-pad: 18px;                      // The left/right padding between button area and bars.
-$button-bar-space: 12px;                // The spacing between button bars
-$button-transistion-duration: 0.3s;     // The transition duration
-
-.c-hamburger {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 96px;
-  height: 96px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.c-hamburger:focus {
-  outline: none;
-}
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 44px;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: white;
-}
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #fff;
-  content: "";
-}
-
-.c-hamburger span::before {
-  top: -20px;
-}
-
-.c-hamburger span::after {
-  bottom: -20px;
-}
-
-.c-hamburger--htx {
-  background-color: #ff3264;
-}
-
-.c-hamburger--htx span {
-  transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform;
-}
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform;
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active {
-  background-color: #cb0032;
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}

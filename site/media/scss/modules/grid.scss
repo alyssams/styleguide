@@ -1,55 +1,41 @@
-// grid variables
-$grid-columns: 12;
-$grid-max-width: 90em;
- 
- 
-// breakpoints
-$breakpoint-small: "only screen and (min-width: 20em)";
-$breakpoint-medium: "only screen and (min-width: 30em)";
+/* main grid */
+$default-columns: 12;
+$total-columns: $default-columns;
+$column-width: 4.27%;
+$gutter-width: 3.75%;
+$grid-padding: $gutter-width;
 
-@mixin border-box {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+/* break points */
+$small-min: 0px;
+$small-max: 640px;
+$medium-min: 641px;
+$medium-mid: 767px;
+$medium-max: 959px;
+$large-min: 960px;
+$large-max: 1204px;
+$extra-large-min: 1205px;
+$large-near-med: 1050px;
+$grid-max: $large-max;
+$full-bleed-width: 1312px;
+
+// Bit of a change in semantics here. The goal is to support mobile first.
+// I'm using bootstrap convention as a base so the folllowing breakpoints
+// will need to map slightly differently:
+//   - xs (extra small) is 0 to (small-max - 1) - NOTE: we dont actually need a breakpoint for this since we should be using a mobile-first approach.
+//   - sm (small) is small-max and up
+//   - lg (large) is large-min and up
+//   - xl (extra large) is extra-large-min and up
+@mixin sm-up ($columns: $default-columns) {
+    // [R4EE-411] Adding 1 to *-max to make breaks inline with pointbreak.js
+    @media (min-width: $small-max + 1) { @content; }
 }
- 
-*, *:after, *:before {
-    margin: 0;
-    padding: 0;
-    @include border-box;
-    }
-     
-img {
-    width: auto;
-    max-width: 100%;
-    height: auto !important; 
-    }   
- 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    }
- 
-.container, .row {
-    @extend %clearfix;
-    }
-      
-[class*='column-'] {
-    float: left;
-    // padding: 1em;
-    padding: 0 23px;
-    width: 100%;
-    min-height: 1px; 
-    }   
- 
-@media #{$breakpoint-medium} {
-    .container {      
-        width: 95%;
-        max-width: $grid-max-width;     
-        }
-    @for $i from 1 through $grid-columns {      
-        .column-#{$i} {         
-            width: 100% / $grid-columns * $i;   
-            }           
-        }   
-    }
+
+@mixin md-up ($columns: $default-columns) {
+    // [R4EE-411] Adding 1 to *-max to make breaks inline with pointbreak.js
+    @media (min-width: $large-min + 1) { @content; }
+}
+
+@mixin lg-up ($columns: $default-columns) {
+    // [R4EE-411] Adding 1 to *-max to make breaks inline with pointbreak.js
+    @media (min-width: $extra-large-min + 1) { @content; }
+}

@@ -29,7 +29,9 @@ jQuery(function($) {
     // };
     // $(window).on('scroll', doAnimations);
     // $(window).trigger('scroll');
-
+    $('.hamburger-slim').on('click', function(){
+        $(this).toggleClass('active');
+    });
 
       var slideWidth = $('#pageslide').outerWidth(); //grab width of the sliding menu so that this can be controlled in the css only
 
@@ -61,14 +63,17 @@ jQuery(function($) {
             e.preventDefault();
           
             var $this = $(this);
-          
+            var $toggle = $this.find('span');
+
             if ($this.next().hasClass('show')) {
                 $this.next().removeClass('show');
+                $toggle.removeClass('expanded');
                 $this.next().slideUp(350);
             } else {
                 $this.parent().parent().find('li .inner').removeClass('show');
                 $this.parent().parent().find('li .inner').slideUp(350);
                 $this.next().toggleClass('show');
+                $toggle.toggleClass('expanded');
                 $this.next().slideToggle(350);
             }
         });

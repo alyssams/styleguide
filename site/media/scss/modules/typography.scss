@@ -1,40 +1,51 @@
-.typeface {
-    ul {
-        display: block;
-        margin-bottom: 50px;
-
-        li {
-            display: inline-block;
-            padding: 0 30px;
-
-            &:first-child {
-                font-family: 'nobel-book';
-            }
-
-            &:nth-child(2) {
-                font-family: 'nobel-regular';
-            }
-
-            &:nth-child(3) {
-                font-family: 'nobel-bold';
-            }
-
-            &:last-child {
-                font-family: 'nobel-light';
-            }
+.type-fonts {
+    @include make-columns(12);
+    @extend .col;
+    .fonts {
+        @include make-columns(12);
+        @extend .col;
+        @include md-up {
+           @include make-columns(8);
         }
+    }
+    .examples{
+        @include make-columns(12);
+        @extend .col;
+        @include md-up {
+           @include make-columns(4);
+        }
+    }
+    h3 {
+        text-transform: inherit;
+        font-size: 20px;
+    }
+    .nobel-light h3{
+        font-family: 'nobel-light';
+        font-weight: lighter;
+    }
+    .nobel-book h3{
+        font-family: 'nobel-book';
+        font-weight: lighter;
+    }
+    .nobel-regular h3{
+        font-family: 'nobel-regular';
+        font-weight: lighter;
+    }
+    .nobel-bold h3{
+        font-family: 'nobel-bold';
+        font-weight: lighter;
+    }
+    .nobel-book-italic h3{
+        font-family: 'nobel-book-italic';
+        font-weight: lighter;
+    }
+    .palentino h3{
+        font-family: 'palentino';
+        font-weight: lighter;
+    }
+    .pakt h3{
+        font-family: 'pakt';
+        font-weight: lighter;
     }
 }
 
-.headings {
-    div {
-        .head {
-            float: left;
-            padding: 0;
-        }
-
-        span {
-            float: right;
-        }
-    }
-}

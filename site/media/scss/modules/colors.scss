@@ -1,4 +1,5 @@
 .colors {
+    @extend .container-fluid;
     margin: 3% 0;
     text-align: center;
 
@@ -34,3 +35,19 @@
         background-color: $gold;
     }
 }
+
+.palette-item {
+    @include make-columns(12);
+    @extend .col;
+
+    @include sm-up {
+       @include make-columns(4);         
+    }
+
+    @include md-up {
+       @include make-columns(2);
+    }
+}
+
+
+

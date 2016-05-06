@@ -1,11 +1,20 @@
-/* line 15, ../../scss/modules/global.scss */
+/* line 20, ../../scss/modules/global.scss */
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 26, ../../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 22, ../../scss/modules/global.scss */
+/* line 33, ../../scss/modules/global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -13,20 +22,32 @@ body {
   background-color: white;
 }
 
-/* line 30, ../../scss/modules/global.scss */
+/* line 41, ../../scss/modules/global.scss */
 h1 {
   font-family: 'nobel-regular', sans-serif;
-  font-size: 4em;
+  font-size: 34px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
-/* line 36, ../../scss/modules/global.scss */
+/* line 48, ../../scss/modules/global.scss */
+h2 {
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  font-family: "nobel-book",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 58, ../../scss/modules/global.scss */
 h3 {
   font-weight: bold;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
-/* line 41, ../../scss/modules/global.scss */
+/* line 64, ../../scss/modules/global.scss */
 p {
   text-align: left;
   font-size: 12px;
@@ -34,19 +55,19 @@ p {
   margin: 1em 0;
 }
 
-/* line 49, ../../scss/modules/global.scss */
+/* line 72, ../../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 54, ../../scss/modules/global.scss */
+/* line 77, ../../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 86, ../../scss/modules/global.scss */
+/* line 82, ../../scss/modules/global.scss */
 .btn {
   border-radius: 0;
   -webkit-box-sizing: border-box;
@@ -68,7 +89,7 @@ p {
   cursor: pointer;
   display: inline-block;
 }
-/* line 108, ../../scss/modules/global.scss */
+/* line 104, ../../scss/modules/global.scss */
 .btn:hover, .btn:focus {
   background: #fff;
   color: #000;
@@ -76,36 +97,26 @@ p {
   outline: none;
 }
 
-/* line 116, ../../scss/modules/global.scss */
-ul.accordion {
-  list-style: none;
-  padding: 0;
-}
-/* line 120, ../../scss/modules/global.scss */
-ul.accordion .inner {
-  padding-left: 1em;
+/* line 112, ../../scss/modules/global.scss */
+.wrapper {
   overflow: hidden;
-  display: none;
+  margin: 50px auto 0 auto;
+  max-width: 1354px;
+  padding: 0 75px;
 }
-/* line 125, ../../scss/modules/global.scss */
-ul.accordion .inner.show {
-  /*display: block;*/
+/* line 118, ../../scss/modules/global.scss */
+.wrapper section {
+  -moz-transition: all 200ms ease-in;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
 }
-/* line 130, ../../scss/modules/global.scss */
-ul.accordion li {
-  margin: .5em 0;
+/* line 124, ../../scss/modules/global.scss */
+.wrapper section h1 {
+  border-top: 2px solid black;
+  padding-top: 30px;
 }
-/* line 133, ../../scss/modules/global.scss */
-ul.accordion li a.toggle {
-  width: 100%;
-  display: block;
-  background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
-  padding: .75em;
-  border-radius: 0.15em;
-  transition: background .3s ease;
-}
-/* line 142, ../../scss/modules/global.scss */
-ul.accordion li a.toggle:hover {
-  background: rgba(0, 0, 0, 0.9);
+/* line 129, ../../scss/modules/global.scss */
+.wrapper section .content p {
+  width: 70%;
 }
