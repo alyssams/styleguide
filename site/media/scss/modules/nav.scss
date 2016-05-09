@@ -176,14 +176,9 @@ nav.primary {
 
 .mobile-nav {
 	width: 100%;
-	z-index: 3;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	padding: 0;
-	left: 0;
-	font-family: "nobel-bold",Helvetica,Arial,sans-serif;
-    @include md-up {
+    height: 44px;
+    background: black;
+    @include sm-up {
        display: none;
     }
 }

@@ -57,7 +57,8 @@ h2 {
 
 h3 {
     font-weight: bold;
-    font-size: 14px;
+    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+    font-size: 2em;
     text-transform: uppercase;
 }
 
@@ -111,25 +112,56 @@ p {
 
 .wrapper {
     overflow:hidden;
-    margin: 50px auto 0 auto;
-    max-width: 1354px;
-    padding: 0 75px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 10%;
+    @include md-up {
+        max-width: 1354px;
+        padding: 0 75px;
+    }
 
+    
     section{
         // padding:30px 30px 30px 80px;
         -moz-transition:all 200ms ease-in;
         -webkit-transition:all 200ms ease-in;
         -o-transition:all 200ms ease-in;
         transition:all 200ms ease-in;
+        
+        border-top: 10px solid $black;
+        &:first-of-type {
+            margin:0;
+            border-top: 0;
+        }
+        &#color {
+            border-top: 0;
+        }
         h1 {
-            border-top: 2px solid $black;
-            padding-top: 30px;
+            border-top: 10px solid $black;
+            border-bottom: 10px solid $black;
+            padding: 30px 0;
+            font-size:3.5em;
+            @include md-up {
+                font-size: 5em;
+            }
+        }
+
+        h3 {
+            margin: 90px 0 30px 0;
         }
         .content {
             p {
                 width: 70%;
             }
         }
+    }
+}
 
+section#header {
+
+    h2 {
+        text-align: left;
+        padding: 40px 0;
     }
 }

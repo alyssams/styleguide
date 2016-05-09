@@ -1211,11 +1211,12 @@ h2 {
 /* line 58, ../scss/modules/global.scss */
 h3 {
   font-weight: bold;
-  font-size: 14px;
+  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
-/* line 64, ../scss/modules/global.scss */
+/* line 65, ../scss/modules/global.scss */
 p {
   text-align: left;
   font-size: 12px;
@@ -1223,19 +1224,19 @@ p {
   margin: 1em 0;
 }
 
-/* line 72, ../scss/modules/global.scss */
+/* line 73, ../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 77, ../scss/modules/global.scss */
+/* line 78, ../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 82, ../scss/modules/global.scss */
+/* line 83, ../scss/modules/global.scss */
 .btn {
   border-radius: 0;
   -webkit-box-sizing: border-box;
@@ -1257,7 +1258,7 @@ p {
   cursor: pointer;
   display: inline-block;
 }
-/* line 104, ../scss/modules/global.scss */
+/* line 105, ../scss/modules/global.scss */
 .btn:hover, .btn:focus {
   background: #fff;
   color: #000;
@@ -1265,28 +1266,64 @@ p {
   outline: none;
 }
 
-/* line 112, ../scss/modules/global.scss */
+/* line 113, ../scss/modules/global.scss */
 .wrapper {
   overflow: hidden;
-  margin: 50px auto 0 auto;
-  max-width: 1354px;
-  padding: 0 75px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 10%;
 }
-/* line 118, ../scss/modules/global.scss */
+@media (min-width: 961px) {
+  /* line 113, ../scss/modules/global.scss */
+  .wrapper {
+    max-width: 1354px;
+    padding: 0 75px;
+  }
+}
+/* line 125, ../scss/modules/global.scss */
 .wrapper section {
   -moz-transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
+  border-top: 10px solid black;
 }
-/* line 124, ../scss/modules/global.scss */
+/* line 133, ../scss/modules/global.scss */
+.wrapper section:first-of-type {
+  margin: 0;
+  border-top: 0;
+}
+/* line 137, ../scss/modules/global.scss */
+.wrapper section#color {
+  border-top: 0;
+}
+/* line 140, ../scss/modules/global.scss */
 .wrapper section h1 {
-  border-top: 2px solid black;
-  padding-top: 30px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  padding: 30px 0;
+  font-size: 3.5em;
 }
-/* line 129, ../scss/modules/global.scss */
+@media (min-width: 961px) {
+  /* line 140, ../scss/modules/global.scss */
+  .wrapper section h1 {
+    font-size: 5em;
+  }
+}
+/* line 150, ../scss/modules/global.scss */
+.wrapper section h3 {
+  margin: 90px 0 30px 0;
+}
+/* line 154, ../scss/modules/global.scss */
 .wrapper section .content p {
   width: 70%;
+}
+
+/* line 163, ../scss/modules/global.scss */
+section#header h2 {
+  text-align: left;
+  padding: 40px 0;
 }
 
 /* line 1, ../scss/modules/nav.scss */
@@ -1419,15 +1456,10 @@ nav.primary .header #categoryNav #categories .vehicleLink.active {
 /* line 177, ../scss/modules/nav.scss */
 .mobile-nav {
   width: 100%;
-  z-index: 3;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  padding: 0;
-  left: 0;
-  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  height: 44px;
+  background: black;
 }
-@media (min-width: 961px) {
+@media (min-width: 641px) {
   /* line 177, ../scss/modules/nav.scss */
   .mobile-nav {
     display: none;
@@ -1442,24 +1474,24 @@ nav.primary .header #categoryNav #categories .vehicleLink.active {
 }
 /* line 10, ../scss/modules/aside.scss */
 .hamburger-slim:before, .hamburger-slim:after {
-  background: black;
+  background: white;
   backface-visibility: hidden;
   content: "";
-  height: 2px;
+  height: 3px;
   left: 0;
   transition: 0.75s;
-  width: 50px;
+  width: 26px;
 }
 /* line 20, ../scss/modules/aside.scss */
 .hamburger-slim:before {
-  box-shadow: black 0 14px 0 0;
+  box-shadow: white 0 14px 0 0;
   position: absolute;
-  top: 0;
+  top: 3px;
 }
 /* line 26, ../scss/modules/aside.scss */
 .hamburger-slim:after {
   position: absolute;
-  top: calc(100% - 2px);
+  top: calc(100% - 20px);
 }
 /* line 33, ../scss/modules/aside.scss */
 .hamburger-slim.active:before {
@@ -1492,36 +1524,58 @@ p {
 
 /* line 57, ../scss/modules/aside.scss */
 .wrapper nav.secondary {
-  display: none;
+  z-index: 1;
+  background: black;
+  display: block;
   position: fixed;
-  top: 58px;
+  top: 0;
   left: 0;
-  width: 250px;
+  width: 100%;
   height: 100%;
-  margin: 0 0 0 -250px;
+  margin: 0 0 0 -100%;
   -moz-transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
 }
-@media (min-width: 961px) {
+@media (min-width: 641px) {
   /* line 57, ../scss/modules/aside.scss */
   .wrapper nav.secondary {
-    display: block;
+    width: 340px;
+    margin: 0 0 0 -292px;
   }
 }
-/* line 72, ../scss/modules/aside.scss */
+/* line 75, ../scss/modules/aside.scss */
+.wrapper nav.secondary .header {
+  padding: 60px;
+}
+/* line 77, ../scss/modules/aside.scss */
+.wrapper nav.secondary .header h2 {
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: 'nobel-bold';
+}
+/* line 84, ../scss/modules/aside.scss */
+.wrapper nav.secondary .header .logo {
+  background: url("http://lexus.com/assets/sprite/sprites/global-sf24df3adbc.png") 0 0 no-repeat;
+  height: 30px;
+  width: 162px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 93, ../scss/modules/aside.scss */
 .wrapper nav.secondary ul {
   width: 250px;
+  margin: 0 auto;
+  text-align: center;
   height: 100%;
   padding: 0;
-  margin: 0;
   list-style: none;
-  background: white;
-  border-right: 1px solid black;
   overflow: hidden;
 }
-/* line 81, ../scss/modules/aside.scss */
+/* line 103, ../scss/modules/aside.scss */
 .wrapper nav.secondary ul li {
   margin: 0;
   font-size: 15px;
@@ -1529,7 +1583,7 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px solid #3f3f3f;
   margin: 0 auto 20px auto;
   padding-bottom: 15px;
   position: relative;
@@ -1541,22 +1595,31 @@ p {
   padding: 5px;
   margin-left: 8px;
 }
-/* line 101, ../scss/modules/aside.scss */
-.wrapper nav.secondary ul li ul li:last-child {
+/* line 123, ../scss/modules/aside.scss */
+.wrapper nav.secondary ul li ul li {
   border: none;
 }
-/* line 106, ../scss/modules/aside.scss */
+/* line 125, ../scss/modules/aside.scss */
+.wrapper nav.secondary ul li ul li a {
+  color: #696969;
+  font-family: "nobel-regular", Helvetica, Arial, sans-serif;
+}
+/* line 128, ../scss/modules/aside.scss */
+.wrapper nav.secondary ul li ul li a:hover {
+  color: white;
+}
+/* line 136, ../scss/modules/aside.scss */
 .wrapper nav.secondary a {
-  margin: 0 auto 20px auto;
-  font-size: 15px;
-  color: black;
+  margin: 5px auto;
+  font-size: 12px;
+  color: white;
   font-family: "nobel-bold", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 117, ../scss/modules/aside.scss */
+/* line 147, ../scss/modules/aside.scss */
 .wrapper label {
-  display: none;
+  display: block;
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
   font-weight: 700;
   line-height: 42px;
@@ -1565,81 +1628,85 @@ p {
   font-size: 2em;
   line-height: 1.1em;
   position: fixed;
-  top: 70px;
-  left: 10px;
+  top: 10px;
+  left: 90%;
   -moz-transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in;
   z-index: 500;
 }
-@media (min-width: 961px) {
-  /* line 117, ../scss/modules/aside.scss */
+@media (min-width: 641px) {
+  /* line 147, ../scss/modules/aside.scss */
   .wrapper label {
-    display: block;
+    left: 10px;
   }
 }
-/* line 138, ../scss/modules/aside.scss */
+/* line 168, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"] {
   display: none;
 }
-/* line 141, ../scss/modules/aside.scss */
+/* line 171, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"]:checked ~ nav {
   margin: 0;
 }
-/* line 144, ../scss/modules/aside.scss */
+/* line 174, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"]:checked ~ label {
-  left: 260px;
+  left: 90%;
 }
-/* line 147, ../scss/modules/aside.scss */
-.wrapper input[type="checkbox"]:checked ~ section {
-  -webkit-transform: translate3d(260px, 0, 0);
-  -moz-transform: translate3d(260px, 0, 0);
-  -o-transform: translate3d(260px, 0, 0);
-  transform: translate3d(260px, 0, 0);
+@media (min-width: 641px) {
+  /* line 174, ../scss/modules/aside.scss */
+  .wrapper input[type="checkbox"]:checked ~ label {
+    left: 300px;
+  }
+}
+@media (min-width: 1206px) {
+  /* line 180, ../scss/modules/aside.scss */
+  .wrapper input[type="checkbox"]:checked ~ section {
+    -webkit-transform: translate3d(260px, 0, 0);
+    -moz-transform: translate3d(260px, 0, 0);
+    -o-transform: translate3d(260px, 0, 0);
+    transform: translate3d(260px, 0, 0);
+  }
 }
 
-/* line 157, ../scss/modules/aside.scss */
+/* line 193, ../scss/modules/aside.scss */
 ul.accordion {
   list-style: none;
   padding: 0;
 }
-/* line 161, ../scss/modules/aside.scss */
+/* line 197, ../scss/modules/aside.scss */
 ul.accordion .inner {
   padding-left: 1em;
   overflow: hidden;
   display: none;
 }
-/* line 166, ../scss/modules/aside.scss */
+/* line 202, ../scss/modules/aside.scss */
 ul.accordion .inner.show {
   /*display: block;*/
 }
-/* line 171, ../scss/modules/aside.scss */
+/* line 207, ../scss/modules/aside.scss */
 ul.accordion li {
   margin: .5em 0;
   color: black;
 }
-/* line 176, ../scss/modules/aside.scss */
+/* line 212, ../scss/modules/aside.scss */
 ul.accordion li a.toggle {
-  font-family: "nobel-book", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 20px;
   width: 100%;
   display: block;
-  background: white;
-  color: black;
   padding: .75em;
   border-radius: 0.15em;
   transition: background .3s ease;
   position: relative;
 }
-/* line 188, ../scss/modules/aside.scss */
+/* line 222, ../scss/modules/aside.scss */
 ul.accordion li a.toggle span {
   position: absolute;
   display: inline-block;
   cursor: pointer;
-  right: 10px;
-  top: 50%;
+  right: -10px;
+  top: 30%;
   font-size: 32px;
   -ms-transform: scale(0.9, 1) translateY(-15%);
   -webkit-transform: scale(0.9, 1) translateY(-15%);
@@ -1654,20 +1721,20 @@ ul.accordion li a.toggle span {
   -o-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-/* line 207, ../scss/modules/aside.scss */
+/* line 241, ../scss/modules/aside.scss */
 ul.accordion li a.toggle span.expanded {
   -ms-transform: scale(0.9, -1) translateY(-15%);
   -webkit-transform: scale(0.9, -1) translateY(-15%);
   -moz-transform: scale(0.9, -1) translateY(-15%);
   transform: scale(0.9, -1) translateY(-15%);
 }
-/* line 215, ../scss/modules/aside.scss */
+/* line 249, ../scss/modules/aside.scss */
 ul.accordion li a.toggle:hover {
   background: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
-/* line 225, ../scss/modules/aside.scss */
+/* line 259, ../scss/modules/aside.scss */
 aside {
   position: fixed;
   left: 0;
@@ -1679,29 +1746,29 @@ aside {
   overflow-y: scroll;
   padding: 80px 23px !important;
 }
-/* line 236, ../scss/modules/aside.scss */
+/* line 270, ../scss/modules/aside.scss */
 aside > h3 {
   margin-top: 30px;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 241, ../scss/modules/aside.scss */
+/* line 275, ../scss/modules/aside.scss */
 aside a {
   color: black;
   text-decoration: none;
 }
-/* line 246, ../scss/modules/aside.scss */
+/* line 280, ../scss/modules/aside.scss */
 aside a.active {
   background: black;
   color: white;
   padding: 5px;
 }
-/* line 251, ../scss/modules/aside.scss */
+/* line 285, ../scss/modules/aside.scss */
 aside p > span {
   font-weight: bold;
 }
 
-/* line 257, ../scss/modules/aside.scss */
+/* line 291, ../scss/modules/aside.scss */
 ::-webkit-scrollbar {
   width: 2px;
   /* for vertical scrollbars */
@@ -1710,22 +1777,22 @@ aside p > span {
   background-color: #fff;
 }
 
-/* line 263, ../scss/modules/aside.scss */
+/* line 297, ../scss/modules/aside.scss */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* line 267, ../scss/modules/aside.scss */
+/* line 301, ../scss/modules/aside.scss */
 ::-webkit-scrollbar-thumb {
   background: #ccc;
 }
 
-/* line 300, ../scss/modules/aside.scss */
+/* line 334, ../scss/modules/aside.scss */
 .slideItWrapper {
   position: relative;
 }
 
-/* line 303, ../scss/modules/aside.scss */
+/* line 337, ../scss/modules/aside.scss */
 .slideIt {
   left: 8px;
   color: white;
@@ -1738,7 +1805,7 @@ aside p > span {
   border-radius: 40px;
   position: relative;
 }
-/* line 314, ../scss/modules/aside.scss */
+/* line 348, ../scss/modules/aside.scss */
 .slideIt span {
   font-size: 20px;
   left: 6px;
@@ -1758,33 +1825,33 @@ aside p > span {
   background-size: 150%;
   background-position: 4px 7px;
 }
-/* line 332, ../scss/modules/aside.scss */
+/* line 366, ../scss/modules/aside.scss */
 .slideIt span.open {
   background-position: 4px 7px;
   opacity: 1;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 338, ../scss/modules/aside.scss */
+/* line 372, ../scss/modules/aside.scss */
 .slideIt span.close {
   background-position: -19px 7px;
   opacity: 0;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 345, ../scss/modules/aside.scss */
+/* line 379, ../scss/modules/aside.scss */
 .slideIt.active .close {
   opacity: 1;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 350, ../scss/modules/aside.scss */
+/* line 384, ../scss/modules/aside.scss */
 .slideIt.active .open {
   opacity: 0;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 355, ../scss/modules/aside.scss */
+/* line 389, ../scss/modules/aside.scss */
 .slideIt:before {
   content: '';
   position: absolute;
@@ -1797,14 +1864,14 @@ aside p > span {
   border-right: 10px solid #7E64BF;
   border-bottom: 5px solid transparent;
 }
-/* line 368, ../scss/modules/aside.scss */
+/* line 402, ../scss/modules/aside.scss */
 .slideIt:hover:before {
   left: -9px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
 
-/* line 375, ../scss/modules/aside.scss */
+/* line 409, ../scss/modules/aside.scss */
 #pageslide {
   /* These styles MUST be included. Do not change. */
   display: none;
@@ -1820,7 +1887,7 @@ aside p > span {
   left: -240px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 391, ../scss/modules/aside.scss */
+/* line 425, ../scss/modules/aside.scss */
 #pageslide h3 {
   font-size: 1.8em;
   margin: 0;
@@ -1828,13 +1895,13 @@ aside p > span {
   font-weight: 300;
   color: #fff;
 }
-/* line 398, ../scss/modules/aside.scss */
+/* line 432, ../scss/modules/aside.scss */
 #pageslide ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 403, ../scss/modules/aside.scss */
+/* line 437, ../scss/modules/aside.scss */
 #pageslide li a {
   display: block;
   color: #fff;
@@ -1845,7 +1912,7 @@ aside p > span {
   border-bottom: 1px solid #594786;
   text-decoration: none;
 }
-/* line 412, ../scss/modules/aside.scss */
+/* line 446, ../scss/modules/aside.scss */
 #pageslide li a:hover {
   background: #6E58A6;
 }

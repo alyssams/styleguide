@@ -6,11 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./media/css/style.css" />
+    <link rel="stylesheet" href="./media/css/default.css">
+    <link rel="stylesheet" href="./media/css/component.css">
     <script src="./media/js/modernizr.custom.js"></script>
     <title></title>
 </head>
 <body>
-    <div class="mobile-nav"></div>
+    <div class="mobile-nav">
+        <div class="container demo-3">  
+            <div class="main clearfix">
+                <div class="column">
+                    <div id="dl-menu" class="dl-menuwrapper">
+                        <button class="dl-trigger">Open Menu</button>
+                        <ul class="dl-menu">
+                            <li>
+                                <a href="#">Design Elements <span>></span></a>
+                                <ul class="dl-submenu">
+                                    <li>
+                                        <a href="#">Color</a>
+                                    </li>
+                                    <li>
+                                        <a class="toggle" href="#typography">Typography <span>></span></a>
+                                        <ul class="dl-submenu">
+                                          <li><a href="#typography-typeface">Typeface</a></li>
+                                          <li><a href="#typography-content">Content Type Styles</a></li>
+                                          <li><a href="#typography-case">Case</a></li>
+                                          <li><a href="#typography-spacing">Spacing</a></li>
+                                          <li><a href="#typography-badging">Badging</a></li>
+                                          <li><a href="#typography-legal">Legal &amp; Recalls</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Layout <span>></span></a>
+                                        <ul class="dl-submenu">
+                                            <li>Responsive Grid</li>
+                                            <li>Grid</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Imagery <span>></span></a>
+                                        <ul class="dl-submenu">
+                                            <li>Logo</li>
+                                            <li>Heros &amp; Headers</li>
+                                            <li>Backgrounds</li>
+                                            <li>Images</li>
+                                            <li>Videos</li>
+                                            <li>Image Selection Guidelines</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Iconography</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">UI Components</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Camera &amp; Photo</a></li>
+                                    <li><a href="#">TV &amp; Home Cinema</a></li>
+                                    <li><a href="#">Phones</a></li>
+                                    <li><a href="#">PC &amp; Video Games</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Banners</a>
+                                <ul class="dl-submenu">
+                                    <li>
+                                        <a href="#">Living Room</a>
+                                        <ul class="dl-submenu">
+                                            <li><a href="#">Sofas &amp; Loveseats</a></li>
+                                            <li><a href="#">Coffee &amp; Accent Tables</a></li>
+                                            <li><a href="#">Chairs &amp; Recliners</a></li>
+                                            <li><a href="#">Bookshelves</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bedroom</a>
+                                        <ul class="dl-submenu">
+                                            <li>
+                                                <a href="#">Beds</a>
+                                                <ul class="dl-submenu">
+                                                    <li><a href="#">Upholstered Beds</a></li>
+                                                    <li><a href="#">Divans</a></li>
+                                                    <li><a href="#">Metal Beds</a></li>
+                                                    <li><a href="#">Storage Beds</a></li>
+                                                    <li><a href="#">Wooden Beds</a></li>
+                                                    <li><a href="#">Children's Beds</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Bedroom Sets</a></li>
+                                            <li><a href="#">Chests &amp; Dressers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Home Office</a></li>
+                                    <li><a href="#">Dining &amp; Bar</a></li>
+                                    <li><a href="#">Patio</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /dl-menuwrapper -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <input type="checkbox" id="navigation" />
         <label for="navigation" class="hamburger-slim"></label>
@@ -21,21 +119,23 @@
             </div>
             <ul class="accordion">
               <li>
-                <a class="toggle" href="#overview">Overview</a>
+                <a class="toggle" href="#color">Color</a>
               </li>
               
               <li>
-                <a class="toggle" href="#design-elements">Design Elements <span>﹀</span></a>
+                <a class="toggle" href="#typography">Typography <span>﹀</span></a>
                 <ul class="inner">
-                  <li><a href="#color">Color</a></li>
-                  <li><a href="#typography">Typography</a></li>
-                  <li><a href="#imagery">Imagery</a></li>
-                  <li><a href="#iconography">Iconography</a></li>
+                  <li><a href="#typography-typeface">Typeface</a></li>
+                  <li><a href="#typography-content">Content Type Styles</a></li>
+                  <li><a href="#typography-case">Case</a></li>
+                  <li><a href="#typography-spacing">Spacing</a></li>
+                  <li><a href="#typography-badging">Badging</a></li>
+                  <li><a href="#typography-legal">Legal &amp; Recalls</a></li>
                 </ul>
               </li>
               
               <li>
-                <a class="toggle" href="#ui-components">UI Components <span>﹀</span></a>
+                <a class="toggle" href="#layout">Layout <span>﹀</span></a>
                 <ul class="inner">
                   <li>Responsive Grid</li>
                   <li>Grid</li>
@@ -43,7 +143,7 @@
               </li>
               
               <li>
-                <a class="toggle" href="#banners">Banners <span>﹀</span></a>
+                <a class="toggle" href="#imagery">Imagery <span>﹀</span></a>
                 <ul class="inner">
                     <li>Logo</li>
                     <li>Heros &amp; Headers</li>
@@ -52,27 +152,68 @@
                     <li>Videos</li>
                     <li>Image Selection Guidelines</li>
                 </ul>
+                <li>
+                <a class="toggle" href="#iconography">Iconography</a>
               </li>
-              <li>
-                <a class="toggle" href="#glossary">Glossary <span>﹀</span></a>
-                <ul class="inner">
-                    <li>Logo</li>
-                    <li>Heros &amp; Headers</li>
-                    <li>Backgrounds</li>
-                    <li>Images</li>
-                    <li>Videos</li>
-                    <li>Image Selection Guidelines</li>
-                </ul>
+                <!-- <ul class="inner">
+                  <li>
+                    <a href="#" class="toggle">Technically any number of nested elements</a>
+                    <ul class="inner">
+                      <li>
+                        <a href="#" class="toggle">Another nested element</a>
+                        <div class="inner">
+                          <p>
+                            As long as the inner element has inner as one of its classes then it will be toggled.
+                          </p>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
+                            blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque eu enim ac, ultricies pretium felis.
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>Option 2</li>
+                  
+                  <li>Option 3</li>
+                </ul> -->
               </li>
 
             </ul>
         </nav>
-        <section id="header">
-            <h2>Lexus</br>Digital StyleGuide</h2>
-            <h1>Design<br/>Elements</h1>
-        </section>
+        
+
+            <!-- <nav class="secondary">
+                <h3><a class="menu-item colors" href="./">Color</a></h3>
+                <h3><a class="menu-item typography" href="./../typopgrahy">Typography</a></h3>
+                <ul>
+                    <li><a href="./../typography/#typeface">Typeface</a></li>
+                    <li><a href="./../typography/#content-type-styles">Content Type Styles</a></li>
+                    <li><a href="./../typography/#case">Case</a></li>
+                    <li><a href="./../typography/#spacing">Spacing</a></li>
+                    <li><a href="./../typography/#badging">Badging</a></li>
+                    <li><a href="./../typography/#legal-recalls">Legal &amp; Recalls</a></li>
+                </ul>
+                <h3><a class="menu-item layout" href="./../layout">Layout</a></h3>
+                <ul>
+                    <li><a href="./../layout/#responsive-grid">Responsive Grid</a></li>
+                    <li><a href="./../layout/#grid">Grid</a></li>
+                </ul>
+                <h3><a class="menu-item imagery" href="./../imagery">Imagery</a></h3>
+                <ul>
+                    <li><a href="./../imagery/#logo">Logo</a></li>
+                    <li><a href="./../imagery/#heros-headers">Heros &amp; Headers</a></li>
+                    <li><a href="./../imagery/#backgrounds">Backgrounds</a></li>
+                    <li><a href="./../imagery/#images">Images</a></li>
+                    <li><a href="./../imagery/#images">Videos</a></li>
+                    <li><a href="./../imagery/#image-selection">Image Selection Guidelines</a></li>
+                </ul>
+                <h3><a class="menu-item iconography" href="./../iconography">Iconography</a></h3>
+            </nav>
+             -->
         <section id="color">
-            <h3>Color</h3>
+            <h1>Color</h1>
             <p>The Lexus color palette is the foundation of all Lexus communication and is kept intentionally simple to allow for ease of viewing. It is sophisticated and muted which provides an unmistakable element of luxury.</p>
             <div id="#palette" class="palette">
                 <h2>Text Palette</h2>
@@ -228,10 +369,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                         <div class="column-4 badge-wrapper" data-example-id="colors-badge">
                         <div class="badger">
-                            <h3 class="badge-title">
+                            <h1 class="badge-title">
                             <span class="top-line">The 2016</span>
                             <span class="model-name" style="font-size: 54.4px; float: none; position: static; letter-spacing: 0px;">NX</span>
-                        </h3>
+                        </h1>
                         </div>
                         <p>Models Page Badge</p>
                     </div>
@@ -248,7 +389,7 @@
         </section>
         <div class="clearfix"></div>
         <section id="typography">
-            <h3>Typography</h3>
+            <h1>Typography</h1>
             <div class="column-1"></div>
             <div class="content column-11">
                 <p>All the text on lexus.com is set in either Nobel, Pakt or Palatino.</p>
@@ -497,7 +638,7 @@
             </div>
         </section>
         <section id="layout">
-            <h3>Layout</h3>
+            <h1>Layout</h1>
             <h2>Responsive Design</h2>
             <p>Lexus.com was designed to work optimally on all screen sizes. There are four main breaking points for the site: 1204, 960, 720 and 280. Within these breakpoints there are thoughtful changes to keep the site’s look and feel consistent.</p>
             <p>The homepage above is a great example of how our responsive layouts keep everything looking sharp while also providing the best user experience.</p>
@@ -510,7 +651,7 @@
             <p>Lexus.com on mobile is set on a 6-column grid with 30-pixel column width and 20-pixel gutter width.</p>
         </section>
         <section id="imagery">
-            <h3>Imagery</h3>
+            <h1>Imagery</h1>
             <h2>Desktop Universal Elements: Backgrounds</h2>
             <h3>Backgrounds - Gray &amp; White Variation</h3>
             <p>Lexus.com uses a banded design that relies on white and occasionally gray backgrounds. Most modules are on white backgrounds only. Gray is used occasionally expanding modules to help organize large amounts of information.</p>
@@ -579,7 +720,7 @@
             </ol>
         </section>
         <section id="iconography">
-            <h3>Iconography</h3>
+            <h1>Iconography</h1>
             <p>FIND ICONOGRAPHY</p>
         </section>
 
@@ -590,5 +731,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="./media/js/main.js"></script>
     <script src="./media/js/typeahead.min.js"></script>
-    <script src="./media/js/search.js"></script></body>
+    <script src="./media/js/search.js"></script>
+    <script src="./media/js/jquery.dlmenu.js"></script>
+        <script>
+            $(function() {
+                $( '#dl-menu' ).dlmenu({
+                    animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+                });
+            });
+        </script>
+</body>
 </html>

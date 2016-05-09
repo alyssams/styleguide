@@ -29,9 +29,9 @@ jQuery(function($) {
     // };
     // $(window).on('scroll', doAnimations);
     // $(window).trigger('scroll');
-    $('.hamburger-slim').on('click', function(){
-        $(this).toggleClass('active');
-    });
+    // $('.hamburger-slim').on('click', function(){
+    //     $(this).toggleClass('active');
+    // });
 
       var slideWidth = $('#pageslide').outerWidth(); //grab width of the sliding menu so that this can be controlled in the css only
 
