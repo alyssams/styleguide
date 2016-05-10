@@ -1,51 +1,75 @@
-.colors {
-    @extend .container-fluid;
+#color .content {
     margin: 3% 0;
-    text-align: center;
-
-    .color-picker {
-        color: $white;
-        padding: 20px;
-        margin-bottom: 15px;
-    }
-
-    .black {
-        background-color: $black;
-    }
-
-    .white {
-        background-color: $white;
-        border: 1px solid $black;
-        color: $black;
-    }
-
-    .grey {
-        background-color: $grey;
-    }
-
-    .light-grey {
-        background: $light-grey;
-    }
-
-    .dark-grey {
-        background: $dark-grey;
-    }
-
-    .gold {
-        background-color: $gold;
-    }
 }
 
+.box {
+    width: 150px;
+    height: 30px;
+    float: left;
+}
+
+.info {
+    float: left;
+    margin-left: 5%;
+}    
+
+ #color h2, .hex, .rgb {
+    font-size: 0.6em;
+    text-align: left;
+}
+
+ #color h2 {
+    font-family: 'nobel-bold';
+}
+
+span {
+    font-size: .3em;
+}
+
+.hex, .rgb {
+    font-family: 'nobel-regular';
+}
+
+.box.black {
+    background: $black;
+}
+.box.white {
+    background: $white;
+    border: 1px solid $black;
+}
+.box.bg-grey {
+    background: $bg-grey;
+}
+.box.red {
+    background: $red;
+}
+.box.gold {
+    background: $gold;
+}
+.box.grey {
+    background: $grey;
+}
+
+.box.light-grey {
+    background: $light-grey;
+}
+
+.box.pink {
+    background: $pink;
+}
+
+
 .palette-item {
-    @include make-columns(12);
+    @include make-columns(4);
     @extend .col;
+    padding: 10px 0;
 
     @include sm-up {
        @include make-columns(4);         
     }
 
     @include md-up {
-       @include make-columns(2);
+       @include make-columns(4);
     }
 }
 

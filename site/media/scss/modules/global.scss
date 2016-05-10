@@ -3,13 +3,15 @@
 $white: #ffffff;
 $black: #000000;
 $bg-grey: #eeeeee;
-$light-grey: #cccccc;
+$light-grey: #EFEFEF;
 $grey: #939393;
 $dark-grey: #696969;
 $navy: #596f7d;
 $beige: #e7ebd6;
 $text-grey: #747474;
-$gold: #C29339;
+$gold: #c19237;
+$red: #FF0000;
+$pink: #FFE8E8;
 
 @mixin border-box {
     -webkit-box-sizing: border-box;
@@ -27,6 +29,10 @@ body, html {
     font-size: 100%;
     padding: 0;
     margin: 0;
+}
+
+.overflows {
+    overflow: hidden;
 }
 
 
@@ -62,11 +68,23 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-size: 1.5em;
+    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: left;
+
+}
+
 p {
     text-align: left;
     font-size: 12px;
     line-height: 14px;
-    margin: 1em 0;
+}
+
+.unclickable {
+    pointer-events: none;
 }
 
 .clearfix:before,
@@ -77,6 +95,10 @@ p {
 
 .clearfix:after {
     clear: both;
+}
+
+.clearfix {
+    padding-bottom: 30px;
 }
 
 
@@ -111,11 +133,11 @@ p {
 }
 
 .wrapper {
-    overflow:hidden;
+    // overflow: hidden;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
-    padding: 10%;
+    padding: 0 10%;
     @include md-up {
         max-width: 1354px;
         padding: 0 75px;
@@ -137,6 +159,11 @@ p {
         &#color {
             border-top: 0;
         }
+        .content > h4{
+            border-top: 1px dotted $grey;
+            // border-bottom: 1px dotted $grey;
+            padding: 30px 0;
+        }
         h1 {
             border-top: 10px solid $black;
             border-bottom: 10px solid $black;
@@ -147,13 +174,13 @@ p {
             }
         }
 
-        h3 {
-            margin: 90px 0 30px 0;
+        p:first-of-type {
+            padding-bottom: 20px;
+            width: 70%;
         }
-        .content {
-            p {
-                width: 70%;
-            }
+
+        h3 {
+            margin: 50px 0 20px 0;
         }
     }
 }

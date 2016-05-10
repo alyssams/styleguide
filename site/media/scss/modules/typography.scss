@@ -1,51 +1,64 @@
-.type-fonts {
-    @include make-columns(12);
-    @extend .col;
-    .fonts {
-        @include make-columns(12);
-        @extend .col;
-        @include md-up {
-           @include make-columns(8);
+#typography {
+    .content {
+        .fonts h4 {
+            margin-top: 40px;
         }
-    }
-    .examples{
-        @include make-columns(12);
-        @extend .col;
-        @include md-up {
-           @include make-columns(4);
+        h4:nth-child(even){
+            margin-top:10px;
         }
-    }
-    h3 {
-        text-transform: inherit;
-        font-size: 20px;
-    }
-    .nobel-light h3{
-        font-family: 'nobel-light';
-        font-weight: lighter;
-    }
-    .nobel-book h3{
-        font-family: 'nobel-book';
-        font-weight: lighter;
-    }
-    .nobel-regular h3{
-        font-family: 'nobel-regular';
-        font-weight: lighter;
-    }
-    .nobel-bold h3{
-        font-family: 'nobel-bold';
-        font-weight: lighter;
-    }
-    .nobel-book-italic h3{
-        font-family: 'nobel-book-italic';
-        font-weight: lighter;
-    }
-    .palentino h3{
-        font-family: 'palentino';
-        font-weight: lighter;
-    }
-    .pakt h3{
-        font-family: 'pakt';
-        font-weight: lighter;
+        .nobel-light h4{
+            font-family: 'nobel-light';
+            font-weight: lighter;
+        }
+        .nobel-book h4{
+            font-family: 'nobel-book';
+            font-weight: lighter;
+        }
+        .nobel-regular h4{
+            font-family: 'nobel-regular';
+            font-weight: lighter;
+        }
+        .nobel-bold h4{
+            font-family: 'nobel-bold';
+            font-weight: lighter;
+        }
+        .nobel-book-italic h4{
+            font-family: 'nobel-book-italic';
+            font-weight: lighter;
+        }
+        .palentino h4{
+            font-family: 'palentino';
+            font-weight: lighter;
+        }
+        .pakt h4{
+            font-family: 'pakt';
+            font-weight: lighter;
+        }
+
     }
 }
+
+// .type-fonts {
+//     @include make-columns(12);
+//     @extend .col;
+//     .fonts {
+//         @include make-columns(12);
+//         @extend .col;
+//         @include md-up {
+//            @include make-columns(8);
+//         }
+//     }
+//     .examples{
+//         @include make-columns(12);
+//         @extend .col;
+//         @include md-up {
+//            @include make-columns(4);
+//         }
+//     }
+//     h3 {
+//         text-transform: inherit;
+//         font-size: 20px;
+//     }
+
+// }
 

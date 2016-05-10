@@ -1,7 +1,7 @@
 /* main grid */
 /* break points */
 /* line 3, ../scss/modules/grid-base.scss */
-.container-fluid, .colors {
+.container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -9,13 +9,13 @@
 }
 
 /* line 8, ../scss/modules/grid-base.scss */
-.container-fluid:before, .colors:before, .container-fluid:after, .colors:after {
+.container-fluid:before, .container-fluid:after {
   content: " ";
   display: table;
 }
 
 /* line 11, ../scss/modules/grid-base.scss */
-.container-fluid:after, .colors:after {
+.container-fluid:after {
   clear: both;
 }
 
@@ -37,7 +37,7 @@
 }
 
 /* line 23, ../scss/modules/grid-base.scss */
-.col, .palette-item, .type-fonts, .type-fonts .fonts, .type-fonts .examples, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col, .palette-item, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1096,7 +1096,7 @@
 }
 
 /* line 886, ../scss/modules/grid-base.scss */
-.col, .palette-item, .type-fonts, .type-fonts .fonts, .type-fonts .examples {
+.col, .palette-item {
   width: 100%;
   box-sizing: border-box;
 }
@@ -1166,7 +1166,7 @@
   src: url("./../fonts/pakt.eot") format("embedded-opentype"), url("./../fonts/pakt.woff") format("woff"), url("./../fonts/pakt.ttf") format("truetype"), url("./../fonts/pakt.svg#PaktRegular") format("svg");
 }
 
-/* line 20, ../scss/modules/global.scss */
+/* line 22, ../scss/modules/global.scss */
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -1175,14 +1175,19 @@
   box-sizing: border-box;
 }
 
-/* line 26, ../scss/modules/global.scss */
+/* line 28, ../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 33, ../scss/modules/global.scss */
+/* line 34, ../scss/modules/global.scss */
+.overflows {
+  overflow: hidden;
+}
+
+/* line 39, ../scss/modules/global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -1190,7 +1195,7 @@ body {
   background-color: white;
 }
 
-/* line 41, ../scss/modules/global.scss */
+/* line 47, ../scss/modules/global.scss */
 h1 {
   font-family: 'nobel-regular', sans-serif;
   font-size: 34px;
@@ -1198,7 +1203,7 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 48, ../scss/modules/global.scss */
+/* line 54, ../scss/modules/global.scss */
 h2 {
   font-size: 22px;
   letter-spacing: 0.2em;
@@ -1208,7 +1213,7 @@ h2 {
   text-align: center;
 }
 
-/* line 58, ../scss/modules/global.scss */
+/* line 64, ../scss/modules/global.scss */
 h3 {
   font-weight: bold;
   font-family: "nobel-bold",Helvetica,Arial,sans-serif;
@@ -1216,27 +1221,45 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 65, ../scss/modules/global.scss */
+/* line 71, ../scss/modules/global.scss */
+h4 {
+  font-size: 1.5em;
+  font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+}
+
+/* line 80, ../scss/modules/global.scss */
 p {
   text-align: left;
   font-size: 12px;
   line-height: 14px;
-  margin: 1em 0;
 }
 
-/* line 73, ../scss/modules/global.scss */
+/* line 86, ../scss/modules/global.scss */
+.unclickable {
+  pointer-events: none;
+}
+
+/* line 91, ../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 78, ../scss/modules/global.scss */
+/* line 96, ../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 83, ../scss/modules/global.scss */
+/* line 100, ../scss/modules/global.scss */
+.clearfix {
+  padding-bottom: 30px;
+}
+
+/* line 105, ../scss/modules/global.scss */
 .btn {
   border-radius: 0;
   -webkit-box-sizing: border-box;
@@ -1258,7 +1281,7 @@ p {
   cursor: pointer;
   display: inline-block;
 }
-/* line 105, ../scss/modules/global.scss */
+/* line 127, ../scss/modules/global.scss */
 .btn:hover, .btn:focus {
   background: #fff;
   color: #000;
@@ -1266,22 +1289,21 @@ p {
   outline: none;
 }
 
-/* line 113, ../scss/modules/global.scss */
+/* line 135, ../scss/modules/global.scss */
 .wrapper {
-  overflow: hidden;
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
-  padding: 10%;
+  padding: 0 10%;
 }
 @media (min-width: 961px) {
-  /* line 113, ../scss/modules/global.scss */
+  /* line 135, ../scss/modules/global.scss */
   .wrapper {
     max-width: 1354px;
     padding: 0 75px;
   }
 }
-/* line 125, ../scss/modules/global.scss */
+/* line 147, ../scss/modules/global.scss */
 .wrapper section {
   -moz-transition: all 200ms ease-in;
   -webkit-transition: all 200ms ease-in;
@@ -1289,16 +1311,21 @@ p {
   transition: all 200ms ease-in;
   border-top: 10px solid black;
 }
-/* line 133, ../scss/modules/global.scss */
+/* line 155, ../scss/modules/global.scss */
 .wrapper section:first-of-type {
   margin: 0;
   border-top: 0;
 }
-/* line 137, ../scss/modules/global.scss */
+/* line 159, ../scss/modules/global.scss */
 .wrapper section#color {
   border-top: 0;
 }
-/* line 140, ../scss/modules/global.scss */
+/* line 162, ../scss/modules/global.scss */
+.wrapper section .content > h4 {
+  border-top: 1px dotted #939393;
+  padding: 30px 0;
+}
+/* line 167, ../scss/modules/global.scss */
 .wrapper section h1 {
   border-top: 10px solid black;
   border-bottom: 10px solid black;
@@ -1306,21 +1333,22 @@ p {
   font-size: 3.5em;
 }
 @media (min-width: 961px) {
-  /* line 140, ../scss/modules/global.scss */
+  /* line 167, ../scss/modules/global.scss */
   .wrapper section h1 {
     font-size: 5em;
   }
 }
-/* line 150, ../scss/modules/global.scss */
-.wrapper section h3 {
-  margin: 90px 0 30px 0;
-}
-/* line 154, ../scss/modules/global.scss */
-.wrapper section .content p {
+/* line 177, ../scss/modules/global.scss */
+.wrapper section p:first-of-type {
+  padding-bottom: 20px;
   width: 70%;
 }
+/* line 182, ../scss/modules/global.scss */
+.wrapper section h3 {
+  margin: 50px 0 20px 0;
+}
 
-/* line 163, ../scss/modules/global.scss */
+/* line 190, ../scss/modules/global.scss */
 section#header h2 {
   text-align: left;
   padding: 40px 0;
@@ -1524,7 +1552,7 @@ p {
 
 /* line 57, ../scss/modules/aside.scss */
 .wrapper nav.secondary {
-  z-index: 1;
+  z-index: 2;
   background: black;
   display: block;
   position: fixed;
@@ -1605,10 +1633,10 @@ p {
   font-family: "nobel-regular", Helvetica, Arial, sans-serif;
 }
 /* line 128, ../scss/modules/aside.scss */
-.wrapper nav.secondary ul li ul li a:hover {
+.wrapper nav.secondary ul li ul li a:hover, .wrapper nav.secondary ul li ul li a.active {
   color: white;
 }
-/* line 136, ../scss/modules/aside.scss */
+/* line 137, ../scss/modules/aside.scss */
 .wrapper nav.secondary a {
   margin: 5px auto;
   font-size: 12px;
@@ -1617,7 +1645,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 147, ../scss/modules/aside.scss */
+/* line 148, ../scss/modules/aside.scss */
 .wrapper label {
   display: block;
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
@@ -1637,31 +1665,49 @@ p {
   z-index: 500;
 }
 @media (min-width: 641px) {
-  /* line 147, ../scss/modules/aside.scss */
+  /* line 148, ../scss/modules/aside.scss */
   .wrapper label {
     left: 10px;
   }
 }
-/* line 168, ../scss/modules/aside.scss */
+/* line 169, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"] {
   display: none;
 }
-/* line 171, ../scss/modules/aside.scss */
+/* line 172, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"]:checked ~ nav {
   margin: 0;
 }
-/* line 174, ../scss/modules/aside.scss */
+@media (min-width: 641px) {
+  /* line 175, ../scss/modules/aside.scss */
+  .wrapper input[type="checkbox"]:checked ~ .cover {
+    display: block;
+    background: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .7;
+    position: fixed;
+  }
+}
+@media (min-width: 961px) {
+  /* line 175, ../scss/modules/aside.scss */
+  .wrapper input[type="checkbox"]:checked ~ .cover {
+    display: none;
+  }
+}
+/* line 190, ../scss/modules/aside.scss */
 .wrapper input[type="checkbox"]:checked ~ label {
   left: 90%;
 }
 @media (min-width: 641px) {
-  /* line 174, ../scss/modules/aside.scss */
+  /* line 190, ../scss/modules/aside.scss */
   .wrapper input[type="checkbox"]:checked ~ label {
     left: 300px;
   }
 }
-@media (min-width: 1206px) {
-  /* line 180, ../scss/modules/aside.scss */
+@media (min-width: 961px) {
+  /* line 196, ../scss/modules/aside.scss */
   .wrapper input[type="checkbox"]:checked ~ section {
     -webkit-transform: translate3d(260px, 0, 0);
     -moz-transform: translate3d(260px, 0, 0);
@@ -1670,27 +1716,27 @@ p {
   }
 }
 
-/* line 193, ../scss/modules/aside.scss */
+/* line 208, ../scss/modules/aside.scss */
 ul.accordion {
   list-style: none;
   padding: 0;
 }
-/* line 197, ../scss/modules/aside.scss */
+/* line 212, ../scss/modules/aside.scss */
 ul.accordion .inner {
   padding-left: 1em;
   overflow: hidden;
   display: none;
 }
-/* line 202, ../scss/modules/aside.scss */
+/* line 217, ../scss/modules/aside.scss */
 ul.accordion .inner.show {
-  /*display: block;*/
+  display: block;
 }
-/* line 207, ../scss/modules/aside.scss */
+/* line 222, ../scss/modules/aside.scss */
 ul.accordion li {
   margin: .5em 0;
   color: black;
 }
-/* line 212, ../scss/modules/aside.scss */
+/* line 227, ../scss/modules/aside.scss */
 ul.accordion li a.toggle {
   text-transform: uppercase;
   width: 100%;
@@ -1700,7 +1746,7 @@ ul.accordion li a.toggle {
   transition: background .3s ease;
   position: relative;
 }
-/* line 222, ../scss/modules/aside.scss */
+/* line 237, ../scss/modules/aside.scss */
 ul.accordion li a.toggle span {
   position: absolute;
   display: inline-block;
@@ -1721,20 +1767,20 @@ ul.accordion li a.toggle span {
   -o-transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-/* line 241, ../scss/modules/aside.scss */
+/* line 256, ../scss/modules/aside.scss */
 ul.accordion li a.toggle span.expanded {
   -ms-transform: scale(0.9, -1) translateY(-15%);
   -webkit-transform: scale(0.9, -1) translateY(-15%);
   -moz-transform: scale(0.9, -1) translateY(-15%);
   transform: scale(0.9, -1) translateY(-15%);
 }
-/* line 249, ../scss/modules/aside.scss */
-ul.accordion li a.toggle:hover {
+/* line 264, ../scss/modules/aside.scss */
+ul.accordion li a.toggle:hover, ul.accordion li a.toggle:active {
   background: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
-/* line 259, ../scss/modules/aside.scss */
+/* line 274, ../scss/modules/aside.scss */
 aside {
   position: fixed;
   left: 0;
@@ -1746,29 +1792,29 @@ aside {
   overflow-y: scroll;
   padding: 80px 23px !important;
 }
-/* line 270, ../scss/modules/aside.scss */
+/* line 285, ../scss/modules/aside.scss */
 aside > h3 {
   margin-top: 30px;
   text-align: left;
   text-transform: uppercase;
 }
-/* line 275, ../scss/modules/aside.scss */
+/* line 290, ../scss/modules/aside.scss */
 aside a {
   color: black;
   text-decoration: none;
 }
-/* line 280, ../scss/modules/aside.scss */
+/* line 295, ../scss/modules/aside.scss */
 aside a.active {
   background: black;
   color: white;
   padding: 5px;
 }
-/* line 285, ../scss/modules/aside.scss */
+/* line 300, ../scss/modules/aside.scss */
 aside p > span {
   font-weight: bold;
 }
 
-/* line 291, ../scss/modules/aside.scss */
+/* line 306, ../scss/modules/aside.scss */
 ::-webkit-scrollbar {
   width: 2px;
   /* for vertical scrollbars */
@@ -1777,22 +1823,22 @@ aside p > span {
   background-color: #fff;
 }
 
-/* line 297, ../scss/modules/aside.scss */
+/* line 312, ../scss/modules/aside.scss */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* line 301, ../scss/modules/aside.scss */
+/* line 316, ../scss/modules/aside.scss */
 ::-webkit-scrollbar-thumb {
   background: #ccc;
 }
 
-/* line 334, ../scss/modules/aside.scss */
+/* line 349, ../scss/modules/aside.scss */
 .slideItWrapper {
   position: relative;
 }
 
-/* line 337, ../scss/modules/aside.scss */
+/* line 352, ../scss/modules/aside.scss */
 .slideIt {
   left: 8px;
   color: white;
@@ -1805,7 +1851,7 @@ aside p > span {
   border-radius: 40px;
   position: relative;
 }
-/* line 348, ../scss/modules/aside.scss */
+/* line 363, ../scss/modules/aside.scss */
 .slideIt span {
   font-size: 20px;
   left: 6px;
@@ -1825,33 +1871,33 @@ aside p > span {
   background-size: 150%;
   background-position: 4px 7px;
 }
-/* line 366, ../scss/modules/aside.scss */
+/* line 381, ../scss/modules/aside.scss */
 .slideIt span.open {
   background-position: 4px 7px;
   opacity: 1;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 372, ../scss/modules/aside.scss */
+/* line 387, ../scss/modules/aside.scss */
 .slideIt span.close {
   background-position: -19px 7px;
   opacity: 0;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 379, ../scss/modules/aside.scss */
+/* line 394, ../scss/modules/aside.scss */
 .slideIt.active .close {
   opacity: 1;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-/* line 384, ../scss/modules/aside.scss */
+/* line 399, ../scss/modules/aside.scss */
 .slideIt.active .open {
   opacity: 0;
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
 }
-/* line 389, ../scss/modules/aside.scss */
+/* line 404, ../scss/modules/aside.scss */
 .slideIt:before {
   content: '';
   position: absolute;
@@ -1864,14 +1910,14 @@ aside p > span {
   border-right: 10px solid #7E64BF;
   border-bottom: 5px solid transparent;
 }
-/* line 402, ../scss/modules/aside.scss */
+/* line 417, ../scss/modules/aside.scss */
 .slideIt:hover:before {
   left: -9px;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
 
-/* line 409, ../scss/modules/aside.scss */
+/* line 424, ../scss/modules/aside.scss */
 #pageslide {
   /* These styles MUST be included. Do not change. */
   display: none;
@@ -1887,7 +1933,7 @@ aside p > span {
   left: -240px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 425, ../scss/modules/aside.scss */
+/* line 440, ../scss/modules/aside.scss */
 #pageslide h3 {
   font-size: 1.8em;
   margin: 0;
@@ -1895,13 +1941,13 @@ aside p > span {
   font-weight: 300;
   color: #fff;
 }
-/* line 432, ../scss/modules/aside.scss */
+/* line 447, ../scss/modules/aside.scss */
 #pageslide ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 437, ../scss/modules/aside.scss */
+/* line 452, ../scss/modules/aside.scss */
 #pageslide li a {
   display: block;
   color: #fff;
@@ -1912,127 +1958,149 @@ aside p > span {
   border-bottom: 1px solid #594786;
   text-decoration: none;
 }
-/* line 446, ../scss/modules/aside.scss */
+/* line 461, ../scss/modules/aside.scss */
 #pageslide li a:hover {
   background: #6E58A6;
 }
 
 /* line 1, ../scss/modules/colors.scss */
-.colors {
+#color .content {
   margin: 3% 0;
-  text-align: center;
-}
-/* line 6, ../scss/modules/colors.scss */
-.colors .color-picker {
-  color: white;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-/* line 12, ../scss/modules/colors.scss */
-.colors .black {
-  background-color: black;
-}
-/* line 16, ../scss/modules/colors.scss */
-.colors .white {
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-}
-/* line 22, ../scss/modules/colors.scss */
-.colors .grey {
-  background-color: #939393;
-}
-/* line 26, ../scss/modules/colors.scss */
-.colors .light-grey {
-  background: #cccccc;
-}
-/* line 30, ../scss/modules/colors.scss */
-.colors .dark-grey {
-  background: dimgrey;
-}
-/* line 34, ../scss/modules/colors.scss */
-.colors .gold {
-  background-color: #c29339;
 }
 
-/* line 39, ../scss/modules/colors.scss */
+/* line 5, ../scss/modules/colors.scss */
+.box {
+  width: 150px;
+  height: 30px;
+  float: left;
+}
+
+/* line 11, ../scss/modules/colors.scss */
+.info {
+  float: left;
+  margin-left: 5%;
+}
+
+/* line 16, ../scss/modules/colors.scss */
+#color h2, .hex, .rgb {
+  font-size: 0.6em;
+  text-align: left;
+}
+
+/* line 21, ../scss/modules/colors.scss */
+#color h2 {
+  font-family: 'nobel-bold';
+}
+
+/* line 25, ../scss/modules/colors.scss */
+span {
+  font-size: .3em;
+}
+
+/* line 29, ../scss/modules/colors.scss */
+.hex, .rgb {
+  font-family: 'nobel-regular';
+}
+
+/* line 33, ../scss/modules/colors.scss */
+.box.black {
+  background: black;
+}
+
+/* line 36, ../scss/modules/colors.scss */
+.box.white {
+  background: white;
+  border: 1px solid black;
+}
+
+/* line 40, ../scss/modules/colors.scss */
+.box.bg-grey {
+  background: #eeeeee;
+}
+
+/* line 43, ../scss/modules/colors.scss */
+.box.red {
+  background: red;
+}
+
+/* line 46, ../scss/modules/colors.scss */
+.box.gold {
+  background: #c19237;
+}
+
+/* line 49, ../scss/modules/colors.scss */
+.box.grey {
+  background: #939393;
+}
+
+/* line 53, ../scss/modules/colors.scss */
+.box.light-grey {
+  background: #efefef;
+}
+
+/* line 57, ../scss/modules/colors.scss */
+.box.pink {
+  background: #ffe8e8;
+}
+
+/* line 62, ../scss/modules/colors.scss */
 .palette-item {
-  width: 100%;
+  width: 33.33333%;
+  padding: 10px 0;
 }
 @media (min-width: 641px) {
-  /* line 39, ../scss/modules/colors.scss */
+  /* line 62, ../scss/modules/colors.scss */
   .palette-item {
     width: 33.33333%;
   }
 }
 @media (min-width: 961px) {
-  /* line 39, ../scss/modules/colors.scss */
+  /* line 62, ../scss/modules/colors.scss */
   .palette-item {
-    width: 16.66667%;
+    width: 33.33333%;
   }
 }
 
-/* line 1, ../scss/modules/typography.scss */
-.type-fonts {
-  width: 100%;
+/* line 3, ../scss/modules/typography.scss */
+#typography .content .fonts h4 {
+  margin-top: 40px;
 }
-/* line 4, ../scss/modules/typography.scss */
-.type-fonts .fonts {
-  width: 100%;
+/* line 6, ../scss/modules/typography.scss */
+#typography .content h4:nth-child(even) {
+  margin-top: 10px;
 }
-@media (min-width: 961px) {
-  /* line 4, ../scss/modules/typography.scss */
-  .type-fonts .fonts {
-    width: 66.66667%;
-  }
-}
-/* line 11, ../scss/modules/typography.scss */
-.type-fonts .examples {
-  width: 100%;
-}
-@media (min-width: 961px) {
-  /* line 11, ../scss/modules/typography.scss */
-  .type-fonts .examples {
-    width: 33.33333%;
-  }
-}
-/* line 18, ../scss/modules/typography.scss */
-.type-fonts h3 {
-  text-transform: inherit;
-  font-size: 20px;
-}
-/* line 22, ../scss/modules/typography.scss */
-.type-fonts .nobel-light h3 {
+/* line 9, ../scss/modules/typography.scss */
+#typography .content .nobel-light h4 {
   font-family: 'nobel-light';
   font-weight: lighter;
 }
-/* line 26, ../scss/modules/typography.scss */
-.type-fonts .nobel-book h3 {
+/* line 13, ../scss/modules/typography.scss */
+#typography .content .nobel-book h4 {
   font-family: 'nobel-book';
   font-weight: lighter;
 }
-/* line 30, ../scss/modules/typography.scss */
-.type-fonts .nobel-regular h3 {
+/* line 17, ../scss/modules/typography.scss */
+#typography .content .nobel-regular h4 {
   font-family: 'nobel-regular';
   font-weight: lighter;
 }
-/* line 34, ../scss/modules/typography.scss */
-.type-fonts .nobel-bold h3 {
+/* line 21, ../scss/modules/typography.scss */
+#typography .content .nobel-bold h4 {
   font-family: 'nobel-bold';
   font-weight: lighter;
 }
-/* line 38, ../scss/modules/typography.scss */
-.type-fonts .nobel-book-italic h3 {
+/* line 25, ../scss/modules/typography.scss */
+#typography .content .nobel-book-italic h4 {
   font-family: 'nobel-book-italic';
   font-weight: lighter;
 }
-/* line 42, ../scss/modules/typography.scss */
-.type-fonts .palentino h3 {
+/* line 29, ../scss/modules/typography.scss */
+#typography .content .palentino h4 {
   font-family: 'palentino';
   font-weight: lighter;
 }
-/* line 46, ../scss/modules/typography.scss */
-.type-fonts .pakt h3 {
+/* line 33, ../scss/modules/typography.scss */
+#typography .content .pakt h4 {
   font-family: 'pakt';
   font-weight: lighter;
 }

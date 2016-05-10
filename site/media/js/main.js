@@ -1,15 +1,42 @@
 jQuery(function($) {
-    // var scrollto = window.location.hash;
-    // if (window.location.hash != null && window.location.hash != '') {
-    //     $('html, body').animate({
-    //         scrollTop: $(scrollto).offset().top-100
-    //     }, 500);
+    var scrollto = window.location.hash;
+    if (window.location.hash != null && window.location.hash != '') {
+        $('html, body').animate({
+            scrollTop: $(scrollto).offset().top-100
+        }, 500);
+    }
+
+    $('.secondary').on('click', 'li a', function() {
+        $('.secondary li a.active').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // if ($(window).width() < 959) { 
+    //     $(".wrapper input").removeAttr('checked');
     // }
 
-    // $('.secondary').on('click', 'li a', function() {
-    //     $('.secondary li a.active').removeClass('active');
-    //     $(this).addClass('active');
-    // });
+    var $window = $(window);
+    var $input = $('.wrapper input');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        if (windowsize < 959) {
+           $input.prop('checked', false);
+        }else {
+            $input.prop('checked', true);    
+        }
+
+        if($('.cover').hasClass('active')) {
+            $('body').addClass('overflows');
+        }else {
+            $('body').removeClass('overflows');
+        }
+    }
+    checkWidth();
+    $(window).resize(checkWidth);
+
+
+
     // var doAnimations = function() {
 
     // var offset = $(window).scrollTop() + $(window).height(),
