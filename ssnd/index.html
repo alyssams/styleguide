@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>AI Voting Questionaire</title>
+	<meta name="author" content="Alyssa Saucedo" />
+	<meta name="description" content="AI Voting." />
+	<meta name="keywords"  content="ai, voting, cannes" />
+	<meta name="Resource-type" content="Document" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href="media/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<ul class="lines">
+				<li class="animated grow short blue"></li>
+				<li class="animated grow short blue"></li>
+				<li class="animated grow short blue"></li>
+				<li class="animated grow medium red"></li>
+				<li class="animated grow medium red"></li>
+				<li class="animated grow medium red"></li>
+				<li class="animated grow medium blue"></li>
+				<li class="animated grow medium blue"></li>
+				<li class="animated grow medium blue"></li>
+			</ul>
+			<h1 class="animated fade-in">The<br/>Saatchi &amp; Saatchi<br/><span class="red">New Directors' Showcase</span> 2016</h1>
+			<h2 class="animated fade-in">One of these films was made by a machine</h2>
+			<h2 class="inverted"></h2>
+<!-- 			<h2 class="inverted">which one?</h2>
+ -->			<div class="scrolldown">
+				scroll down
+				<div class="arrow"></div>
+				</div>
+		</div>
+		<div class="section" id="section1">
+			<!-- <img class="info" src="./media/images/white-info.png" alt=""> -->
+		    <div class="slide" id="slide1"><h1>Inception</h1></div>
+		    <div class="slide" id="slide2"><h1>Star Trek Into Darkness</h1></div>
+		    <button class="hold-button-circle hold-button-circle__in-circle"><i class="fa fa-trash-o"></i></button>
+		</div>
+		<div class="modal">
+			<div class="inner">
+				<div class="close">X</div>
+				<h2>INFO</h2>
+				<p>LDFKJAFDLKAJFD
+
+				LAKJDFALFJKA
+
+				LAKDJFALDFKJA
+				</p>
+			</div>
+			<div class="mask"></div>
+			
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="./media/js/typed.js"></script>
+	<script src="./media/js/main.js"></script>
+	<script type="text/javascript" src="./media/js/jquery.fullPage.js"></script>
+	<script>
+		var timeoutId = 0,
+		    holdTime = 2000, // Duration to hold button for
+		    holdFunction = function() { return; }, // Function to call once held fully
+		    holdTrigger = $(".hold-button__bottom-bar"); // Button element to hold down
+
+		holdTrigger.mousedown(function() {
+		    timeoutId = setTimeout(holdFunction, holdTime);
+		}).bind("mouseup mouseleave", function() {
+		    clearTimeout(timeoutId);
+		});
+	</script>
+	<script>
+	  $(function(){
+	      $(".inverted").typed({
+	        strings: ["CAN YOU TELL WHICH ONE?"],
+	        typeSpeed: 0
+	      });
+	  });
+	</script>
+</body>
+</html>

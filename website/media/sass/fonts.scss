@@ -1,0 +1,75 @@
+//FONT CSS BEGINS
+
+// font-weight
+$weight-light: 200;
+$weight-normal: normal;
+$weight-bold: bold;
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot?#iefix') format("embedded-opentype"), url('../fonts/icomoon.woff') format("woff"), url('../fonts/icomoon.ttf') format("truetype"), url('../fonts/icomoon.svg#icomoon') format("svg");
+  font-weight: $weight-normal;
+  font-style: $weight-normal;
+}
+
+/* Nobel Light */
+@font-face {
+    font-family: 'nobel-light';
+    font-weight: $weight-light;
+    src: url("./../fonts/nobel-light.eot");
+    src: url("./../fonts/nobel-light.eot") format("embedded-opentype"), url("./../fonts/nobel-light.woff") format("woff"), url("./../fonts/nobel-light.ttf") format("truetype"), url("./../fonts/nobel-light.svg#NobelLight") format("svg");
+}
+
+/* Nobel Book */
+@font-face {
+    font-family: 'nobel-book';
+    font-weight: $weight-normal;
+    src: url("./../fonts/nobel-book.eot");
+    src: url("./../fonts/nobel-book.eot") format("embedded-opentype"), url("./../fonts/nobel-book.woff") format("woff"), url("./../fonts/nobel-book.ttf") format("truetype"), url("./../fonts/nobel-book.svg#NobelBook") format("svg");
+}
+
+/* Nobel Book Italic */
+@font-face {
+    font-family: 'nobel-book-italic';
+    src: url("./../fonts/nobel-book-italic.eot");
+    src: url("./../fonts/nobel-book-italic.eot") format("embedded-opentype"), url("./../fonts/nobel-book-italic.woff") format("woff"), url("./../fonts/nobel-book-italic.ttf") format("truetype"), url("./../fonts/nobel-book-italic.svg") format("svg");
+    font-weight: $weight-normal;
+    font-style: italic;
+}
+
+/* Nobel Regular */
+@font-face {
+    font-family: 'nobel-regular';
+    src: url("./../fonts/nobelregular.eot");
+    src: url("./../fonts/nobel-regular.ttf") format("truetype"), url("./../fonts/nobelregular.eot") format("embedded-opentype"), url("./../fonts/nobel-regular.woff") format("woff"), url("./../fonts/nobel-regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Nobel Regular Italic */
+@font-face {
+    font-family: 'nobel-regular-italic';
+    src: url("./../fonts/nobelregularitalic.eot");
+    src: url("./../fonts/nobelregularitalic.eot") format("embedded-opentype"), url("./../fonts/nobel-regular-italic.woff") format("woff"), url("./../fonts/nobel-regular-italic.ttf") format("truetype"), url("./../fonts/nobel-regular-italic.svg") format("svg");
+    font-style: italic;
+}
+
+/* Nobel Bold */
+@font-face {
+    font-family: 'nobel-bold';
+    src: url("./../fonts/nobelbold.eot");
+    src: url("./../fonts/nobelbold.eot") format("embedded-opentype"), url("./../fonts/nobel-bold.woff") format("woff"), url("./../fonts/nobel-bold.ttf") format("truetype"), url("./../fonts/nobel-bold.svg") format("svg");
+    font-weight: $weight-bold;
+}
+
+/* Pakt */
+@font-face {
+    font-family: 'pakt';
+    src: url("./../fonts/pakt.eot");
+    src: url("./../fonts/pakt.eot") format("embedded-opentype"), url("./../fonts/pakt.woff") format("woff"), url("./../fonts/pakt.ttf") format("truetype"), url("./../fonts/pakt.svg#PaktRegular") format("svg");
+}
+
+
+//FONT CSS ENDS

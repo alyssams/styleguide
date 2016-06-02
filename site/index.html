@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./media/css/style.css" />
     <script src="./media/js/modernizr.custom.js"></script>
     <title></title>
@@ -12,7 +11,7 @@
 <body>
     <div class="mobile-nav"></div>
     <div class="wrapper">
-        <input checked type="checkbox" id="navigation" />
+        <input type="checkbox" id="navigation" />
         <label for="navigation" class="hamburger-slim"></label>
         <nav class="secondary">
             <div class="header">
@@ -26,13 +25,13 @@
               
               <li>
                 <a class="toggle" href="#design-elements">Design Elements <span class="expanded">﹀</span></a>
-                <ul class="inner show">
-                  <li><a href="#color">Color</a></li>
-                  <li><a href="#typography">Typography</a></li>
-                  <li><a href="#layout">Layout</a></li>
-                  <li><a href="#imagery">Imagery</a></li>
-                  <li><a href="#iconography">Iconography</a></li>
-                </ul>
+                 <ul id="nav">
+                    <li class="active"><a class="scroll" href="#color">Color</a></li>
+                    <li><a class="scroll" href="#typography">Typography</a></li>
+                    <li><a class="scroll" href="#layout">Layout</a></li>
+                    <li><a class="scroll" href="#imagery">Imagery</a></li>
+                    <li><a class="scroll" href="#iconography">Iconography</a></li>
+                  </ul>
               </li>
               
               <li>
@@ -69,320 +68,562 @@
             </ul>
         </nav>
         <div class="cover"></div>
-        <section id="header">
-            <h2>Lexus</br>Digital StyleGuide</h2>
-            <h1>Design<br/>Elements</h1>
-        </section>
-        <section id="color">
-            <h3>Color</h3>
-            <p>Color is a critical element in creating the unique look and feel of Lexus. Here are a few guidelines to ensure that proper color and tone are maintained throughout.</p>
-            <div id="#palette" class="content">
-                <h4>Text Palette</h4>
-               <!--  <p>The Lexus color palette is the foundation of all Lexus communication and is kept intentionally simple to allow for ease of viewing. It is sophisticated and muted which provides an unmistakable element of luxury.</p> -->
-                <div class="colors">
-                    <div class="palette-item">
+        <div id="elwrapper">
+            <h1>Lexus</br>Digital StyleGuide</h1>
+            <h2>Design Elements</h2>
+            <section id="color">
+                <h3>Color</h3>
+                <p>Color is a critical element in creating the unique look and feel of Lexus. Here are a few guidelines to ensure that proper color and tone are maintained throughout.</p>
+                <div id="colors-palette" class="content">
+                    <h4>Palette</h4> 
+                    <p>The Lexus color palette is the foundation of all Lexus communication and is kept intentionally simple to allow for ease of viewing. It is sophisticated and muted which provides an unmistakable element of luxury.</p>
+                </div>
+                <div class="content">
+                    <h5>Text Palette</h5>
+                    <div class="clearfix">
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Headline Text</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
                         <div class="box black"></div>
-                        <div class="info">
-                            <h2>Headline Text</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div>
+                            <div class="info">
+                                <h6>Dropdown Text</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box white"></div>
+                            <div class="info">
+                                <h6>Expanding List <span>(Primary)</span></h6>
+                                <div class="hex">HEX: #FFFFFF</div>
+                                <div class="rgb">RGB: 255, 255, 255</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box red"></div>
+                            <div class="info">
+                                <h6>Error Text</h6>
+                                <div class="hex">HEX: #FF0000</div>
+                                <div class="rgb">RGB: 255, 0, 0</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box bg-grey"></div>
+                            <div class="info">
+                                <h6>Display VS Nobel</h6>
+                                <div class="hex">HEX: #EEEEEE</div>
+                                <div class="rgb">RGB: 238, 238, 238</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Default Text</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div> 
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box white"></div>
+                            <div class="info">
+                                <h6>Negative Text</h6>
+                                <div class="hex">HEX: #FFFFFF</div>
+                                <div class="rgb">RGB: 255, 255, 255</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box gold"></div>
+                            <div class="info">
+                                <h6>Expanding List <span>(Secondary)</span></h6>
+                                <div class="hex">HEX: #C19237</div>
+                                <div class="rgb">RGB: 193, 146, 55</div>
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box grey"></div>
+                            <div class="info">
+                                <h6>Terms &amp; Details</h6>
+                                <div class="hex">HEX: #939393</div>
+                                <div class="rgb">RGB: 147, 147, 147</div>  
+                            </div>
                         </div>
                     </div>
-                    <div class="palette-item">
-                    <div class="box black"></div>
-                        <div class="info">
-                            <h2>Dropdown Text</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div>
+                    <h5>Brand Colors</h5>
+                    <div class="clearfix">
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Black</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div> 
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box white"></div>
+                            <div class="info">
+                                <h6>White</h6>
+                                <div class="hex">HEX: #FFFFFF</div>
+                                <div class="rgb">RGB: 255, 255, 255</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="palette-item">
-                        <div class="box white"></div>
-                        <div class="info">
-                            <h2>Expanding List <span>(Primary)</span></h2>
-                            <div class="hex">HEX: #FFFFFF</div>
-                            <div class="rgb">RGB: 255, 255, 255</div>
+                    <h5>Background and Accent Colors Palette</h5>
+                    <div class="clearfix">
+                        <div class="palette-item">
+                            <div class="box white"></div>
+                            <div class="info">
+                                <h6>Default Background</h6>
+                                <div class="hex">HEX: #FFFFFF</div>
+                                <div class="rgb">RGB: 255, 255, 255</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box red"></div>
-                        <div class="info">
-                            <h2>Error Text</h2>
-                            <div class="hex">HEX: #FF0000</div>
-                            <div class="rgb">RGB: 255, 0, 0</div>
+                        <div class="palette-item">
+                            <div class="box light-grey"></div>
+                            <div class="info">
+                                <h6>Dropdown</h6>
+                                <div class="hex">HEX: #EFEFEF</div>
+                                <div class="rgb">RGB: 239, 239, 239</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box bg-grey"></div>
-                        <div class="info">
-                            <h2>Display VS Nobel</h2>
-                            <div class="hex">HEX: #EEEEEE</div>
-                            <div class="rgb">RGB: 238, 238, 238</div>
+                        <div class="palette-item">
+                            <div class="box light-grey"></div>
+                            <div class="info">
+                                <h6>Textfield</h6>
+                                <div class="hex">HEX: #EFEFEF</div>
+                                <div class="rgb">RGB: 239, 239, 239</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box black"></div>
-                        <div class="info">
-                            <h2>Default Text</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div> 
+                        <div class="palette-item">
+                            <div class="box pink"></div>
+                            <div class="info">
+                                <h6>Error Text Field</h6>
+                                <div class="hex">HEX: #FFE8E8</div>
+                                <div class="rgb">RGB: 255,232, 232</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box white"></div>
-                        <div class="info">
-                            <h2>Negative Text</h2>
-                            <div class="hex">HEX: #FFFFFF</div>
-                            <div class="rgb">RGB: 255, 255, 255</div>
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Negative Background</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div> 
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box gold"></div>
-                        <div class="info">
-                            <h2>Expanding List <span>(Secondary)</span></h2>
-                            <div class="hex">HEX: #C19237</div>
-                            <div class="rgb">RGB: 193, 146, 55</div>
+                        <div class="palette-item">
+                            <div class="box white"></div>
+                            <div class="info">
+                                <h6>Dropdown Options</h6>
+                                <div class="hex">HEX: #FFFFFF</div>
+                                <div class="rgb">RGB: 255, 255, 255</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box grey"></div>
-                        <div class="info">
-                            <h2>Terms &amp; Details</h2>
-                            <div class="hex">HEX: #939393</div>
-                            <div class="rgb">RGB: 147, 147, 147</div>  
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Tool Tip</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div> 
+                            </div>
+                        </div>
+                        <div class="palette-item">
+                            <div class="box black"></div>
+                            <div class="info">
+                                <h6>Accent</h6>
+                                <div class="hex">HEX: #000000</div>
+                                <div class="rgb">RGB: 0, 0, 0</div> 
+                            </div>
+                        </div>
+                         <div class="palette-item">
+                            <div class="box gold"></div>
+                            <div class="info">
+                                <h6>Accent</h6>
+                                <div class="hex">HEX: #C19237</div>
+                                <div class="rgb">RGB: 193, 146, 55</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
-                <h4>Brand Colors</h4>
-                <div class="colors">
-                    <div class="palette-item">
-                        <div class="box black"></div>
-                        <div class="info">
-                            <h2>Black</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div> 
+            </section>
+            <section id="typography">
+                <h3>Typography</h3>
+                <p>The type for lexus.com was carefully chosen to be strong, elegant and easy to read. Please use special consideration when laying out headlines, copy, labels and tags to keep all the pages looking consistent throughout.</p>
+                <div id="font-families" class="content">
+                    <h4>Font Families</h4>
+                    <p>All the text on lexus.com is set in either Nobel, Pakt or Palatino. If there is any confusion about what type to use, base your choice on the PSD page.</p>
+                    <div class="the-font">
+                         <h5>Nobel Font</h5>
+                        <p>Nobel is used primarily in upper case for section headers and set in Bold, Book and Regular, but it’s also occasionally used in Book Italics. For example: Testimonials and Quotes are set in Book Italics using sentence case.</p>
+                    </div>
+                    <div class="font-details">
+                        <h5>Font Details</h5>
+                        <div class="fonts">
+                            <div class="font nobel-light">
+                                <h5>Nobel Light</h5>
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
+                        </div>
+                        <div class="fonts">
+                            <div class="font nobel-book">
+                                <h5>Nobel Book</h5>
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
+                        </div>
+                        <div class="fonts">
+                            <div class="font nobel-book-italic">
+                                <h5>Nobel Book Italic</h5>
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
+                        </div>
+                        <div class="fonts">
+                            <div class="font nobel-regular">
+                                <h5>Nobel Regular</h5>
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
+                        </div>
+                        <div class="fonts">
+                            <div class="font nobel-bold">
+                                <h5>Nobel Bold</h5>
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="palette-item">
-                        <div class="box white"></div>
-                        <div class="info">
-                            <h2>White</h2>
-                            <div class="hex">HEX: #FFFFFF</div>
-                            <div class="rgb">RGB: 255, 255, 255</div>
+                   <!--  <div class="font-example">
+                        <h5>Examples</h5>
+                        <img src="./media/images/typography/badge.png" alt="">
+                        <div class="clearfix"></div>
+                        <img src="./media/images/typography/section-heading.png" alt="">
+                        <div class="clearfix"></div>
+                        <img src="./media/images/typography/accolade-module.png" alt="">
+                        <div class="clearfix"></div>
+                        <img src="./media/images/typography/module-headline.png" alt="">
+                        <div class="clearfix"></div>
+                        <img src="./media/images/typography/navigaton-button.png" alt="">
+                        <div class="clearfix"></div>
+                    </div> -->
+                    <div class="clearfix"></div>
+                    <div class="the-font">
+                         <h5>Pakt Font</h5>
+                        <p>Pakt is generally used for Display text, and numbers in Bold and Semibold. It’s a tall, condensed font that really stands out for dramatic effect. When a character other than a number is needed (i.e., $,%, etc.), that character should be set at about 1/2 the size.</p>
+                    </div>
+                    <div class="font-details">
+                        <h5>Font Details</h5>
+                        <div class="fonts">
+                            <div class="font pakt">
+                                <h5>Pakt</h5>
+                                
+                                <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                                <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="clearfix"></div>
-                <h4>Background and Accent Colors Palette</h4>
-                <div class="colors">
-                    <div class="palette-item">
-                        <div class="box white"></div>
-                        <div class="info">
-                            <h2>Default Background</h2>
-                            <div class="hex">HEX: #FFFFFF</div>
-                            <div class="rgb">RGB: 255, 255, 255</div>
-                        </div>
+                   <!--  <div class="font-examples">
+                        <img style="width: 30%;"src="./media/images/typography/display-numbers.png" alt="">
+                    </div> -->
+                    <div class="clearfix"></div>
+                    <div class="the-font">
+                        <h5>Palatino Font</h5>
+                    <p>Palatino is mostly used for body copy or secondary typography. It’s not used for display type and should be kept small. Type protection from page elements or navigation can be referenced in the Desktop Standards: Vertical protection section of this style guide.</p>
                     </div>
-                    <div class="palette-item">
-                        <div class="box light-grey"></div>
-                        <div class="info">
-                            <h2>Dropdown</h2>
-                            <div class="hex">HEX: #EFEFEF</div>
-                            <div class="rgb">RGB: 239, 239, 239</div>
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box light-grey"></div>
-                        <div class="info">
-                            <h2>Textfield</h2>
-                            <div class="hex">HEX: #EFEFEF</div>
-                            <div class="rgb">RGB: 239, 239, 239</div>
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box pink"></div>
-                        <div class="info">
-                            <h2>Error Text Field</h2>
-                            <div class="hex">HEX: #FFE8E8</div>
-                            <div class="rgb">RGB: 255,232, 232</div>
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box black"></div>
-                        <div class="info">
-                            <h2>Negative Background</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div> 
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box white"></div>
-                        <div class="info">
-                            <h2>Dropdown Options</h2>
-                            <div class="hex">HEX: #FFFFFF</div>
-                            <div class="rgb">RGB: 255, 255, 255</div>
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box black"></div>
-                        <div class="info">
-                            <h2>Tool Tip</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div> 
-                        </div>
-                    </div>
-                    <div class="palette-item">
-                        <div class="box black"></div>
-                        <div class="info">
-                            <h2>Accent</h2>
-                            <div class="hex">HEX: #000000</div>
-                            <div class="rgb">RGB: 0, 0, 0</div> 
-                        </div>
-                    </div>
-                     <div class="palette-item">
-                        <div class="box gold"></div>
-                        <div class="info">
-                            <h2>Accent</h2>
-                            <div class="hex">HEX: #C19237</div>
-                            <div class="rgb">RGB: 193, 146, 55</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="clearfix"></div>
-                
-                <!-- <div class="example">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                        <div class="column-4 badge-wrapper" data-example-id="colors-badge">
-                        <div class="badger">
-                            <h3 class="badge-title">
-                            <span class="top-line">The 2016</span>
-                            <span class="model-name" style="font-size: 54.4px; float: none; position: static; letter-spacing: 0px;">NX</span>
-                        </h3>
-                        </div>
-                        <p>Models Page Badge</p>
-                    </div>
-                    <div class="column-4 button-wrapper" data-example-id="colors-button">
-                        <button href="/models/GSF" class="btn">LEARN MORE</button>
-                        <p>Button for dark background</p>
-                    </div>
-                    <div class="column-4 favorite-wrapper" data-example-id="colors-favorite">
-                        <span class="favorite-listener" data-action="addFavorite" data-url="/cm-img/exterior/2016/Lexus-IS-exterior-swatch-42x42-eminent-white-pearl.png" data-code="0085" data-title="Eminent White Pearl" data-clean-title="Eminent White Pearl" data-type="Exterior">Save Color</span>
-                        <p>Favorites CTA</p>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <div class="clearfix"></div>
-        <section id="typography">
-            <h3>Typography</h3>
-            <p>The type for lexus.com was carefully chosen to be strong, elegant and easy to read. Please use special consideration when laying out headlines, copy, labels and tags to keep all the pages looking consistent throughout.</p>
-            <div id="#typeface" class="content">
-                <h4>Typeface</h4>
-                <div class="fonts">
-                    <div class="font nobel-light">
-                        <h4>Nobel Light</h4>
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
-                    </div>
-                </div>
-                <div class="fonts">
-                    <div class="font nobel-book">
-                        <h4>Nobel Book</h4>
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
-                    </div>
-                </div>
+                    <div class="font-details">
+                        <h5>Font Details</h5>
                     <div class="fonts">
-                    <div class="font nobel-regular">
-                        <h4>Nobel Regular</h4>
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
-                    </div>
-                </div>
-                <div class="fonts">
-                    <div class="font nobel-bold">
-                        <h4>Nobel Bold</h4>
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
-                    </div>
-                </div>
-                <div class="fonts">
-                    <div class="font nobel-book-italic">
-                        <h4>Nobel Book Italic</h4>
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
-                    </div>
-                </div>
-                <div class="fonts">
-                    <div class="font palentino">
-                        <h4>Palentino</h4>
+                        <div class="font palentino">
+                            <h5>Palatino</h5>
 
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
+                            <h5>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h5>
+                            <h5>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h5>
+                        </div>
                     </div>
+                    </div>
+                    <!-- <div class="font-examples">
+                        <img style="width: 30%;"src="./media/images/typography/module-body-copy.png" alt="">
+                    </div> -->
                 </div>
-                <div class="fonts">
-                    <div class="font pakt">
-                        <h4>Pakt</h4>
+                <div class="clearfix"></div>
+                <!-- <div id="caps-case" class="content">
+                    <h4>All Caps VS Sentence Case</h4>
+                    <p>Lexus.com uses text set in all caps extensively. Here’s where you’ll normally see it used:</p>
+                    <ul>
+                        <li>Buttons and Links</li>
+                        <li>Navigation</li>
+                        <li>Product Names</li>
+                        <li>Page Headers</li>
+                        <li>Sections headers and Subheaders</li>
+                        <li>Prices, Months, Mileage</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <p>There are several places where all caps should not be used. Basically, anywhere the user needs to read important content or quickly scan a large amount of it. In these instances, Sentence Case should be used:</p>
+                    <div class="clearfix"></div>
+                    <ul>
+                        <li>Article Content</li>
+                        <li>Quotes and Testimonials</li>
+                        <li>Vehicle Descriptions</li>
+                        <li>Body Copy</li>
+                        <li>Intro Paragraphs</li>
+                        <li>Swatch Labels</li>
+                        <li>Tables of Content</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div id="typography-vertical-spacing" class="content">
+                    <h4>Type Vertical Spacing</h4>
+                    <p>Vertical spacing of type on lexus.com is also very critical. Visually, most type is given leading equal or similar to its height. Type protection from page elements or navigation can be referenced in the Desktop Standards: Vertical protection section of this Style Guide.</p>
+                    <p>All the measurements for vertical spacing are taken between or from base and cap lines.</p>
+                    <h5>Vertical Spacing</h5>
+                    <ul>
+                        <li>Vehicle Lockups / 6 pixels </li>
+                        <li>Model Tags / 16 pixels </li>
+                        <li>Body Copy / 9 pixels</li>
+                        <li>Intro Paragraph / 13 pixels </li>
+                        <li>Dealer Tool Tip — Title / 14 pixels </li>
+                        <li>Dealer Tool Tip — Address / 9 pixels </li>
+                        <li>Map Error Message — Title Leading / 8 pixels </li>
+                        <li>Map Error Message — Title Padding / 14 pixels </li>
+                        <li>Quote Leading / 10 pixels</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div id="logos" class="content">
+                    <h4>Logos</h4>
+                    <p>The minimum size for the Master Logo is 17.5 mm. The clearance zone is indicated by the measurement of the “L” taken from the logotype. This space is applied to ensure the integrity and readability of the logo. Apply these same rules when using the 3-D logo, while also keeping the logo on a white background. It’s important to note that the logo should not be altered (bent, rotated, outlined, etc.) in any way.</p>
+                </div>
+                <div id="model-tags" class="content">
+                    <h4>Model Tags</h4>
+                    <p>Model Tags are used frequently but are nonstandard elements. Each one is slightly different, but they should all have the same effect. The smaller text normally reads “All-New” or “The 2016” (depending on the model year), and the large text is the model type. With models that have more than two letters, the size and spacing can change as long as the general layout and look remain consistent. And if it’s a Hybrid model, place “Hybrid” underneath the double rule lines in the same weight and height as the smaller text.</p>
+                </div>
+                <div id="type-treatment" class="content">
+                    <h4>Type Treatment</h4>
+                    <ul>
+                        <li>Nobel / bold / 12pt / #FFFFFF</li>
+                        <li>Nobel / light / 84pt / #FFFFFF</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div id="typography-recalls" class="content">
+                    <h4>Recalls</h4>
+                    <p>The Recall bar generally appears in black on the homepage and shows up either at the top or bottom of the page.</p>
+                    <h4>Footer</h4>
+                    <p>The footer is divided into six sections: Information, Shopping Tools, Services, Additional Sites and Social Media. The footer sticks to the bottom of every page and includes any disclosures and legal information. The dark background runs across the full width of the page.</p>
+                </div> -->
+            </section>
+            <section id="layout">
+                <h3>Layout</h3>
+                <p>The following is meant to demonstrate how different pages can look on lexus.com, showing you where the opportunities are as well as the limitations. The whole site was designed to be modular to allow for the most flexibility.</p>
+                <div class ="responsive-design" class="content">
+                    <h4>Responsive Design</h4>
+                    <p>Lexus.com was designed to work optimally on all screen sizes. There are four main breaking points for the site: 1204, 960, 640 and 320. Within these breakpoints there are thoughtful changes to keep the site’s look and feel consistent.</p>
+                    <p>The homepage above is a great example of how our responsive layouts keep everything looking sharp while also providing the best user experience.</p>
+                    <img class="desktop-image"src="./media/images/responsive/desktop-image.png" alt="">
+                    <img class="tablet-image" src="./media/images/responsive/tablet-image.png" alt="">
+                    <img class="mobile-image" src="./media/images/responsive/mobile-image.png" alt="">
+                </div>
+
+                <div class="clearfix"></div>
+            </section>
+            <section id="imagery">
+                <h3>Imagery</h3>
+                <p>The key attributes of Lexus imagery are its emotion, humanity and authenticity. In the following, you’ll see examples of the desired photography and how it’s used. Keep in mind, however, since each model or campaign has a different strategic point of view, you can allow for variations along the way.</p>
+                
+                <div id="imagery-backgrounds" class="content">
+                    <h4>Backgrounds - Gray &amp; White Variation</h4>
+                    <p>Lexus.com uses a banded design that relies on white and occasionally gray backgrounds. Most modules are on white backgrounds only. Gray is used occasionally expanding modules to help organize large amounts of information.</p>
+                    <img src="./media/images/imagery/grey-white.jpg" alt="">
+                </div>
+                
+                <div id="product-image-styles" class="content imagery-stuff">
+                    <h4>Desktop Standards: Images</h4>
+                    <h5>Product Image Styles</h5>
+                    <p>For lexus.com to achieve its robust visual style, photography shot on white is used exclusively. Shooting on any any other color should be avoided. It’s also critical that the white behind the product images is a white that does not contain washed out backgrounds or any vignetting. This ensures the vehicles remain uniform when placed in a grid or module together and that they seamlessly integrate with other white backgrounds on the site.</p>
+                    <img  src="./media/images/imagery/product-image.jpg" alt="">
+                    <h5>7/8 Vehicle Rotation</h5>
+                    <p>Because of the different image sizes and aspect ratios of vehicle photography, it’s often necessary to scale certain items.</p>
+                    <p>Vehicles can be different sizes, shapes and colors, but they all need to fit nicely in a grid together. When different models are shown in a grid or list, it’s important that they’re all at the same size and same angle. A 7/8 angle is used to uniformly show all the models in a flattering way.</p>
+                    <img src="./media/images/imagery/seven.jpg" alt="">
+                </div>
+                
+                <div class="content responsive-design">
+                    <h4>Responsive Image Scaling and Cropping</h4>
+                    <p>Lexus.com uses a few different responsive techniques for images. In most cases, the images simply scale at 1204px, 960px, 720px and 280px break points. To achieve the same visual effects from small to large, some elements end up being cropped on small devices.</p>
+                    <img class="desktop-image" src="./media/images/imagery/desktop-crop.jpg" alt="">
+                    <img class="tablet-image" src="./media/images/imagery/tablet-crop.jpg" alt="">
+                    <img class="mobile-image" src="./media/images/imagery/mobile-crop.jpg" alt="">
+                </div>
+            
+                
+                <div id="" class="content imagery-stuff">
+                    <h4>Standard 4:3 Editorial Imagery</h4>
+                    <p>Editorial imagery is usually presented in a 4:3 aspect ratio. It’s used consistently throughout lexus.com, especially on the Performance, Technology and Key Features pages. The large editorial images scale down for Medium and Small. This category also contains nonstandard image sizes and aspect ratios, which are detailed later in this style guide.</p>
+                    <img src="./media/images/imagery/standard4.jpg" alt="">
+                </div>
+                
+                <div id="" class="content imagery-stuff">
+                    <h4>4:3 Thumbnails</h4>
+                    <p>Thumbnails, a JPEG with a 4:3 aspect ratio, can be found on the All Models, Media Gallery, Model Detail and Key Features, and Packages pages.</p>
+                    <img src="./media/images/imagery/four3.jpg" alt="">
+                </div>
+                
+                <div id="overlays" class="content">
+                    <h4>16:9 &amp; 4:3 Overlays</h4>
+                    <p>Overlays are traditionally full-bleed images appearing on a hover or click-thru pages such as Model Overview, Media Gallery and Key Features. Both a 4:3 and 16:9 aspect ratio can be used. A 16:9 aspect ratio is preferred for Model Overview and Key Features pages. A 4:3 aspect ratio is preferred for the Media Gallery.</p>
+                    <img src="./media/images/imagery/sixten9.jpg" alt="">
+                </div>
+                
+                <div id="" class="content">
+                    <h4>Location Shots</h4>
+                    <p>Always look for believable situations—for images that look like they’re captured in the moment. Shots with natural light will always look the best. And be sure to keep the car angles aggressive and powerful. </p>
+                    <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                            <li>BELIEVABLE SITUATIONS, NOT CONTRIVED</li>
+                            <li>IMAGES LOOK LIKE THEY’RE CAPTURED IN THE MOMENT, NOT SET UP</li>
+                            <li>AVAILABLE OR NATURAL LIGHT</li>
+                            <li>NOT OVERLY RETOUCHED</li>
+                            <li>SMALLER-FORMAT HANDHELD CAMERA WHEN POSSIBLE</li>
+                            <li>MUTED YET SOPHISTICATED TONES</li>
+                            <li>GRAPHIC AND SIMPLE COMPOSITIONS</li>
+                            <li>HIGHLY CURATED WARDROBE AND LOCATION ARCHITECTURE</li>
+                            <li>SELECTIVE FOCUS ADDS DEPTH AND INTRIGUE</li>
+                            <li>CAR ANGLES MUST BE AGGRESSIVE AND POWERFUL</li>
+                            <li>ALLOW REASONABLE REFLECTIONS AND IMPERFECTIONS</li>
+                        </ul>
+                    </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/location.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div id="" class="content">
+                    <h4>Studio Shots</h4>
+                    <p>Select shots in real environments, not contrived sets. They should not appear slick or overly retouched. Always strive for simple and graphic compositions and a muted, sophisticated color palette.</p>
+                    <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                            <li>REAL ENVIRONMENTS, NOT CONTRIVED SETS</li>
+                            <li>NOT SLICK OR OVERLY RETOUCHED</li>
+                            <li>GRAPHIC AND SIMPLE COMPOSITIONS</li>
+                            <li>BELIEVABLE SITUATIONS</li>
+                            <li>MUTED, SOPHISTICATED COLOR PALETTE</li>
+                            <li>WHEN USED, TALENT IS INTERACTING NATURALLY</li>
+                            <li>HIGHLY CURATED WARDROBE AND ENVIRONMENTS</li>
+                            <li>SELECTIVE FOCUS AND LIGHTING ADDS DEPTH AND INTRIGUE</li>
+                            <li>CAR ANGLES MUST BE AGGRESSIVE AND POWERFUL</li>
+                        </ul>
+                    </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/studio.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div id="" class="content">
+                    <h4>Motion Shots</h4>
+                    <p>To give the best sense of motion, the backgrounds should have some movement and blur to them. Don’t use shots that are overly retouched. You can allow for reasonable reflections and imperfections.</p>
+                    <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                            <li>NOT OVERLY RETOUCHED</li>
+                            <li>BACKGROUND SHOULD HAVE MOVEMENT AND BLUR, CONTEXT, DETAIL</li>
+                            <li>CAR ANGLES MUST BE AGGRESSIVE AND POWERFUL</li>
+                            <li>ALLOW REASONABLE REFLECTIONS AND IMPERFECTIONS</li>
+                            <li>AVAILABLE OR NATURAL LIGHT</li>
+                            <li>SMALLER-FORMAT HANDHELD CAMERA WHEN POSSIBLE</li>
+                        </ul>
+                    </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/motion.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="" class="content">
+                <h4>People</h4>
+                <p>Look for regionally diverse talent. They should be interacting with each other naturally, not looking at the camera or posing. Make sure a highly curated wardrobe and location are represented as well.</p>
+                <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                            <li>REGIONALLY DIVERSE TALENT SHOULD BE REPRESENTED</li>
+                            <li>TALENT INTERACTING NATURALLY, NOT POSING OR CONTRIVED</li>
+                            <li>HIGHLY CURATED WARDROBE AND LOCATION ARCHITECTURE</li>
+                            <li>SELECTIVE FOCUS ADDS DEPTH AND INTRIGUE</li>
+                            <li>TALENT IS NOT LOOKING AT CAMERA</li>
+                            <li>AVAILABLE OR NATURAL LIGHT</li>
+                            <li>MUTED YET SOPHISTICATED TONES</li>
+                        </ul>
                         
-                        <h4>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</h4>
-                        <h4>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 26 27 28 29 30</h4>
                     </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/people.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+               </div>
+                
+                <div id="" class="content">
+                <h4>Interiors</h4>
+                <p>The interior of the vehicles shows best in a natural light with real backgrounds to provide context. Look for dramatic, directional light to give everything a rich, sculptural look with selective focus to add depth and intrigue.</p>
+                <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                            <li>USE OF NATURAL LIGHT AND REAL BACKGROUNDS PROVIDE CONTEXT</li>
+                            <li>DRAMATIC, DIRECTIONAL LIGHT LENDS RICH, SCULPTURAL LOOK</li>
+                            <li>MUTED YET SOPHISTICATED TONES</li>
+                            <li>NOT OVERLY RETOUCHED</li>
+                            <li>SELECTIVE FOCUS ADDS DEPTH AND INTRIGUE</li>
+                            <li>TALENT, IF USED, INTERACTING NATURALLY, NOT POSING</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/interiors.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-            </div>
-            <div class="clearfix"></div>
-        </section>
-        <section id="layout">
-            <h3>Layout</h3>
-            <div id="responsive-design" class="content">
-                <h4>Responsive Design</h4>
-                <p>Lexus.com was designed to work optimally on all screen sizes. There are four main breaking points for the site: 1204, 960, 720 and 280. Within these breakpoints there are thoughtful changes to keep the site’s look and feel consistent.</p>
-                <p>The homepage above is a great example of how our responsive layouts keep everything looking sharp while also providing the best user experience.</p>
-            </div>
-            <div class="clearfix"></div>
-            <div id="desktop-grid" class="content">
-                <h4>Destop Content Grid</h4>
-                <p>All pages on Lexus.com lie on a 1032px grid with 1247px columns with 36px gutters. The grid should be center- aligned with equal spacing on the left and right</p>
-                <p>Some scenarios require a layout that does not fall exactly on the grid. While exceptions can be made, designers and developers should strive to limit how many times this happens.</p>
-            </div>
-            <div class="clearfix"></div>
-            <div id="tablet-grid" class="content">
-                <h4>Tablet Content Grid</h4>
-                <p>Lexus.com in portrait view on a tablet is also set on a 12-column grid. Each column width is 38 pixels with margin sizes of 24 pixels. Fixed margins of 24 pixels are assigned to the outside of the grid.</p>
-            </div>
-            <div class="clearfix"></div>
-            <div id="mobile-grid" class="content">
-                <h4>Mobile Content Grid</h4>
-                <p>Lexus.com on mobile is set on a 6-column grid with 30-pixel column width and 20-pixel gutter width.</p>
-            </div>
-            <div class="clearfix"></div>
-        </section>
-        <section id="imagery">
-            <h3>Imagery</h3>
-            <div id="imagery-desktop" class="content">
-                <h4>Desktop Universal Elements: Backgrounds</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-            </div>
-            <div class="clearfix"></div>
-            <div id="imagery-backgrounds" class="content">
-                <h4>Backgrounds - Gray &amp; White Variation</h4>
-                <p>Lexus.com uses a banded design that relies on white and occasionally gray backgrounds. Most modules are on white backgrounds only. Gray is used occasionally expanding modules to help organize large amounts of information.</p>
-            </div>
-            <div class="clearfix"></div>
-        </section>
-        <section id="iconography">
-            <h3>Iconography</h3>
-            <p>FIND ICONOGRAPHY</p>
-        </section>
-
-
-
+                
+                <div id="" class="content">
+                <h4>Details</h4>
+                <p>Keep your close-up shots in believable, natural environments. They shouldn’t be overly retouched. Choose shots with selective focus for more depth that look as if they were captured on the fly.</p>
+                <div class="image-details">
+                        <h5>Image Details</h5>
+                        <ul>
+                             <li>SHOT OUTDOORS WITH NATURAL LIGHT AND REAL BACKGROUNDS</li>
+                            <li>SELECTIVE FOCUS ADDS DEPTH AND INTRIGUE</li>
+                            <li>BELIEVABLE SITUATIONS, NOT CONTRIVED</li>
+                            <li>NOT OVERLY RETOUCHED</li>
+                            <li>IMAGES LOOK LIKE CAPTURED MOMENTS, NOT SET UP</li>
+                            <li>TALENT, IF USED, INTERACTING NATURALLY, NOT POSING</li>
+                        </ul>
+                       
+                    </div>
+                    <div class="image-examples">
+                        <h5>Examples</h5>
+                        <img src="./media/images/imagery/details.png" alt="">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </section>
+            <section id="iconography">
+                <h3>Iconography</h3>
+                <p>Oftentimes lexus.com will use graphic illustrations or symbols to help communicate ideas and create visual interest. See below for examples and some basic rules. For usage, speak to your project manager to work with DAM. </p>
+                <img src="./media/images/icons-temp.png" alt="">
+            </section>
         </div>
     </div>
     <script src="./media/js/jquery-2.1.4.min.js"></script>
     <script src="./media/js/main.js"></script>
-    <script src="./media/js/typeahead.min.js"></script>
-    <script src="./media/js/search.js"></script></body>
+    </body>
 </html>

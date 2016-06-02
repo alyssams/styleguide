@@ -17,6 +17,7 @@ $extra-large-min: 1205px;
 $large-near-med: 1050px;
 $grid-max: $large-max;
 $full-bleed-width: 1312px;
+$super-size: 1600px;
 
 // Bit of a change in semantics here. The goal is to support mobile first.
 // I'm using bootstrap convention as a base so the folllowing breakpoints
@@ -38,4 +39,9 @@ $full-bleed-width: 1312px;
 @mixin lg-up ($columns: $default-columns) {
     // [R4EE-411] Adding 1 to *-max to make breaks inline with pointbreak.js
     @media (min-width: $extra-large-min + 1) { @content; }
+}
+
+@mixin sp-up ($columns: $default-columns) {
+    // [R4EE-411] Adding 1 to *-max to make breaks inline with pointbreak.js
+    @media (min-width: $super-size + 1) { @content; }
 }

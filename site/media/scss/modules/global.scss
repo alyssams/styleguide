@@ -13,6 +13,12 @@ $gold: #c19237;
 $red: #FF0000;
 $pink: #FFE8E8;
 
+// move this once VR becomes more prominent. then add a new sass file for it
+.vr {
+    padding: 0 !important;
+}
+
+
 @mixin border-box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -43,46 +49,67 @@ body {
     // change this font once they migrate to better design.
     background-color: $white;
 }
+a { 
+    text-decoration: none; 
+}
 
-h1 {
-    font-family: 'nobel-regular', sans-serif;
-    font-size: 34px;
-    font-weight: normal;
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
     text-transform: uppercase;
 }
 
-h2 {
+h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
+}
+
+h1 {
     font-size: 22px;
     letter-spacing: 0.2em;
     font-family: "nobel-book",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
     font-weight: 300;
-    text-align: center;
+    margin: 0.67em 0;
+}
 
+h2 {
+    font-family: 'nobel-regular', sans-serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    padding: 30px 0;
+    word-spacing: .2em;
+    @include md-up {
+        font-size: 5em;
+    }
 }
 
 h3 {
-    font-weight: bold;
-    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
     font-size: 2em;
-    text-transform: uppercase;
 }
 
 h4 {
     font-size: 1.5em;
-    font-family: "nobel-bold",Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: left;
+}
 
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 0.6em;
 }
 
 p {
-    text-align: left;
-    font-size: 12px;
-    line-height: 14px;
+    width: 100%;
+    padding: 25px 0 50px 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 .unclickable {
     pointer-events: none;
 }
@@ -101,6 +128,75 @@ p {
     padding-bottom: 30px;
 }
 
+
+
+.wrapper {
+    // overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    // max-width: 100%;
+    padding: 0 10%;
+    @include md-up {
+        // max-width: 1354px;
+        // padding: 0 75px;
+    }
+}
+
+#elwrapper {
+    padding-top: 50px;
+     @include make-columns(12);
+
+}
+section{
+    padding: 25px 0 100px 0;
+    // padding:30px 30px 30px 80px;
+    -moz-transition:all 200ms ease-in;
+    -webkit-transition:all 200ms ease-in;
+    -o-transition:all 200ms ease-in;
+    transition:all 200ms ease-in;
+    border-top: 10px solid $black;
+    &:first-of-type {
+        border-top: 0;
+    }
+    &#color {
+        border-top: 0;
+    }
+    &#header {
+        h2 {
+            text-align: left;
+            padding: 40px 0;
+        }
+    }
+    .content {
+        // padding: 10px 0;
+        > p {
+            width: 100%;
+            padding: 0;
+            padding-bottom: 50px;
+        }
+    }
+    .content > h4{
+        border-top: 5px solid $black;
+        // border-bottom: 1px dotted $grey;
+        padding: 25px 0;
+    }
+
+    .content > h3 {
+        padding: 10px 0;
+    }
+    .content > h5 {
+        padding: 50px 0 25px 0;
+    }
+    h1 {
+        border-top: 10px solid $black;
+        border-bottom: 10px solid $black;
+        padding: 30px 0;
+        font-size:3.5em;
+        @include md-up {
+            font-size: 5em;
+        }
+    }
+}
 
 .btn {
     border-radius: 0;
@@ -132,63 +228,117 @@ p {
     }
 }
 
-.wrapper {
-    // overflow: hidden;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10%;
-    @include md-up {
-        max-width: 1354px;
-        padding: 0 75px;
-    }
+// ::-webkit-scrollbar
+// {
+//     width: 2px;  /* for vertical scrollbars */
+//     height: 0px; /* for horizontal scrollbars */
+//     background-color: #fff;
+// }
+// ::-webkit-scrollbar-track
+// {
+//     background: #fff;
+// }
+// ::-webkit-scrollbar-thumb
+// {
+//     background: #ccc;
+// }
 
+.image-examples {
+    @include make-columns(12);
+    @include lg-up {
+        @include make-columns(8);
+        img {
+            padding-top: 10px;
+        }
+    }
+}
+
+.image-details {
+    @include sm-up {
+        @include make-columns(12);
+    }
+    @include lg-up {
+        @include make-columns(4)
+    }
     
-    section{
-        // padding:30px 30px 30px 80px;
-        -moz-transition:all 200ms ease-in;
-        -webkit-transition:all 200ms ease-in;
-        -o-transition:all 200ms ease-in;
-        transition:all 200ms ease-in;
-        
-        border-top: 10px solid $black;
+}
+
+.image-examples, .image-details {
+    @extend .col;
+    padding: 0 0 25px 0;
+    p {
+        width: 100% !important;
+        padding: 25px 0 0 !important;
         &:first-of-type {
-            margin:0;
-            border-top: 0;
+            padding-top: 10px !important;
         }
-        &#color {
-            border-top: 0;
+    }
+}
+
+.responsive-design {
+
+        img.desktop-image {
+            width: 44%        
         }
-        .content > h4{
-            border-top: 1px dotted $grey;
-            // border-bottom: 1px dotted $grey;
-            padding: 30px 0;
+        img.tablet-image {
+            width: 32%
         }
-        h1 {
-            border-top: 10px solid $black;
-            border-bottom: 10px solid $black;
-            padding: 30px 0;
-            font-size:3.5em;
-            @include md-up {
-                font-size: 5em;
+        img.mobile-image {
+            width: 9%
+        }
+
+}
+
+#imagery-backgrounds img {
+    width: 100%;
+    padding: 50px 0;
+    @include md-up {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        padding: 25px 0 50px;
+        
+    }
+}
+
+.imagery-stuff img {
+    width: 100%;
+    @include md-up {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+#imagery img {
+    padding-bottom: 50px;
+}
+
+#overlays img {
+    width: 100%;
+    @include md-up {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
+
+#imagery ul {
+        margin-left: 18px;
+        padding-top: 25px;
+
+
+    @include lg-up {
+        padding-right: 30px;
+        li{
+            font-family: 'nobel-book';
+            margin-top:12px;
+            &:first-of-type {
+                margin-top: 12px;
             }
         }
-
-        p:first-of-type {
-            padding-bottom: 20px;
-            width: 70%;
-        }
-
-        h3 {
-            margin: 50px 0 20px 0;
-        }
     }
+    
 }
 
-section#header {
-
-    h2 {
-        text-align: left;
-        padding: 40px 0;
-    }
-}

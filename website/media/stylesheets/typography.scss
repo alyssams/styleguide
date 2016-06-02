@@ -1,0 +1,44 @@
+#typography {
+    .content {
+        .fonts h4 {
+            margin-top: 40px;
+        }
+        h4:nth-child(even){
+            margin-top:10px;
+        }
+        .nobel-light h4{
+            font-family: 'nobel-light';
+            font-weight: lighter;
+        }
+        .nobel-book h4{
+            font-family: 'nobel-book';
+            font-weight: lighter;
+        }
+        .nobel-regular h4{
+            font-family: 'nobel-regular';
+            font-weight: lighter;
+        }
+        .nobel-bold h4{
+            font-family: 'nobel-bold';
+            font-weight: lighter;
+        }
+        .nobel-book-italic h4{
+            font-family: 'nobel-book-italic';
+            font-weight: lighter;
+        }
+        .palentino h4{
+            font-family: 'palentino';
+            font-weight: lighter;
+        }
+        .pakt h4{
+            font-family: 'pakt';
+            font-weight: lighter;
+        }
+
+    }
+}
+
+ul li, ol li{
+    @include make-columns(4);
+    @extend .col;
+}

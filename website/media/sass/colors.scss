@@ -1,0 +1,61 @@
+#colors {
+	.palette-item {
+	    @include make-columns(12);
+	    @extend .col;
+	    padding: 10px 0;
+
+	    @include sm-up {
+	       @include make-columns(4);         
+	    }
+
+	    @include md-up {
+	       @include make-columns(4);
+	    }
+	}
+	.box {
+	    width: 150px;
+	    height: 30px;
+	    float: left;
+	}
+
+	.info {
+	    float: left;
+	    margin-left: 5%;
+	}    
+
+	 h2, .hex, .rgb {
+	    font-size: 0.6em;
+	    text-align: left;
+	}
+	.hex, .rgb {
+	    font-family: 'nobel-regular';
+	}
+
+	.box.black {
+	    background: $black;
+	}
+	.box.white {
+	    background: $white;
+	    border: 1px solid $black;
+	}
+	.box.bg-grey {
+	    background: $bg-grey;
+	}
+	.box.red {
+	    background: $red;
+	}
+	.box.gold {
+	    background: $gold;
+	}
+	.box.grey {
+	    background: $grey;
+	}
+
+	.box.light-grey {
+	    background: $light-grey;
+	}
+
+	.box.pink {
+	    background: $pink;
+	}
+}

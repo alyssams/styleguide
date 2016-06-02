@@ -1,0 +1,896 @@
+/* line 3, ../sass/global.scss */
+.animated.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* show objects being animated */
+/* line 19, ../sass/global.scss */
+.animated {
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes grow {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes grow {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* line 64, ../sass/global.scss */
+.animated.grow {
+  -webkit-animation: grow ease-in 1;
+  /* call our keyframe named grow, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: grow ease-in 1;
+  animation: grow ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 84, ../sass/global.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 89, ../sass/global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 92, ../sass/global.scss */
+table {
+  border-spacing: 0;
+}
+
+/* line 95, ../sass/global.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 98, ../sass/global.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 102, ../sass/global.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 105, ../sass/global.scss */
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 110, ../sass/global.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 114, ../sass/global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+/* line 121, ../sass/global.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 124, ../sass/global.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* line 128, ../sass/global.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 133, ../sass/global.scss */
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: lighter;
+  background-color: #000000;
+}
+
+/* line 157, ../sass/global.scss */
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+
+/* line 163, ../sass/global.scss */
+h1 {
+  font-size: 1.5em;
+}
+@media (max-width: 320px) {
+  /* line 163, ../sass/global.scss */
+  h1 {
+    font-size: 1em;
+  }
+}
+
+/* line 170, ../sass/global.scss */
+h2 {
+  font-size: 2em;
+}
+@media (max-width: 320px) {
+  /* line 170, ../sass/global.scss */
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* line 177, ../sass/global.scss */
+p {
+  font-size: 2em;
+}
+
+/* line 180, ../sass/global.scss */
+.intro p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+/* line 185, ../sass/global.scss */
+.section {
+  background-size: cover;
+  text-align: center;
+}
+
+/* line 189, ../sass/global.scss */
+.slide {
+  background-size: contain;
+}
+
+/* line 194, ../sass/global.scss */
+.fp-slides h1 {
+  color: white;
+  text-align: left;
+  width: 60%;
+  position: relative;
+  top: -20%;
+  left: 40px;
+  text-transform: uppercase;
+}
+
+/* line 205, ../sass/global.scss */
+.fp-tableCell {
+  vertical-align: top;
+}
+
+/* line 209, ../sass/global.scss */
+.red {
+  color: #d96564;
+}
+
+/* line 214, ../sass/global.scss */
+#section0 {
+  background-image: url("./../images/bg.jpg");
+}
+/* line 216, ../sass/global.scss */
+#section0 ul.lines {
+  display: block;
+  width: 100%;
+}
+/* line 219, ../sass/global.scss */
+#section0 ul.lines li {
+  padding: 0px 1px;
+  display: inline-block;
+  margin: 0 4%;
+  position: relative;
+  top: 0;
+}
+/* line 225, ../sass/global.scss */
+#section0 ul.lines li:first-child {
+  margin-left: 0;
+}
+/* line 228, ../sass/global.scss */
+#section0 ul.lines li:last-child {
+  margin-right: 0;
+}
+/* line 232, ../sass/global.scss */
+#section0 ul.lines .blue {
+  background: #00abb6;
+}
+/* line 235, ../sass/global.scss */
+#section0 ul.lines .red {
+  background: #d96564;
+}
+/* line 238, ../sass/global.scss */
+#section0 ul.lines .short {
+  height: 24px;
+  top: -22px;
+}
+/* line 242, ../sass/global.scss */
+#section0 ul.lines .medium {
+  height: 45px;
+}
+/* line 246, ../sass/global.scss */
+#section0 .fp-tableCell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+}
+/* line 250, ../sass/global.scss */
+#section0 .fp-tableCell h1 {
+  color: #00abb6;
+  letter-spacing: 0.2em;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 35px;
+}
+/* line 259, ../sass/global.scss */
+#section0 .fp-tableCell h2 {
+  margin-top: 10%;
+  letter-spacing: 0.1em;
+  color: #00abb6;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 35px;
+}
+/* line 268, ../sass/global.scss */
+#section0 .fp-tableCell .inverted {
+  background: #00abb6;
+  color: #000000;
+  padding: 0;
+  margin: 30px 35px;
+  width: 54%;
+  line-height: 30px;
+  text-align: left;
+}
+/* line 277, ../sass/global.scss */
+#section0 .fp-tableCell .scrolldown {
+  position: fixed;
+  bottom: 40px;
+  font-size: 1em;
+  left: 20px;
+  color: #00abb6;
+  text-transform: uppercase;
+}
+
+/* line 289, ../sass/global.scss */
+#section1 .title {
+  padding: 40px;
+  position: relative;
+  font-size: 3em;
+  top: 0;
+  z-index: 3;
+  background: white;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+/* line 303, ../sass/global.scss */
+#slide1 {
+  background-image: url(./../images/movie1.jpg);
+}
+
+/* line 306, ../sass/global.scss */
+#slide2 {
+  background-image: url(./../images/movie2.jpg);
+}
+
+/* line 311, ../sass/global.scss */
+.info {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+  z-index: 2;
+}
+
+/* line 318, ../sass/global.scss */
+.fp-controlArrow.fp-next {
+  border-width: 5px 5px 0 0;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  rotate: 45px;
+  right: 20px;
+  transform: rotate(45deg);
+  border-color: #00abb6 #00abb6 transparent transparent;
+}
+
+/* line 329, ../sass/global.scss */
+.fp-controlArrow.fp-prev {
+  border-width: 0 0 5px 5px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  rotate: 45px;
+  left: 20px;
+  transform: rotate(45deg);
+  border-color: transparent transparent #00abb6 #00abb6;
+}
+
+/* line 341, ../sass/global.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 364, ../sass/global.scss */
+.modal {
+  /* display: table-cell; */
+  /* padding: 0 77px; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+/* line 372, ../sass/global.scss */
+.modal .inner {
+  width: 400px;
+  height: 270px;
+  margin: 200px auto;
+  background-color: transparent;
+  position: relative;
+  z-index: 9999;
+}
+/* line 379, ../sass/global.scss */
+.modal .inner h2 {
+  font-size: 8.0em;
+  margin-top: 100px;
+  z-index: 999;
+  /* height: 87%; */
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 390, ../sass/global.scss */
+.modal .inner .close {
+  font-size: 8.0em;
+  margin-top: 300px;
+  z-index: 999;
+  /* height: 87%; */
+  vertical-align: middle;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+/* line 402, ../sass/global.scss */
+.modal .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: 99;
+}
+/* line 413, ../sass/global.scss */
+.modal.active {
+  touch-action: none;
+  transform: translate3d(0px, -1739px, 0px);
+  transition: all 700ms ease;
+}
+
+/**** Hold-To-Confirm Buttons ****/
+/* line 430, ../sass/global.scss */
+.hold-button {
+  background-color: #F5F5F5;
+  width: 128px;
+  height: 32px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #E5E5E5;
+  color: #E0E0E0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: relative;
+  margin-left: 64px;
+  background-color: #607D8B;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 453, ../sass/global.scss */
+.hold-button:active, .hold-button:focus {
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* line 456, ../sass/global.scss */
+.hold-button:active {
+  transition-delay: 2s;
+  background-color: #81C784;
+}
+
+/* line 460, ../sass/global.scss */
+.hold-button__bottom-bar:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 473, ../sass/global.scss */
+.hold-button__bottom-bar:active:before {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 481, ../sass/global.scss */
+.hold-button__top-bar:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 494, ../sass/global.scss */
+.hold-button__top-bar:active:before {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 502, ../sass/global.scss */
+.hold-button__both-bar:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 515, ../sass/global.scss */
+.hold-button__both-bar:after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 528, ../sass/global.scss */
+.hold-button__both-bar:active:before, .hold-button__both-bar:active:after {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 536, ../sass/global.scss */
+.hold-button__centre-bar:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 551, ../sass/global.scss */
+.hold-button__centre-bar:after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #D43444;
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 566, ../sass/global.scss */
+.hold-button__centre-bar:active:before, .hold-button__centre-bar:active:after {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 574, ../sass/global.scss */
+.hold-button__left-fill:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 588, ../sass/global.scss */
+.hold-button__left-fill:active:before {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 596, ../sass/global.scss */
+.hold-button__right-fill:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 610, ../sass/global.scss */
+.hold-button__right-fill:active:before {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 618, ../sass/global.scss */
+.hold-button__centre-fill:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: width 0s ease-out;
+  -moz-transition: width 0s ease-out;
+  -ms-transition: width 0s ease-out;
+  -o-transition: width 0s ease-out;
+  transition: width 0s ease-out;
+}
+
+/* line 634, ../sass/global.scss */
+.hold-button__centre-fill:active:before {
+  width: 100%;
+  -webkit-transition: width 2s linear;
+  -moz-transition: width 2s linear;
+  -ms-transition: width 2s linear;
+  -o-transition: width 2s linear;
+  transition: width 2s linear;
+}
+
+/* line 642, ../sass/global.scss */
+.hold-button-circle {
+  background-color: #000000;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid #00abb6;
+  color: #00abb6;
+  font-size: 2.5em;
+  -webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: relative;
+  text-align: center;
+  z-index: 9999;
+  bottom: 100px;
+}
+
+/* line 669, ../sass/global.scss */
+.hold-button-circle:active, .hold-button-circle:focus {
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* line 672, ../sass/global.scss */
+.hold-button-circle:active {
+  background-color: #81C784;
+  transition-delay: 5s;
+}
+
+/* line 676, ../sass/global.scss */
+.hold-button-circle__in-circle:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 0%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  background-color: pink;
+}
+
+/* line 696, ../sass/global.scss */
+.hold-button-circle__in-circle:active:before {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+/* line 705, ../sass/global.scss */
+.hold-button-circle__out-circle:before {
+  content: "";
+  width: 0%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 0%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  background-color: pink;
+  z-index: 9;
+}
+
+/* line 726, ../sass/global.scss */
+.hold-button-circle__out-circle:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  background-color: red;
+  z-index: 10;
+}
+
+/* line 747, ../sass/global.scss */
+.hold-button-circle__out-circle:active:before {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 750, ../sass/global.scss */
+.hold-button-circle__out-circle:active:after {
+  width: 0;
+  height: 0;
+  background-color: #d96564;
+  -webkit-transition: width 2s linear, height 2s linear, background-color 0s linear;
+  -moz-transition: width 2s linear, height 2s linear, background-color 0s linear;
+  -ms-transition: width 2s linear, height 2s linear, background-color 0s linear;
+  -o-transition: width 2s linear, height 2s linear, background-color 0s linear;
+  transition: width 2s linear, height 2s linear, background-color 0s linear;
+}
+
+/*# sourceMappingURL=hold-buttons.css.map */
