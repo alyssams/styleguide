@@ -1,4 +1,4 @@
-#color {
+#color{
     .palette-item {
         @extend .col;
         padding: 10px 0;
@@ -68,5 +68,12 @@
     .box.pink {
         background: $pink;
         border: 1px solid $black;
+    }
+}
+#vr-demo .palette-demo {
+    @include sm-up {
+       @include make-columns(12);   
+       padding: 20px 0;
+       margin-left: 0 1%;     
     }
 }

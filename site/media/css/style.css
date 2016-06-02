@@ -37,7 +37,7 @@
 }
 
 /* line 23, ../scss/modules/grid-base.scss */
-.col, .image-examples, .image-details, #color .palette-item, #typography ul li, #typography ol li, .font-example, .font-details, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col, .image-examples, .image-details, #color .palette-item, #typography ul li, #typography ol li, .font-example, .font-details, .tabs li, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1096,7 +1096,7 @@
 }
 
 /* line 886, ../scss/modules/grid-base.scss */
-.col, .image-examples, .image-details, #color .palette-item, #typography ul li, #typography ol li, .font-example, .font-details {
+.col, .image-examples, .image-details, #color .palette-item, #typography ul li, #typography ol li, .font-example, .font-details, .tabs li {
   width: 100%;
   box-sizing: border-box;
 }
@@ -1166,12 +1166,7 @@
   src: url("./../fonts/pakt.eot") format("embedded-opentype"), url("./../fonts/pakt.woff") format("woff"), url("./../fonts/pakt.ttf") format("truetype"), url("./../fonts/pakt.svg#PaktRegular") format("svg");
 }
 
-/*/move this once VR becomes more prominent. then add a new sass file for it/*/ 
-.vr {
-    padding: 0 !important;
-}
-
-/* line 22, ../scss/modules/global.scss */
+/* line 24, ../scss/modules/global.scss */
 *, *:after, *:before {
   margin: 0;
   padding: 0;
@@ -1180,19 +1175,19 @@
   box-sizing: border-box;
 }
 
-/* line 28, ../scss/modules/global.scss */
+/* line 30, ../scss/modules/global.scss */
 body, html {
   font-size: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* line 34, ../scss/modules/global.scss */
+/* line 36, ../scss/modules/global.scss */
 .overflows {
   overflow: hidden;
 }
 
-/* line 39, ../scss/modules/global.scss */
+/* line 41, ../scss/modules/global.scss */
 body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -1200,24 +1195,24 @@ body {
   background-color: white;
 }
 
-/* line 46, ../scss/modules/global.scss */
+/* line 48, ../scss/modules/global.scss */
 a {
   text-decoration: none;
 }
 
-/* line 51, ../scss/modules/global.scss */
+/* line 53, ../scss/modules/global.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: left;
   text-transform: uppercase;
 }
 
-/* line 56, ../scss/modules/global.scss */
+/* line 58, ../scss/modules/global.scss */
 h3, h4, h5, h6 {
   font-weight: bold;
   font-family: "nobel-bold",Helvetica,Arial,sans-serif;
 }
 
-/* line 61, ../scss/modules/global.scss */
+/* line 63, ../scss/modules/global.scss */
 h1 {
   font-size: 22px;
   letter-spacing: 0.2em;
@@ -1226,7 +1221,7 @@ h1 {
   margin: 0.67em 0;
 }
 
-/* line 69, ../scss/modules/global.scss */
+/* line 71, ../scss/modules/global.scss */
 h2 {
   font-family: 'nobel-regular', sans-serif;
   font-size: 3.5em;
@@ -1237,80 +1232,80 @@ h2 {
   word-spacing: .2em;
 }
 @media (min-width: 961px) {
-  /* line 69, ../scss/modules/global.scss */
+  /* line 71, ../scss/modules/global.scss */
   h2 {
     font-size: 5em;
   }
 }
 
-/* line 82, ../scss/modules/global.scss */
+/* line 84, ../scss/modules/global.scss */
 h3 {
   font-size: 2em;
 }
 
-/* line 86, ../scss/modules/global.scss */
+/* line 88, ../scss/modules/global.scss */
 h4 {
   font-size: 1.5em;
 }
 
-/* line 90, ../scss/modules/global.scss */
+/* line 92, ../scss/modules/global.scss */
 h5 {
   font-size: 1.3em;
 }
 
-/* line 94, ../scss/modules/global.scss */
+/* line 96, ../scss/modules/global.scss */
 h6 {
   font-size: 0.6em;
 }
 
-/* line 98, ../scss/modules/global.scss */
+/* line 100, ../scss/modules/global.scss */
 p {
   width: 100%;
   padding: 25px 0 50px 0;
 }
 
-/* line 103, ../scss/modules/global.scss */
+/* line 105, ../scss/modules/global.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 107, ../scss/modules/global.scss */
+/* line 109, ../scss/modules/global.scss */
 .unclickable {
   pointer-events: none;
 }
 
-/* line 112, ../scss/modules/global.scss */
+/* line 114, ../scss/modules/global.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 117, ../scss/modules/global.scss */
+/* line 119, ../scss/modules/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 121, ../scss/modules/global.scss */
+/* line 123, ../scss/modules/global.scss */
 .clearfix {
   padding-bottom: 30px;
 }
 
-/* line 127, ../scss/modules/global.scss */
+/* line 129, ../scss/modules/global.scss */
 .wrapper {
   margin: 0 auto;
   width: 100%;
   padding: 0 10%;
 }
 
-/* line 139, ../scss/modules/global.scss */
+/* line 141, ../scss/modules/global.scss */
 #elwrapper {
   padding-top: 50px;
   width: 100%;
 }
 
-/* line 144, ../scss/modules/global.scss */
+/* line 146, ../scss/modules/global.scss */
 section {
   padding: 25px 0 100px 0;
   -moz-transition: all 200ms ease-in;
@@ -1319,39 +1314,39 @@ section {
   transition: all 200ms ease-in;
   border-top: 10px solid black;
 }
-/* line 152, ../scss/modules/global.scss */
+/* line 154, ../scss/modules/global.scss */
 section:first-of-type {
   border-top: 0;
 }
-/* line 155, ../scss/modules/global.scss */
+/* line 157, ../scss/modules/global.scss */
 section#color {
   border-top: 0;
 }
-/* line 159, ../scss/modules/global.scss */
+/* line 161, ../scss/modules/global.scss */
 section#header h2 {
   text-align: left;
   padding: 40px 0;
 }
-/* line 166, ../scss/modules/global.scss */
+/* line 168, ../scss/modules/global.scss */
 section .content > p {
   width: 100%;
   padding: 0;
   padding-bottom: 50px;
 }
-/* line 172, ../scss/modules/global.scss */
+/* line 174, ../scss/modules/global.scss */
 section .content > h4 {
   border-top: 5px solid black;
   padding: 25px 0;
 }
-/* line 178, ../scss/modules/global.scss */
+/* line 180, ../scss/modules/global.scss */
 section .content > h3 {
   padding: 10px 0;
 }
-/* line 181, ../scss/modules/global.scss */
+/* line 183, ../scss/modules/global.scss */
 section .content > h5 {
   padding: 50px 0 25px 0;
 }
-/* line 184, ../scss/modules/global.scss */
+/* line 186, ../scss/modules/global.scss */
 section h1 {
   border-top: 10px solid black;
   border-bottom: 10px solid black;
@@ -1359,13 +1354,13 @@ section h1 {
   font-size: 3.5em;
 }
 @media (min-width: 961px) {
-  /* line 184, ../scss/modules/global.scss */
+  /* line 186, ../scss/modules/global.scss */
   section h1 {
     font-size: 5em;
   }
 }
 
-/* line 195, ../scss/modules/global.scss */
+/* line 197, ../scss/modules/global.scss */
 .btn {
   border-radius: 0;
   -webkit-box-sizing: border-box;
@@ -1387,7 +1382,7 @@ section h1 {
   cursor: pointer;
   display: inline-block;
 }
-/* line 217, ../scss/modules/global.scss */
+/* line 219, ../scss/modules/global.scss */
 .btn:hover, .btn:focus {
   background: #fff;
   color: #000;
@@ -1395,68 +1390,68 @@ section h1 {
   outline: none;
 }
 
-/* line 240, ../scss/modules/global.scss */
+/* line 242, ../scss/modules/global.scss */
 .image-examples {
   width: 100%;
 }
 @media (min-width: 1206px) {
-  /* line 240, ../scss/modules/global.scss */
+  /* line 242, ../scss/modules/global.scss */
   .image-examples {
     width: 66.66667%;
   }
-  /* line 244, ../scss/modules/global.scss */
+  /* line 246, ../scss/modules/global.scss */
   .image-examples img {
     padding-top: 10px;
   }
 }
 
 @media (min-width: 641px) {
-  /* line 250, ../scss/modules/global.scss */
+  /* line 252, ../scss/modules/global.scss */
   .image-details {
     width: 100%;
   }
 }
 @media (min-width: 1206px) {
-  /* line 250, ../scss/modules/global.scss */
+  /* line 252, ../scss/modules/global.scss */
   .image-details {
     width: 33.33333%;
   }
 }
 
-/* line 260, ../scss/modules/global.scss */
+/* line 262, ../scss/modules/global.scss */
 .image-examples, .image-details {
   padding: 0 0 25px 0;
 }
-/* line 263, ../scss/modules/global.scss */
+/* line 265, ../scss/modules/global.scss */
 .image-examples p, .image-details p {
   width: 100% !important;
   padding: 25px 0 0 !important;
 }
-/* line 266, ../scss/modules/global.scss */
+/* line 268, ../scss/modules/global.scss */
 .image-examples p:first-of-type, .image-details p:first-of-type {
   padding-top: 10px !important;
 }
 
-/* line 274, ../scss/modules/global.scss */
+/* line 276, ../scss/modules/global.scss */
 .responsive-design img.desktop-image {
   width: 44%;
 }
-/* line 277, ../scss/modules/global.scss */
+/* line 279, ../scss/modules/global.scss */
 .responsive-design img.tablet-image {
   width: 32%;
 }
-/* line 280, ../scss/modules/global.scss */
+/* line 282, ../scss/modules/global.scss */
 .responsive-design img.mobile-image {
   width: 9%;
 }
 
-/* line 286, ../scss/modules/global.scss */
+/* line 288, ../scss/modules/global.scss */
 #imagery-backgrounds img {
   width: 100%;
   padding: 50px 0;
 }
 @media (min-width: 961px) {
-  /* line 286, ../scss/modules/global.scss */
+  /* line 288, ../scss/modules/global.scss */
   #imagery-backgrounds img {
     width: 60%;
     margin: 0 auto;
@@ -1465,12 +1460,12 @@ section h1 {
   }
 }
 
-/* line 298, ../scss/modules/global.scss */
+/* line 300, ../scss/modules/global.scss */
 .imagery-stuff img {
   width: 100%;
 }
 @media (min-width: 961px) {
-  /* line 298, ../scss/modules/global.scss */
+  /* line 300, ../scss/modules/global.scss */
   .imagery-stuff img {
     width: 75%;
     margin: 0 auto;
@@ -1478,17 +1473,17 @@ section h1 {
   }
 }
 
-/* line 307, ../scss/modules/global.scss */
+/* line 309, ../scss/modules/global.scss */
 #imagery img {
   padding-bottom: 50px;
 }
 
-/* line 311, ../scss/modules/global.scss */
+/* line 313, ../scss/modules/global.scss */
 #overlays img {
   width: 100%;
 }
 @media (min-width: 961px) {
-  /* line 311, ../scss/modules/global.scss */
+  /* line 313, ../scss/modules/global.scss */
   #overlays img {
     width: 50%;
     display: block;
@@ -1496,22 +1491,22 @@ section h1 {
   }
 }
 
-/* line 321, ../scss/modules/global.scss */
+/* line 323, ../scss/modules/global.scss */
 #imagery ul {
   margin-left: 18px;
   padding-top: 25px;
 }
 @media (min-width: 1206px) {
-  /* line 321, ../scss/modules/global.scss */
+  /* line 323, ../scss/modules/global.scss */
   #imagery ul {
     padding-right: 30px;
   }
-  /* line 328, ../scss/modules/global.scss */
+  /* line 330, ../scss/modules/global.scss */
   #imagery ul li {
     font-family: 'nobel-book';
     margin-top: 12px;
   }
-  /* line 331, ../scss/modules/global.scss */
+  /* line 333, ../scss/modules/global.scss */
   #imagery ul li:first-of-type {
     margin-top: 12px;
   }
@@ -2045,6 +2040,15 @@ section li {
   border: 1px solid black;
 }
 
+@media (min-width: 641px) {
+  /* line 73, ../scss/modules/colors.scss */
+  #vr-demo .palette-demo {
+    width: 100%;
+    padding: 20px 0;
+    margin-left: 0 1%;
+  }
+}
+
 /* line 3, ../scss/modules/typography.scss */
 #typography .content > h5 {
   padding: 30px 0;
@@ -2129,4 +2133,33 @@ section li {
 .font-example img {
   width: 12%;
   padding-top: 10px;
+}
+
+/* line 1, ../scss/modules/vr.scss */
+.tabs {
+  padding: 0 10%;
+}
+/* line 3, ../scss/modules/vr.scss */
+.tabs li {
+  display: inline;
+  padding: 10px 0;
+}
+@media (min-width: 641px) {
+  /* line 3, ../scss/modules/vr.scss */
+  .tabs li {
+    width: 33.33333%;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 961px) {
+  /* line 3, ../scss/modules/vr.scss */
+  .tabs li {
+    width: 33.33333%;
+  }
+}
+@media (min-width: 1206px) {
+  /* line 3, ../scss/modules/vr.scss */
+  .tabs li {
+    width: 25%;
+  }
 }
